@@ -111,6 +111,8 @@ namespace BibliotecaVirtual
 
         private void metroTextBoxSearch_KeyPress(object sender, KeyPressEventArgs e)
         {
+
+
             if (System.Text.RegularExpressions.Regex.IsMatch(e.KeyChar.ToString(), @"\r"))
             {
                 FormSearchingResult fsr = new FormSearchingResult(this, metroTextBoxSearch.Text, 3, true);
@@ -239,6 +241,12 @@ namespace BibliotecaVirtual
         private void _componentsSideBar_Click(object sender, EventArgs e)
         {
             showDetailsView("Componentes", SearchsTerminals.GetIntance().SearchByKeyAndType("", TypeSearch.ALLCOMPONENTS), "");
+        }
+
+        private void _gallerySideBar_Click(object sender, EventArgs e)
+        {
+            var gallery =new Gallery();
+            gallery.ShowDialog();
         }
     }
 }

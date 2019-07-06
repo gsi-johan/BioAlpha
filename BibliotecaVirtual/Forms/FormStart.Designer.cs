@@ -71,10 +71,10 @@ namespace BibliotecaVirtual
             // 
             // 
             this.metroTextBoxSearch.CustomButton.Image = null;
-            this.metroTextBoxSearch.CustomButton.Location = new System.Drawing.Point(300, 2);
-            this.metroTextBoxSearch.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTextBoxSearch.CustomButton.Location = new System.Drawing.Point(225, 2);
+            this.metroTextBoxSearch.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.metroTextBoxSearch.CustomButton.Name = "";
-            this.metroTextBoxSearch.CustomButton.Size = new System.Drawing.Size(33, 31);
+            this.metroTextBoxSearch.CustomButton.Size = new System.Drawing.Size(25, 25);
             this.metroTextBoxSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBoxSearch.CustomButton.TabIndex = 1;
             this.metroTextBoxSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -82,7 +82,7 @@ namespace BibliotecaVirtual
             this.metroTextBoxSearch.CustomButton.Visible = false;
             this.metroTextBoxSearch.Lines = new string[0];
             this.metroTextBoxSearch.Location = new System.Drawing.Point(653, 127);
-            this.metroTextBoxSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTextBoxSearch.Margin = new System.Windows.Forms.Padding(4);
             this.metroTextBoxSearch.MaxLength = 32767;
             this.metroTextBoxSearch.Name = "metroTextBoxSearch";
             this.metroTextBoxSearch.PasswordChar = '\0';
@@ -103,7 +103,7 @@ namespace BibliotecaVirtual
             this.pictureBoxTesis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxTesis.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxTesis.Image")));
             this.pictureBoxTesis.Location = new System.Drawing.Point(316, 260);
-            this.pictureBoxTesis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxTesis.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxTesis.Name = "pictureBoxTesis";
             this.pictureBoxTesis.Size = new System.Drawing.Size(236, 229);
             this.pictureBoxTesis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -116,7 +116,7 @@ namespace BibliotecaVirtual
             this.pictureBoxLibros.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxLibros.Image = global::BibliotecaVirtual.Properties.Resources.Libros;
             this.pictureBoxLibros.Location = new System.Drawing.Point(653, 260);
-            this.pictureBoxLibros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxLibros.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxLibros.Name = "pictureBoxLibros";
             this.pictureBoxLibros.Size = new System.Drawing.Size(236, 229);
             this.pictureBoxLibros.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -129,7 +129,7 @@ namespace BibliotecaVirtual
             this.pictureBoxArticulos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxArticulos.Image = global::BibliotecaVirtual.Properties.Resources.Articulo;
             this.pictureBoxArticulos.Location = new System.Drawing.Point(967, 260);
-            this.pictureBoxArticulos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxArticulos.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxArticulos.Name = "pictureBoxArticulos";
             this.pictureBoxArticulos.Size = new System.Drawing.Size(236, 229);
             this.pictureBoxArticulos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -143,7 +143,7 @@ namespace BibliotecaVirtual
             this.pictureBoxSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxSearch.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBoxSearch.Location = new System.Drawing.Point(877, 130);
-            this.pictureBoxSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxSearch.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxSearch.Name = "pictureBoxSearch";
             this.pictureBoxSearch.Size = new System.Drawing.Size(24, 22);
             this.pictureBoxSearch.TabIndex = 9;
@@ -157,7 +157,7 @@ namespace BibliotecaVirtual
             this.pictureBox1.BackgroundImage = global::BibliotecaVirtual.Properties.Resources.LogoColor;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(263, 112);
             this.pictureBox1.TabIndex = 2;
@@ -168,7 +168,7 @@ namespace BibliotecaVirtual
             this.pictureBox2.BackgroundImage = global::BibliotecaVirtual.Properties.Resources.FooterFull;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(260, 543);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(1067, 197);
             this.pictureBox2.TabIndex = 12;
@@ -203,7 +203,7 @@ namespace BibliotecaVirtual
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(87)))), ((int)(((byte)(146)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 6);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 100;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(263, 734);
@@ -231,7 +231,7 @@ namespace BibliotecaVirtual
             this._gallerySideBar.IconZoom = 90D;
             this._gallerySideBar.IsTab = false;
             this._gallerySideBar.Location = new System.Drawing.Point(0, 558);
-            this._gallerySideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this._gallerySideBar.Margin = new System.Windows.Forms.Padding(5);
             this._gallerySideBar.Name = "_gallerySideBar";
             this._gallerySideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._gallerySideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
@@ -243,6 +243,7 @@ namespace BibliotecaVirtual
             this._gallerySideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this._gallerySideBar.Textcolor = System.Drawing.Color.White;
             this._gallerySideBar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._gallerySideBar.Click += new System.EventHandler(this._gallerySideBar_Click);
             // 
             // _lectionsSideBar
             // 
@@ -266,7 +267,7 @@ namespace BibliotecaVirtual
             this._lectionsSideBar.IconZoom = 90D;
             this._lectionsSideBar.IsTab = false;
             this._lectionsSideBar.Location = new System.Drawing.Point(0, 494);
-            this._lectionsSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this._lectionsSideBar.Margin = new System.Windows.Forms.Padding(5);
             this._lectionsSideBar.Name = "_lectionsSideBar";
             this._lectionsSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._lectionsSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
@@ -302,7 +303,7 @@ namespace BibliotecaVirtual
             this._exitStrategiesSideBar.IconZoom = 90D;
             this._exitStrategiesSideBar.IsTab = false;
             this._exitStrategiesSideBar.Location = new System.Drawing.Point(0, 433);
-            this._exitStrategiesSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this._exitStrategiesSideBar.Margin = new System.Windows.Forms.Padding(5);
             this._exitStrategiesSideBar.Name = "_exitStrategiesSideBar";
             this._exitStrategiesSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._exitStrategiesSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
@@ -338,7 +339,7 @@ namespace BibliotecaVirtual
             this._postersSideBar.IconZoom = 90D;
             this._postersSideBar.IsTab = false;
             this._postersSideBar.Location = new System.Drawing.Point(0, 378);
-            this._postersSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this._postersSideBar.Margin = new System.Windows.Forms.Padding(5);
             this._postersSideBar.Name = "_postersSideBar";
             this._postersSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._postersSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
@@ -374,7 +375,7 @@ namespace BibliotecaVirtual
             this._pilotsSolutionsSideBar.IconZoom = 90D;
             this._pilotsSolutionsSideBar.IsTab = false;
             this._pilotsSolutionsSideBar.Location = new System.Drawing.Point(0, 318);
-            this._pilotsSolutionsSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this._pilotsSolutionsSideBar.Margin = new System.Windows.Forms.Padding(5);
             this._pilotsSolutionsSideBar.Name = "_pilotsSolutionsSideBar";
             this._pilotsSolutionsSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._pilotsSolutionsSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
@@ -410,7 +411,7 @@ namespace BibliotecaVirtual
             this._componentsSideBar.IconZoom = 90D;
             this._componentsSideBar.IsTab = false;
             this._componentsSideBar.Location = new System.Drawing.Point(0, 250);
-            this._componentsSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this._componentsSideBar.Margin = new System.Windows.Forms.Padding(5);
             this._componentsSideBar.Name = "_componentsSideBar";
             this._componentsSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._componentsSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
@@ -446,7 +447,7 @@ namespace BibliotecaVirtual
             this._sumarySideBar.IconZoom = 90D;
             this._sumarySideBar.IsTab = false;
             this._sumarySideBar.Location = new System.Drawing.Point(0, 204);
-            this._sumarySideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this._sumarySideBar.Margin = new System.Windows.Forms.Padding(5);
             this._sumarySideBar.Name = "_sumarySideBar";
             this._sumarySideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._sumarySideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
@@ -482,7 +483,7 @@ namespace BibliotecaVirtual
             this._reportEndSideBar.IconZoom = 90D;
             this._reportEndSideBar.IsTab = false;
             this._reportEndSideBar.Location = new System.Drawing.Point(0, 150);
-            this._reportEndSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this._reportEndSideBar.Margin = new System.Windows.Forms.Padding(5);
             this._reportEndSideBar.Name = "_reportEndSideBar";
             this._reportEndSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._reportEndSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
@@ -511,7 +512,7 @@ namespace BibliotecaVirtual
             // 
             this._radioComponent_1.AutoSize = true;
             this._radioComponent_1.Location = new System.Drawing.Point(653, 183);
-            this._radioComponent_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._radioComponent_1.Margin = new System.Windows.Forms.Padding(4);
             this._radioComponent_1.Name = "_radioComponent_1";
             this._radioComponent_1.Size = new System.Drawing.Size(110, 17);
             this._radioComponent_1.TabIndex = 17;
@@ -522,7 +523,7 @@ namespace BibliotecaVirtual
             // 
             this._radioComponent_2.AutoSize = true;
             this._radioComponent_2.Location = new System.Drawing.Point(653, 209);
-            this._radioComponent_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._radioComponent_2.Margin = new System.Windows.Forms.Padding(4);
             this._radioComponent_2.Name = "_radioComponent_2";
             this._radioComponent_2.Size = new System.Drawing.Size(110, 17);
             this._radioComponent_2.TabIndex = 18;
@@ -533,7 +534,7 @@ namespace BibliotecaVirtual
             // 
             this._radioComponent_3.AutoSize = true;
             this._radioComponent_3.Location = new System.Drawing.Point(817, 183);
-            this._radioComponent_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._radioComponent_3.Margin = new System.Windows.Forms.Padding(4);
             this._radioComponent_3.Name = "_radioComponent_3";
             this._radioComponent_3.Size = new System.Drawing.Size(110, 17);
             this._radioComponent_3.TabIndex = 19;
@@ -544,7 +545,7 @@ namespace BibliotecaVirtual
             // 
             this._radioComponent_4.AutoSize = true;
             this._radioComponent_4.Location = new System.Drawing.Point(817, 209);
-            this._radioComponent_4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._radioComponent_4.Margin = new System.Windows.Forms.Padding(4);
             this._radioComponent_4.Name = "_radioComponent_4";
             this._radioComponent_4.Size = new System.Drawing.Size(110, 17);
             this._radioComponent_4.TabIndex = 20;
@@ -556,7 +557,7 @@ namespace BibliotecaVirtual
             this._radioMultimedia.AutoSize = true;
             this._radioMultimedia.Checked = true;
             this._radioMultimedia.Location = new System.Drawing.Point(737, 164);
-            this._radioMultimedia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._radioMultimedia.Margin = new System.Windows.Forms.Padding(4);
             this._radioMultimedia.Name = "_radioMultimedia";
             this._radioMultimedia.Size = new System.Drawing.Size(89, 17);
             this._radioMultimedia.TabIndex = 21;
@@ -584,7 +585,7 @@ namespace BibliotecaVirtual
             this.Controls.Add(this.metroTextBoxSearch);
             this.Controls.Add(this.pictureBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FormStart";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
