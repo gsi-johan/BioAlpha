@@ -138,6 +138,11 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         {
             Folder component1 = this._folders[0].Folders[0].Folders[0];
 
+            Folder compResolutionsFolder = new Folder
+            {
+                Name = "Resoluciones",
+            };
+
             List<Documents> component1Documents = new List<Documents>
             {
                 new Documents
@@ -146,6 +151,35 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                     Name = "Informe final",
                     Keys = new List<string>() { "key1", "key2" }
                 }
+            };
+            component1.Folders.Add(compResolutionsFolder);
+            component1.Documents = component1Documents;
+            CreateComponent1Resolutions();
+        }
+
+        private void CreateComponent1Resolutions()
+        {
+            Folder comp1Resolutions = this._folders[0].Folders[0].Folders[0].Folders[0];
+            List<Documents> resolutionsDocuments = new List<Documents>
+            {
+                new Documents
+                {
+                    Url = "Doc_1",
+                    Name = "Doc 1",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = "Doc_2",
+                    Name = "Doc 2",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = "Doc_3",
+                    Name = "Doc 3",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
             };
         }
 
