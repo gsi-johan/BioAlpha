@@ -186,6 +186,11 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         public void CreateComponent2()
         {
             Folder component2 = this._folders[0].Folders[0].Folders[1];
+            Folder compMethodologiesFolder = new Folder
+            {
+                Name = "Metodologías",
+            };
+
             List<Documents> component2Documents = new List<Documents>
             {
                 new Documents
@@ -195,7 +200,37 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                     Keys = new List<string>() { "key1", "key2" }
                 }
             };
+            component2.Folders.Add(compMethodologiesFolder);
+            component2.Documents = component2Documents;
+            CreateComponent2Methodologies();
         }
+
+        private void CreateComponent2Methodologies()
+        {
+            Folder comp2Methodologies = this._folders[0].Folders[0].Folders[1].Folders[0];
+            List<Documents> methodologiesDocuments = new List<Documents>
+            {
+                new Documents
+                {
+                    Url = "Doc_1",
+                    Name = "Doc 1",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = "Doc_2",
+                    Name = "Doc 2",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = "Doc_3",
+                    Name = "Doc 3",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+            };
+        }
+
         public void CreateComponent3()
         {
             Folder component3 = this._folders[0].Folders[0].Folders[2];
