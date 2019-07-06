@@ -1,0 +1,1 @@
+﻿version_stable 1.0

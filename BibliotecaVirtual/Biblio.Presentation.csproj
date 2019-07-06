@@ -216,6 +216,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\diamante.ico" />
+    <Content Include="changle_log.txt" />
     <Content Include="Resources\download.ico" />
     <Content Include="Resources\download.png" />
     <Content Include="Resources\editar.ico" />
