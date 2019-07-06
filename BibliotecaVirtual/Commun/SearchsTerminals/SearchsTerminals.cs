@@ -24,9 +24,9 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         private SearchsTerminals()
         {           
             CreateInitiativeFolder();
-            //CreateComponentsFolder();
-            //CreatePilotSolutionsFolder();
-            //CreatePostersFolder();
+            CreateComponentsFolder();
+            CreatePilotSolutionsFolder();
+            CreatePostersFolder();
         }
 
 
@@ -100,6 +100,117 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
 
             //Adding Initiative folder to Folder Root
             this._folders.Add(initiative);
+        }
+
+        public void CreateComponentsFolder()
+        {
+            Folder componentFolder = this._folders[0].Folders[0];
+
+            Folder component1Folder = new Folder
+            {
+                Name = "Componente 1",
+            };
+            Folder component2Folder = new Folder
+            {
+                Name = "Componente 2",
+            };
+            Folder component3Folder = new Folder
+            {
+                Name = "Componente 3",
+            };
+            Folder component4Folder = new Folder
+            {
+                Name = "Componente 4",
+            };
+            componentFolder.Folders.Add(component1Folder);
+            componentFolder.Folders.Add(component2Folder);
+            componentFolder.Folders.Add(component3Folder);
+            componentFolder.Folders.Add(component4Folder);
+
+            CreateComponent1();
+            CreateComponent2();
+            CreateComponent3();
+            CreateComponent4();
+
+        }
+
+        public void CreateComponent1()
+        {
+            Folder component1 = this._folders[0].Folders[0].Folders[0];
+
+            List<Documents> component1Documents = new List<Documents>
+            {
+                new Documents
+                {
+                    Url = "Informe_final",
+                    Name = "Informe final",
+                    Keys = new List<string>() { "key1", "key2" }
+                }
+            };
+        }
+
+        public void CreateComponent2()
+        {
+            Folder component2 = this._folders[0].Folders[0].Folders[1];
+            List<Documents> component2Documents = new List<Documents>
+            {
+                new Documents
+                {
+                    Url = "Informe_final",
+                    Name = "Informe final",
+                    Keys = new List<string>() { "key1", "key2" }
+                }
+            };
+        }
+        public void CreateComponent3()
+        {
+            Folder component3 = this._folders[0].Folders[0].Folders[2];
+            List<Documents> component3Documents = new List<Documents>
+            {
+                new Documents
+                {
+                    Url = "Informe_final",
+                    Name = "Informe final",
+                    Keys = new List<string>() { "key1", "key2" }
+                }
+            };
+        }
+        public void CreateComponent4()
+        {
+            Folder component4 = this._folders[0].Folders[0].Folders[3];
+            List<Documents> component1Documents = new List<Documents>
+            {
+                new Documents
+                {
+                    Url = "Informe_final",
+                    Name = "Informe final",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = "Fichas_soluciones_financieras",
+                    Name = "Fichas de soluciones financieras",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = "Plan_financiero",
+                    Name = "Plan financiero",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+            };
+        }
+
+        public void CreatePilotSolutionsFolder()
+        {
+            Folder pilotSolutionsFolder = this._folders[0].Folders[1];
+
+        }
+
+        public void CreatePostersFolder()
+        {
+            Folder postersFolder = this._folders[0].Folders[2];
+
         }
     }
 }
