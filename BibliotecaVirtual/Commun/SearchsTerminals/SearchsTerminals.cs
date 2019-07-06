@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace BibliotecaVirtual.Commun.SearchsTerminals
 {
@@ -37,10 +38,83 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         public List<Documents> SearchByKeyAndType(string key, TypeSearch type)
         {
             var results = new List<Documents>();
-
+            switch ((int)type)
+            {
+                case 1:
+                    results = SearchInComponent1(key);
+                    break;
+                case 2:
+                    results = SearchInComponent2(key);
+                    break;
+                case 3:
+                    results = SearchInComponent3(key);
+                    break;
+                case 4:
+                    results = SearchInComponent4(key);
+                    break;
+                case 5:
+                    results = SearchInPosters(key);
+                    break;
+                case 6:
+                    results = SearchInPilotSolutions(key);
+                    break;
+                default:
+                    results = SearchInAllFiles(key);
+                    break;
+            }
 
             return results;
         }
+
+        private List<Documents> SearchInAllFiles(string key)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private List<Documents> SearchInPilotSolutions(string key)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private List<Documents> SearchInPosters(string key)
+        {
+            var results = new List<Documents>();
+            Folder postersFolder = this._folders[0].Folders[2];
+            return SearchInDocuments(key, postersFolder);
+        }
+
+        private List<Documents> SearchInComponent4(string key)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private List<Documents> SearchInComponent3(string key)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private List<Documents> SearchInComponent2(string key)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private List<Documents> SearchInComponent1(string key)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private static List<Documents> SearchInDocuments(string key, Folder folderToSearch)
+        {
+            List<Documents> results;
+            results = folderToSearch.Documents.Where(find => find.Name.Contains(key) ||
+                                                             find.Keys.Contains(key))
+                .OrderByDescending(n => n.Name)
+                .ToList();
+            return results;
+        }
+
+        #region Seed for folders
+
 
         public void CreateInitiativeFolder()
         {
@@ -411,7 +485,8 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                 }
             };
             postersFolder.Documents = postersDocuments;
-
         }
+        #endregion
+
     }
 }
