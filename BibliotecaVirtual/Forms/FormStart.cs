@@ -196,8 +196,8 @@ namespace BibliotecaVirtual
 
         private void _postersSideBar_Click(object sender, EventArgs e)
         {
-            DetailsView fs = new DetailsView();
-            fs.Show();
+            DetailsView fs = new DetailsView(5);
+            fs.ShowDialog();
         }
     }
 }
