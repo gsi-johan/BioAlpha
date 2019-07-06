@@ -10,6 +10,6 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
 
         public string Url { get; set; }
 
-        public List<KeyWords> Resolutions { get; set; }
+        public List<string> Keys { get; set; }
     }
 }
