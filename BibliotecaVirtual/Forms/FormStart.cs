@@ -72,7 +72,7 @@ namespace BibliotecaVirtual
         {
             if (isComponentSelected())
             {
-                _showComponents();
+                _showComponents(metroTextBoxSearch.Text);
             }
             else
             {
@@ -82,52 +82,24 @@ namespace BibliotecaVirtual
             }
         }
 
-        private void _showComponents()
+        private void _showComponents(string key)
         {
             if (this._radioComponent_1.Checked)
             {
-                showDetailsView("Componente 1", new List<Documents>
-                {
-                    new Documents
-                    {
-                        Name = "asda",
-                        Url = "sdfsfs"
-                    }
-                }, "");
+                showDetailsView("Componente 1", SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS1),"");
             }
 
             if (this._radioComponent_2.Checked)
             {
-                showDetailsView("Componente 2", new List<Documents>
-                {
-                    new Documents
-                    {
-                        Name = "asda",
-                        Url = "sdfsfs"
-                    }
-                }, "");
+                showDetailsView("Componente 2", SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS2), "");
             }
             if (this._radioComponent_3.Checked)
             {
-                showDetailsView("Componente 3", new List<Documents>
-                {
-                    new Documents
-                    {
-                        Name = "asda",
-                        Url = "sdfsfs"
-                    }
-                }, "");
+                showDetailsView("Componente 3", SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS3), "");
             }
             if (this._radioComponent_4.Checked)
             {
-                showDetailsView("Componente 3", new List<Documents>
-                {
-                    new Documents
-                    {
-                        Name = "asda",
-                        Url = "sdfsfs"
-                    }
-                }, "");
+                showDetailsView("Componente 4", SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS4), "");
             }
         }
 
@@ -250,50 +222,23 @@ namespace BibliotecaVirtual
 
         private void _postersSideBar_Click(object sender, EventArgs e)
         {
-            showDetailsView("Posters", new List<Documents>
-            {
-                new Documents
-                {
-                    Name = "asda",
-                    Url = "sdfsfs"
-                },
-                new Documents
-                {
-                    Name = "asda",
-                    Url = "sdfsfs"
-                },
-                new Documents
-                {
-                    Name = "asda",
-                    Url = "sdfsfs"
-                },
-                new Documents
-                {
-                    Name = "asda",
-                    Url = "sdfsfs"
-                },
-                new Documents
-                {
-                    Name = "asda",
-                    Url = "sdfsfs"
-                },
-                new Documents
-                {
-                    Name = "asda",
-                    Url = "sdfsfs"
-                },
-                new Documents
-                {
-                    Name = "asda",
-                    Url = "sdfsfs"
-                }
-            }, "");
+            showDetailsView("Posters", SearchsTerminals.GetIntance().SearchByKeyAndType("",TypeSearch.POSTERS), "");
         }
 
         private void showDetailsView(string name, List<Documents> documents, string folder)
         {
             DetailsView fs = new DetailsView(name, documents, folder);
             fs.ShowDialog();
+        }
+
+        private void _pilotsSolutionsSideBar_Click(object sender, EventArgs e)
+        {
+            showDetailsView("Implementación de soluciones pilotos", SearchsTerminals.GetIntance().SearchByKeyAndType("", TypeSearch.PILOTSSOLUTIONS), "");
+        }
+
+        private void _componentsSideBar_Click(object sender, EventArgs e)
+        {
+            showDetailsView("Componentes", SearchsTerminals.GetIntance().SearchByKeyAndType("", TypeSearch.ALLCOMPONENTS), "");
         }
     }
 }

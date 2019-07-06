@@ -11,7 +11,8 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         COMPONENTS3 = 3,
         COMPONENTS4 = 4,
         POSTERS =5,
-        PILOTSSOLUTIONS=6
+        PILOTSSOLUTIONS=6,
+        ALLCOMPONENTS=7
     }
 
     public class SearchsTerminals
@@ -58,6 +59,9 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                 case 6:
                     results = SearchInPilotSolutions(key);
                     break;
+                case 7:
+                    results = AllComponents();
+                    break;
                 default:
                     results = SearchInAllFiles(key);
                     break;
@@ -73,10 +77,25 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             return SearchInAllDocuments(key, allFolders);
         }
 
+        private List<Documents> AllComponents()
+        {
+            var results = new List<Documents>();
+            results.AddRange(SearchInComponent1(""));
+           results.AddRange(SearchInComponent2(""));
+           results.AddRange(SearchInComponent3(""));
+           results.AddRange(SearchInComponent4(""));
+            return results;
+        }
+
         private List<Documents> SearchInPilotSolutions(string key)
         {
             var results = new List<Documents>();
             Folder pilotSolutionsFolder = this._folders[0].Folders[1];
+            if (string.IsNullOrEmpty(key))
+            {
+                results.AddRange(pilotSolutionsFolder.Documents);
+                return results;
+            }
             return SearchInDocuments(key, pilotSolutionsFolder);
         }
 
@@ -84,6 +103,11 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         {
             var results = new List<Documents>();
             Folder postersFolder = this._folders[0].Folders[2];
+            if (string.IsNullOrEmpty(key))
+            {
+                results.AddRange(postersFolder.Documents);
+                return results;
+            }
             return SearchInDocuments(key, postersFolder);
         }
 
@@ -91,6 +115,13 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         {
             var results = new List<Documents>();
             Folder component4 = this._folders[0].Folders[0].Folders[3];
+            if (string.IsNullOrEmpty(key))
+            {
+                results.AddRange(component4.Documents);
+                results.AddRange(component4.Folders[0].Documents);
+                results.AddRange(component4.Folders[1].Documents);
+                return results;
+            }
             return SearchInDocuments(key, component4);
         }
 
@@ -98,6 +129,11 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         {
             var results = new List<Documents>();
             Folder component3 = this._folders[0].Folders[0].Folders[2];
+            if (string.IsNullOrEmpty(key))
+            {
+                results.AddRange(component3.Documents);
+                return results;
+            }
             return SearchInDocuments(key, component3);
         }
 
@@ -105,6 +141,12 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         {
             var results = new List<Documents>();
             Folder component2 = this._folders[0].Folders[0].Folders[1];
+            if (string.IsNullOrEmpty(key))
+            {
+                results.AddRange(component2.Documents);
+                results.AddRange(component2.Folders[0].Documents);
+                return results;
+            }
             return SearchInDocuments(key, component2);
         }
 
@@ -112,6 +154,13 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         {
             var results = new List<Documents>();
             Folder component1 = this._folders[0].Folders[0].Folders[0];
+            if (string.IsNullOrEmpty(key))
+            {
+                results.AddRange(component1.Documents);
+                results.AddRange(component1.Folders[0].Documents);
+                return results;
+            }
+           
             return SearchInDocuments(key, component1);
         }
 

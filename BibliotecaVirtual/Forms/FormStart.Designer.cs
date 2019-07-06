@@ -71,16 +71,18 @@ namespace BibliotecaVirtual
             // 
             // 
             this.metroTextBoxSearch.CustomButton.Image = null;
-            this.metroTextBoxSearch.CustomButton.Location = new System.Drawing.Point(168, 2);
+            this.metroTextBoxSearch.CustomButton.Location = new System.Drawing.Point(300, 2);
+            this.metroTextBoxSearch.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTextBoxSearch.CustomButton.Name = "";
-            this.metroTextBoxSearch.CustomButton.Size = new System.Drawing.Size(19, 19);
+            this.metroTextBoxSearch.CustomButton.Size = new System.Drawing.Size(33, 31);
             this.metroTextBoxSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBoxSearch.CustomButton.TabIndex = 1;
             this.metroTextBoxSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBoxSearch.CustomButton.UseSelectable = true;
             this.metroTextBoxSearch.CustomButton.Visible = false;
             this.metroTextBoxSearch.Lines = new string[0];
-            this.metroTextBoxSearch.Location = new System.Drawing.Point(490, 103);
+            this.metroTextBoxSearch.Location = new System.Drawing.Point(653, 127);
+            this.metroTextBoxSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTextBoxSearch.MaxLength = 32767;
             this.metroTextBoxSearch.Name = "metroTextBoxSearch";
             this.metroTextBoxSearch.PasswordChar = '\0';
@@ -89,7 +91,7 @@ namespace BibliotecaVirtual
             this.metroTextBoxSearch.SelectionLength = 0;
             this.metroTextBoxSearch.SelectionStart = 0;
             this.metroTextBoxSearch.ShortcutsEnabled = true;
-            this.metroTextBoxSearch.Size = new System.Drawing.Size(190, 24);
+            this.metroTextBoxSearch.Size = new System.Drawing.Size(253, 30);
             this.metroTextBoxSearch.TabIndex = 8;
             this.metroTextBoxSearch.UseSelectable = true;
             this.metroTextBoxSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -100,9 +102,10 @@ namespace BibliotecaVirtual
             // 
             this.pictureBoxTesis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxTesis.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxTesis.Image")));
-            this.pictureBoxTesis.Location = new System.Drawing.Point(237, 211);
+            this.pictureBoxTesis.Location = new System.Drawing.Point(316, 260);
+            this.pictureBoxTesis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxTesis.Name = "pictureBoxTesis";
-            this.pictureBoxTesis.Size = new System.Drawing.Size(177, 186);
+            this.pictureBoxTesis.Size = new System.Drawing.Size(236, 229);
             this.pictureBoxTesis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxTesis.TabIndex = 6;
             this.pictureBoxTesis.TabStop = false;
@@ -112,9 +115,10 @@ namespace BibliotecaVirtual
             // 
             this.pictureBoxLibros.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxLibros.Image = global::BibliotecaVirtual.Properties.Resources.Libros;
-            this.pictureBoxLibros.Location = new System.Drawing.Point(490, 211);
+            this.pictureBoxLibros.Location = new System.Drawing.Point(653, 260);
+            this.pictureBoxLibros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxLibros.Name = "pictureBoxLibros";
-            this.pictureBoxLibros.Size = new System.Drawing.Size(177, 186);
+            this.pictureBoxLibros.Size = new System.Drawing.Size(236, 229);
             this.pictureBoxLibros.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLibros.TabIndex = 5;
             this.pictureBoxLibros.TabStop = false;
@@ -124,9 +128,10 @@ namespace BibliotecaVirtual
             // 
             this.pictureBoxArticulos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxArticulos.Image = global::BibliotecaVirtual.Properties.Resources.Articulo;
-            this.pictureBoxArticulos.Location = new System.Drawing.Point(725, 211);
+            this.pictureBoxArticulos.Location = new System.Drawing.Point(967, 260);
+            this.pictureBoxArticulos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxArticulos.Name = "pictureBoxArticulos";
-            this.pictureBoxArticulos.Size = new System.Drawing.Size(177, 186);
+            this.pictureBoxArticulos.Size = new System.Drawing.Size(236, 229);
             this.pictureBoxArticulos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxArticulos.TabIndex = 4;
             this.pictureBoxArticulos.TabStop = false;
@@ -137,9 +142,10 @@ namespace BibliotecaVirtual
             this.pictureBoxSearch.BackgroundImage = global::BibliotecaVirtual.Properties.Resources.search;
             this.pictureBoxSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxSearch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBoxSearch.Location = new System.Drawing.Point(658, 106);
+            this.pictureBoxSearch.Location = new System.Drawing.Point(877, 130);
+            this.pictureBoxSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxSearch.Name = "pictureBoxSearch";
-            this.pictureBoxSearch.Size = new System.Drawing.Size(18, 18);
+            this.pictureBoxSearch.Size = new System.Drawing.Size(24, 22);
             this.pictureBoxSearch.TabIndex = 9;
             this.pictureBoxSearch.TabStop = false;
             this.pictureBoxSearch.Click += new System.EventHandler(this.pictureBoxSearch_Click);
@@ -151,8 +157,9 @@ namespace BibliotecaVirtual
             this.pictureBox1.BackgroundImage = global::BibliotecaVirtual.Properties.Resources.LogoColor;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(197, 91);
+            this.pictureBox1.Size = new System.Drawing.Size(263, 112);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -160,9 +167,10 @@ namespace BibliotecaVirtual
             // 
             this.pictureBox2.BackgroundImage = global::BibliotecaVirtual.Properties.Resources.FooterFull;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(195, 441);
+            this.pictureBox2.Location = new System.Drawing.Point(260, 543);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(800, 160);
+            this.pictureBox2.Size = new System.Drawing.Size(1067, 197);
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
             // 
@@ -170,9 +178,10 @@ namespace BibliotecaVirtual
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel1.Location = new System.Drawing.Point(495, 81);
+            this.metroLabel1.Location = new System.Drawing.Point(660, 100);
+            this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(52, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(55, 20);
             this.metroLabel1.TabIndex = 13;
             this.metroLabel1.Text = "Buscar:";
             // 
@@ -193,10 +202,11 @@ namespace BibliotecaVirtual
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(138)))));
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(87)))), ((int)(((byte)(146)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 5);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 6);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 100;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(197, 596);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(263, 734);
             this.bunifuGradientPanel1.TabIndex = 14;
             // 
             // _gallerySideBar
@@ -220,13 +230,14 @@ namespace BibliotecaVirtual
             this._gallerySideBar.IconVisible = false;
             this._gallerySideBar.IconZoom = 90D;
             this._gallerySideBar.IsTab = false;
-            this._gallerySideBar.Location = new System.Drawing.Point(0, 453);
+            this._gallerySideBar.Location = new System.Drawing.Point(0, 558);
+            this._gallerySideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._gallerySideBar.Name = "_gallerySideBar";
             this._gallerySideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._gallerySideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._gallerySideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._gallerySideBar.selected = false;
-            this._gallerySideBar.Size = new System.Drawing.Size(197, 29);
+            this._gallerySideBar.Size = new System.Drawing.Size(263, 36);
             this._gallerySideBar.TabIndex = 10;
             this._gallerySideBar.Text = "Galeria de Fotos";
             this._gallerySideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -254,13 +265,14 @@ namespace BibliotecaVirtual
             this._lectionsSideBar.IconVisible = false;
             this._lectionsSideBar.IconZoom = 90D;
             this._lectionsSideBar.IsTab = false;
-            this._lectionsSideBar.Location = new System.Drawing.Point(0, 401);
+            this._lectionsSideBar.Location = new System.Drawing.Point(0, 494);
+            this._lectionsSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._lectionsSideBar.Name = "_lectionsSideBar";
             this._lectionsSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._lectionsSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._lectionsSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._lectionsSideBar.selected = false;
-            this._lectionsSideBar.Size = new System.Drawing.Size(197, 29);
+            this._lectionsSideBar.Size = new System.Drawing.Size(263, 36);
             this._lectionsSideBar.TabIndex = 9;
             this._lectionsSideBar.Text = "Lecciones aprendidas";
             this._lectionsSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -289,13 +301,14 @@ namespace BibliotecaVirtual
             this._exitStrategiesSideBar.IconVisible = false;
             this._exitStrategiesSideBar.IconZoom = 90D;
             this._exitStrategiesSideBar.IsTab = false;
-            this._exitStrategiesSideBar.Location = new System.Drawing.Point(0, 352);
+            this._exitStrategiesSideBar.Location = new System.Drawing.Point(0, 433);
+            this._exitStrategiesSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._exitStrategiesSideBar.Name = "_exitStrategiesSideBar";
             this._exitStrategiesSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._exitStrategiesSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._exitStrategiesSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._exitStrategiesSideBar.selected = false;
-            this._exitStrategiesSideBar.Size = new System.Drawing.Size(197, 29);
+            this._exitStrategiesSideBar.Size = new System.Drawing.Size(263, 36);
             this._exitStrategiesSideBar.TabIndex = 8;
             this._exitStrategiesSideBar.Text = "Estrategías de salidas";
             this._exitStrategiesSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -324,13 +337,14 @@ namespace BibliotecaVirtual
             this._postersSideBar.IconVisible = false;
             this._postersSideBar.IconZoom = 90D;
             this._postersSideBar.IsTab = false;
-            this._postersSideBar.Location = new System.Drawing.Point(0, 307);
+            this._postersSideBar.Location = new System.Drawing.Point(0, 378);
+            this._postersSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._postersSideBar.Name = "_postersSideBar";
             this._postersSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._postersSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._postersSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._postersSideBar.selected = false;
-            this._postersSideBar.Size = new System.Drawing.Size(197, 29);
+            this._postersSideBar.Size = new System.Drawing.Size(263, 36);
             this._postersSideBar.TabIndex = 7;
             this._postersSideBar.Text = "Porters";
             this._postersSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -359,18 +373,20 @@ namespace BibliotecaVirtual
             this._pilotsSolutionsSideBar.IconVisible = false;
             this._pilotsSolutionsSideBar.IconZoom = 90D;
             this._pilotsSolutionsSideBar.IsTab = false;
-            this._pilotsSolutionsSideBar.Location = new System.Drawing.Point(0, 258);
+            this._pilotsSolutionsSideBar.Location = new System.Drawing.Point(0, 318);
+            this._pilotsSolutionsSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._pilotsSolutionsSideBar.Name = "_pilotsSolutionsSideBar";
             this._pilotsSolutionsSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._pilotsSolutionsSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._pilotsSolutionsSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._pilotsSolutionsSideBar.selected = false;
-            this._pilotsSolutionsSideBar.Size = new System.Drawing.Size(197, 29);
+            this._pilotsSolutionsSideBar.Size = new System.Drawing.Size(263, 36);
             this._pilotsSolutionsSideBar.TabIndex = 6;
             this._pilotsSolutionsSideBar.Text = "Implementación de soluciones pilotos";
             this._pilotsSolutionsSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this._pilotsSolutionsSideBar.Textcolor = System.Drawing.Color.White;
             this._pilotsSolutionsSideBar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._pilotsSolutionsSideBar.Click += new System.EventHandler(this._pilotsSolutionsSideBar_Click);
             // 
             // _componentsSideBar
             // 
@@ -393,18 +409,20 @@ namespace BibliotecaVirtual
             this._componentsSideBar.IconVisible = false;
             this._componentsSideBar.IconZoom = 90D;
             this._componentsSideBar.IsTab = false;
-            this._componentsSideBar.Location = new System.Drawing.Point(0, 203);
+            this._componentsSideBar.Location = new System.Drawing.Point(0, 250);
+            this._componentsSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._componentsSideBar.Name = "_componentsSideBar";
             this._componentsSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._componentsSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._componentsSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._componentsSideBar.selected = false;
-            this._componentsSideBar.Size = new System.Drawing.Size(197, 29);
+            this._componentsSideBar.Size = new System.Drawing.Size(263, 36);
             this._componentsSideBar.TabIndex = 5;
             this._componentsSideBar.Text = "Componentes";
             this._componentsSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this._componentsSideBar.Textcolor = System.Drawing.Color.White;
             this._componentsSideBar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._componentsSideBar.Click += new System.EventHandler(this._componentsSideBar_Click);
             // 
             // _sumarySideBar
             // 
@@ -427,13 +445,14 @@ namespace BibliotecaVirtual
             this._sumarySideBar.IconVisible = false;
             this._sumarySideBar.IconZoom = 90D;
             this._sumarySideBar.IsTab = false;
-            this._sumarySideBar.Location = new System.Drawing.Point(0, 166);
+            this._sumarySideBar.Location = new System.Drawing.Point(0, 204);
+            this._sumarySideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._sumarySideBar.Name = "_sumarySideBar";
             this._sumarySideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._sumarySideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._sumarySideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._sumarySideBar.selected = false;
-            this._sumarySideBar.Size = new System.Drawing.Size(197, 29);
+            this._sumarySideBar.Size = new System.Drawing.Size(263, 36);
             this._sumarySideBar.TabIndex = 4;
             this._sumarySideBar.Text = "Resumen Ejecutivo";
             this._sumarySideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -462,13 +481,14 @@ namespace BibliotecaVirtual
             this._reportEndSideBar.IconVisible = false;
             this._reportEndSideBar.IconZoom = 90D;
             this._reportEndSideBar.IsTab = false;
-            this._reportEndSideBar.Location = new System.Drawing.Point(0, 122);
+            this._reportEndSideBar.Location = new System.Drawing.Point(0, 150);
+            this._reportEndSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._reportEndSideBar.Name = "_reportEndSideBar";
             this._reportEndSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._reportEndSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._reportEndSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._reportEndSideBar.selected = false;
-            this._reportEndSideBar.Size = new System.Drawing.Size(197, 29);
+            this._reportEndSideBar.Size = new System.Drawing.Size(263, 36);
             this._reportEndSideBar.TabIndex = 3;
             this._reportEndSideBar.Text = "Informe Final";
             this._reportEndSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -480,18 +500,20 @@ namespace BibliotecaVirtual
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel2.Location = new System.Drawing.Point(225, 37);
+            this.metroLabel2.Location = new System.Drawing.Point(300, 46);
+            this.metroLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(333, 25);
+            this.metroLabel2.Size = new System.Drawing.Size(347, 25);
             this.metroLabel2.TabIndex = 16;
             this.metroLabel2.Text = "Economía y Finanzas para la Biodiversidad";
             // 
             // _radioComponent_1
             // 
             this._radioComponent_1.AutoSize = true;
-            this._radioComponent_1.Location = new System.Drawing.Point(490, 149);
+            this._radioComponent_1.Location = new System.Drawing.Point(653, 183);
+            this._radioComponent_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._radioComponent_1.Name = "_radioComponent_1";
-            this._radioComponent_1.Size = new System.Drawing.Size(102, 15);
+            this._radioComponent_1.Size = new System.Drawing.Size(110, 17);
             this._radioComponent_1.TabIndex = 17;
             this._radioComponent_1.Text = "Componente 1";
             this._radioComponent_1.UseSelectable = true;
@@ -499,9 +521,10 @@ namespace BibliotecaVirtual
             // _radioComponent_2
             // 
             this._radioComponent_2.AutoSize = true;
-            this._radioComponent_2.Location = new System.Drawing.Point(490, 170);
+            this._radioComponent_2.Location = new System.Drawing.Point(653, 209);
+            this._radioComponent_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._radioComponent_2.Name = "_radioComponent_2";
-            this._radioComponent_2.Size = new System.Drawing.Size(102, 15);
+            this._radioComponent_2.Size = new System.Drawing.Size(110, 17);
             this._radioComponent_2.TabIndex = 18;
             this._radioComponent_2.Text = "Componente 2";
             this._radioComponent_2.UseSelectable = true;
@@ -509,9 +532,10 @@ namespace BibliotecaVirtual
             // _radioComponent_3
             // 
             this._radioComponent_3.AutoSize = true;
-            this._radioComponent_3.Location = new System.Drawing.Point(613, 149);
+            this._radioComponent_3.Location = new System.Drawing.Point(817, 183);
+            this._radioComponent_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._radioComponent_3.Name = "_radioComponent_3";
-            this._radioComponent_3.Size = new System.Drawing.Size(102, 15);
+            this._radioComponent_3.Size = new System.Drawing.Size(110, 17);
             this._radioComponent_3.TabIndex = 19;
             this._radioComponent_3.Text = "Componente 3";
             this._radioComponent_3.UseSelectable = true;
@@ -519,9 +543,10 @@ namespace BibliotecaVirtual
             // _radioComponent_4
             // 
             this._radioComponent_4.AutoSize = true;
-            this._radioComponent_4.Location = new System.Drawing.Point(613, 170);
+            this._radioComponent_4.Location = new System.Drawing.Point(817, 209);
+            this._radioComponent_4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._radioComponent_4.Name = "_radioComponent_4";
-            this._radioComponent_4.Size = new System.Drawing.Size(102, 15);
+            this._radioComponent_4.Size = new System.Drawing.Size(110, 17);
             this._radioComponent_4.TabIndex = 20;
             this._radioComponent_4.Text = "Componente 4";
             this._radioComponent_4.UseSelectable = true;
@@ -530,9 +555,10 @@ namespace BibliotecaVirtual
             // 
             this._radioMultimedia.AutoSize = true;
             this._radioMultimedia.Checked = true;
-            this._radioMultimedia.Location = new System.Drawing.Point(553, 133);
+            this._radioMultimedia.Location = new System.Drawing.Point(737, 164);
+            this._radioMultimedia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._radioMultimedia.Name = "_radioMultimedia";
-            this._radioMultimedia.Size = new System.Drawing.Size(84, 15);
+            this._radioMultimedia.Size = new System.Drawing.Size(89, 17);
             this._radioMultimedia.TabIndex = 21;
             this._radioMultimedia.TabStop = true;
             this._radioMultimedia.Text = "Multimedia";
@@ -540,9 +566,9 @@ namespace BibliotecaVirtual
             // 
             // FormStart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(995, 600);
+            this.ClientSize = new System.Drawing.Size(1327, 738);
             this.Controls.Add(this._radioMultimedia);
             this.Controls.Add(this._radioComponent_4);
             this.Controls.Add(this._radioComponent_3);
@@ -558,8 +584,10 @@ namespace BibliotecaVirtual
             this.Controls.Add(this.metroTextBoxSearch);
             this.Controls.Add(this.pictureBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "FormStart";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Resizable = false;
             this.TransparencyKey = System.Drawing.Color.SteelBlue;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormStart_FormClosed);
