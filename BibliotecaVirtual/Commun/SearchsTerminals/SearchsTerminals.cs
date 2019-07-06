@@ -4,9 +4,13 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
 {
     public enum TypeSearch
     {
-        All=0
-
-
+        All=0,
+        COMPONENTS1=1,
+        COMPONENTS2 = 2,
+        COMPONENTS3 = 3,
+        COMPONENTS4 = 4,
+        POSTERS =5,
+        PILOTSSOLUTIONS=6
     }
 
     public class SearchsTerminals
@@ -30,9 +34,12 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         }
 
 
-        public void SearchByKeyAndType(string key, TypeSearch type)
+        public List<Documents> SearchByKeyAndType(string key, TypeSearch type)
         {
-            // todo search inside folders
+            var results = new List<Documents>();
+
+
+            return results;
         }
 
         public void CreateInitiativeFolder()
