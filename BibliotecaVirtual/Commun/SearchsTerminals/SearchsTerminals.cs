@@ -68,12 +68,16 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
 
         private List<Documents> SearchInAllFiles(string key)
         {
-            throw new System.NotImplementedException();
+            var results = new List<Documents>();
+            Folder allFolders = this._folders[0];
+            return SearchInAllDocuments(key, allFolders);
         }
 
         private List<Documents> SearchInPilotSolutions(string key)
         {
-            throw new System.NotImplementedException();
+            var results = new List<Documents>();
+            Folder pilotSolutionsFolder = this._folders[0].Folders[1];
+            return SearchInDocuments(key, pilotSolutionsFolder);
         }
 
         private List<Documents> SearchInPosters(string key)
@@ -85,36 +89,87 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
 
         private List<Documents> SearchInComponent4(string key)
         {
-            throw new System.NotImplementedException();
+            var results = new List<Documents>();
+            Folder component4 = this._folders[0].Folders[0].Folders[3];
+            return SearchInDocuments(key, component4);
         }
 
         private List<Documents> SearchInComponent3(string key)
         {
-            throw new System.NotImplementedException();
+            var results = new List<Documents>();
+            Folder component3 = this._folders[0].Folders[0].Folders[2];
+            return SearchInDocuments(key, component3);
         }
 
         private List<Documents> SearchInComponent2(string key)
         {
-            throw new System.NotImplementedException();
+            var results = new List<Documents>();
+            Folder component2 = this._folders[0].Folders[0].Folders[1];
+            return SearchInDocuments(key, component2);
         }
 
         private List<Documents> SearchInComponent1(string key)
         {
-            throw new System.NotImplementedException();
+            var results = new List<Documents>();
+            Folder component1 = this._folders[0].Folders[0].Folders[0];
+            return SearchInDocuments(key, component1);
         }
 
-        private static List<Documents> SearchInDocuments(string key, Folder folderToSearch)
+        private List<Documents> SearchInDocuments(string key, Folder folderToSearch)
         {
-            List<Documents> results;
-            results = folderToSearch.Documents.Where(find => find.Name.Contains(key) ||
-                                                             find.Keys.Contains(key))
-                .OrderByDescending(n => n.Name)
-                .ToList();
+            List<Documents> results = new List<Documents>();
+
+            if (folderToSearch.Documents != null)
+            {
+                results = folderToSearch.Documents.Where(find => find.Name.ToLower().Contains(key) ||
+                                                                 find.Keys.Any(k => k.ToLower().Contains(key)))
+                    .OrderByDescending(n => n.Name)
+                    .ToList();
+            }
+            int foldersCount = folderToSearch.Folders.Count -1;
+            while (foldersCount >= 0)
+            {
+                results.AddRange(folderToSearch.Folders[foldersCount].Documents.Where(find => find.Name.ToLower().Contains(key) ||find.Keys.Any(k => k.ToLower().Contains(key)))
+                    .OrderByDescending(n => n.Name)
+                    .ToList());
+
+                foldersCount--;
+            }
+            
             return results;
         }
 
-        #region Seed for folders
+        private List<Documents> SearchInAllDocuments(string key, Folder folderToSearch)
+        {
+            List<Documents> results = new List<Documents>();
 
+            if (folderToSearch.Documents != null)
+            {
+                results = folderToSearch.Documents.Where(find => find.Name.ToLower().Contains(key) ||
+                                                                 find.Keys.Any(k => k.ToLower().Contains(key)))
+                    .OrderByDescending(n => n.Name)
+                    .ToList();
+            }
+            int foldersCount = folderToSearch.Folders.Count - 1;
+            while (foldersCount >= 0)
+            {
+                results.AddRange(folderToSearch.Folders[foldersCount].Documents.Where(find => find.Name.ToLower().Contains(key) || find.Keys.Any(k => k.ToLower().Contains(key)))
+                    .OrderByDescending(n => n.Name)
+                    .ToList());
+
+                foldersCount--;
+            }
+
+            results.AddRange(SearchInComponent1(key));
+            results.AddRange(SearchInComponent2(key));
+            results.AddRange(SearchInComponent3(key));
+            results.AddRange(SearchInComponent4(key));
+
+            return results;
+        }
+
+
+        #region Seed for folders
 
         public void CreateInitiativeFolder()
         {
@@ -122,7 +177,8 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             Folder initiative = new Folder
             {
                 Name = "Iniciativa_Biofin",
-                Folders = new List<Folder>()
+                Folders = new List<Folder>(),
+                Documents = new List<Documents>()
             };
 
             List<Documents> initDocuments = new List<Documents>
@@ -131,50 +187,54 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                     {
                         Url = "Informe_final",
                         Name = "Informe final",
-                        Keys = new List<string>() { "key1", "key2" }
+                        Keys = new List<string>() { "general", "conclusiones" }
                     },
                      new Documents
                     {
                         Url = "Resumen_ejecutivo",
                         Name = "Resumen ejecutivo",
-                        Keys = new List<string>() { "key1", "key2" }
+                        Keys = new List<string>() { "resumen", "general" }
                     },
                       new Documents
                     {
                         Url = "Estrategia_de_salida",
                         Name = "Estrategia de salida",
-                        Keys = new List<string>() { "key1", "key2" }
+                        Keys = new List<string>() { "estrategia", "economia" }
                     },
                         new Documents
                     {
                         Url = "Lecciones_aprendidas",
                         Name = "Lecciones aprendidas",
-                        Keys = new List<string>() { "key1", "key2" }
+                        Keys = new List<string>() { "MINAGRI", "lecciones" }
                     },
                 };
 
             Folder initComponentsFolder = new Folder
             {
                 Name = "Informes por componentes",
-                Folders = new List<Folder>()
+                Folders = new List<Folder>(),
+                Documents = new List<Documents>()
             };
 
             Folder initPilotsSolutionsFolder = new Folder
             {
                 Name = "Sitios de Implementación de las soluciones pilotos",
-                Folders = new List<Folder>()
+                Folders = new List<Folder>(),
+                Documents = new List<Documents>()
             };
 
             Folder initPostersFolder = new Folder
             {
                 Name = "Posters",
-                Folders = new List<Folder>()
+                Folders = new List<Folder>(),
+                Documents = new List<Documents>()
             };
 
             Folder initGalleryFolder = new Folder
             {
                 Name = "Galeria",
-                Folders = new List<Folder>()
+                Folders = new List<Folder>(),
+                Documents = new List<Documents>()
             };
 
             //Adding contents to initiative folder 
@@ -195,22 +255,26 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             Folder component1Folder = new Folder
             {
                 Name = "Componente 1",
-                Folders = new List<Folder>()
+                Folders = new List<Folder>(),
+                Documents = new List<Documents>()
             };
             Folder component2Folder = new Folder
             {
                 Name = "Componente 2",
-                Folders = new List<Folder>()
+                Folders = new List<Folder>(),
+                Documents = new List<Documents>()
             };
             Folder component3Folder = new Folder
             {
                 Name = "Componente 3",
-                Folders = new List<Folder>()
+                Folders = new List<Folder>(),
+                Documents = new List<Documents>()
             };
             Folder component4Folder = new Folder
             {
                 Name = "Componente 4",
-                Folders = new List<Folder>()
+                Folders = new List<Folder>(),
+                Documents = new List<Documents>()
             };
             componentFolder.Folders.Add(component1Folder);
             componentFolder.Folders.Add(component2Folder);
@@ -232,7 +296,8 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             Folder compResolutionsFolder = new Folder
             {
                 Name = "Resoluciones",
-                Folders = new List<Folder>()
+                Folders = new List<Folder>(),
+                Documents = new List<Documents>()
             };
 
             List<Documents> component1Documents = new List<Documents>
@@ -241,7 +306,7 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                 {
                     Url = "Informe_final",
                     Name = "Informe final",
-                    Keys = new List<string>() { "key1", "key2" }
+                    Keys = new List<string>() { "Componente 1", "Conclusion","economia cubana" }
                 }
             };
             component1.Folders.Add(compResolutionsFolder);
@@ -258,19 +323,19 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                 {
                     Url = "Doc_1",
                     Name = "Doc 1",
-                    Keys = new List<string>() { "key1", "key2" }
+                    Keys = new List<string>() { "Documento", "componente 1" }
                 },
                 new Documents
                 {
                     Url = "Doc_2",
                     Name = "Doc 2",
-                    Keys = new List<string>() { "key1", "key2" }
+                    Keys = new List<string>() { "MINAGRI", "agricultura" }
                 },
                 new Documents
                 {
                     Url = "Doc_3",
                     Name = "Doc 3",
-                    Keys = new List<string>() { "key1", "key2" }
+                    Keys = new List<string>() { "agricultura 2019", "estrategia" }
                 }
             };
             comp1Resolutions.Documents = resolutionsDocuments;
@@ -283,7 +348,8 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             Folder compMethodologiesFolder = new Folder
             {
                 Name = "Metodologías",
-                Folders = new List<Folder>()
+                Folders = new List<Folder>(),
+                Documents = new List<Documents>()
             };
 
             List<Documents> component2Documents = new List<Documents>
@@ -349,12 +415,14 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             Folder compResolutionsFolder = new Folder
             {
                 Name = "Resoluciones",
-                Folders = new List<Folder>()
+                Folders = new List<Folder>(),
+                Documents = new List<Documents>()
             };
             Folder compFinancialSolutionsSheetsFolder = new Folder
             {
                 Name = "Fichas de soluciones financieras",
-                Folders = new List<Folder>()
+                Folders = new List<Folder>(),
+                Documents = new List<Documents>()
             };
 
             List<Documents> component4Documents = new List<Documents>
@@ -363,7 +431,7 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                 {
                     Url = "Informe_final",
                     Name = "Informe final",
-                    Keys = new List<string>() { "key1", "key2" }
+                    Keys = new List<string>() { "lecciones", "key2" }
                 },
                 new Documents
                 {
@@ -427,7 +495,7 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                 {
                     Url = "Doc_3",
                     Name = "Doc 3",
-                    Keys = new List<string>() { "key1", "key2" }
+                    Keys = new List<string>() { "lecciones", "key2" }
                 }
             };
             comp4FinancialSolutions.Documents = financialSolutionsDocuments;
