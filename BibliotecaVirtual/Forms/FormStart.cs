@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Drawing.Text;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -14,6 +16,9 @@ using Biblio.Business.Service;
 using BibliotecaVirtual.Commun;
 using BibliotecaVirtual.Commun.SearchsTerminals;
 using BibliotecaVirtual.Forms;
+using BibliotecaVirtual.Forms.Initiative;
+using BibliotecaVirtual.Properties;
+using MetroFramework;
 using MetroFramework.Forms;
 
 namespace BibliotecaVirtual
@@ -84,7 +89,7 @@ namespace BibliotecaVirtual
 
         private void FormStart_Load(object sender, EventArgs e)
         {
-
+           
             if (!Global.isStartFirst)
             {
                 var loaded = new Loaded();
@@ -123,6 +128,76 @@ namespace BibliotecaVirtual
             {
                 lista[i].Close();
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            Point startPoint = new Point(0, 0);
+            Point endPoint = new Point(183, 560);
+
+            LinearGradientBrush lgb =
+                new LinearGradientBrush(startPoint, endPoint, Color.White, System.Drawing.ColorTranslator.FromHtml("#0c5e6e"));
+            Graphics g = e.Graphics;
+            g.FillRectangle(lgb, 0, 0, 183, 560);
+
+        }
+
+        private void _reportEndSideBar_Click(object sender, EventArgs e)
+        {
+            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\informe_final.pdf");
+        }
+
+       
+
+        private void _sumarySideBar_Click(object sender, EventArgs e)
+        {
+            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\resumen_ejecutivo.pdf");
+        }
+
+
+        private void _exitStrategiesSideBar_Click(object sender, EventArgs e)
+        {
+            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\estrategias_de_salidas.pdf");
+
+        }
+
+
+        private void _lectionsSideBar_Click(object sender, EventArgs e)
+        {
+            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\estrategias_de_salidas.pdf");
+        }
+
+        private void CheckAndOpenUrlPdf(string urlPdf)
+        {
+            try
+            {
+                string currentDir = Environment.CurrentDirectory;
+                string directory = currentDir + urlPdf;
+
+                if (File.Exists(directory))
+                {
+                    System.Diagnostics.Process.Start(directory);
+                }
+                else
+                {
+                    MetroMessageBox.Show(this, Resources.LostFileError, Resources.Information,
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning, 120);
+                }
+
+            }
+            catch (Exception e)
+            {
+                MetroMessageBox.Show(this, Resources.LostFileError, Resources.Information,
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning, 120);
+            }
+        }
+
+        private void _postersSideBar_Click(object sender, EventArgs e)
+        {
+            DetailsView fs = new DetailsView();
+            fs.Show();
         }
     }
 }
