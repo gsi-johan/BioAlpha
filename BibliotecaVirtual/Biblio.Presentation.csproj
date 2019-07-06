@@ -91,6 +91,11 @@
   <ItemGroup>
     <Compile Include="Commun\FontCustomizable.cs" />
     <Compile Include="Commun\Global.cs" />
+    <Compile Include="Commun\SearchsTerminals\Documents.cs" />
+    <Compile Include="Commun\SearchsTerminals\Folder.cs" />
+    <Compile Include="Commun\SearchsTerminals\KeyWords.cs" />
+    <Compile Include="Commun\SearchsTerminals\ParentData.cs" />
+    <Compile Include="Commun\SearchsTerminals\SearchsTerminals.cs" />
     <Compile Include="Forms\FormInsertar.cs">
       <SubType>Form</SubType>
     </Compile>

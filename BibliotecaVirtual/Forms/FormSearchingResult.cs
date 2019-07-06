@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using Biblio.Business.Mapper;
 using Biblio.Business.Service;
 using Biblio.Business.Service.Helpers;
+using BibliotecaVirtual.Commun.SearchsTerminals;
 using BibliotecaVirtual.Forms;
 using BibliotecaVirtual.Properties;
 using MetroFramework;
@@ -69,6 +70,7 @@ namespace BibliotecaVirtual
             InitializeComponent();
             CreateForm();
 
+           
             metroTabControl2.TabPages.RemoveAt(4);
 
 

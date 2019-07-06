@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using Biblio.Business.Service;
 using BibliotecaVirtual.Commun;
+using BibliotecaVirtual.Commun.SearchsTerminals;
 using BibliotecaVirtual.Forms;
 using MetroFramework.Forms;
 
@@ -23,7 +24,8 @@ namespace BibliotecaVirtual
 
         public FormStart()
         {
-            _documentServices=new DocumentServices();
+            var test= SearchsTerminals.GetIntance();
+            _documentServices =new DocumentServices();
             InitializeComponent();
 
         }
