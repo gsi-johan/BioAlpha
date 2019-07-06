@@ -51,6 +51,11 @@ namespace BibliotecaVirtual
             this._sumarySideBar = new Bunifu.Framework.UI.BunifuFlatButton();
             this._reportEndSideBar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this._radioComponent_1 = new MetroFramework.Controls.MetroRadioButton();
+            this._radioComponent_2 = new MetroFramework.Controls.MetroRadioButton();
+            this._radioComponent_3 = new MetroFramework.Controls.MetroRadioButton();
+            this._radioComponent_4 = new MetroFramework.Controls.MetroRadioButton();
+            this._radioMultimedia = new MetroFramework.Controls.MetroRadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTesis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLibros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArticulos)).BeginInit();
@@ -95,7 +100,7 @@ namespace BibliotecaVirtual
             // 
             this.pictureBoxTesis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxTesis.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxTesis.Image")));
-            this.pictureBoxTesis.Location = new System.Drawing.Point(237, 171);
+            this.pictureBoxTesis.Location = new System.Drawing.Point(237, 211);
             this.pictureBoxTesis.Name = "pictureBoxTesis";
             this.pictureBoxTesis.Size = new System.Drawing.Size(177, 186);
             this.pictureBoxTesis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -107,7 +112,7 @@ namespace BibliotecaVirtual
             // 
             this.pictureBoxLibros.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxLibros.Image = global::BibliotecaVirtual.Properties.Resources.Libros;
-            this.pictureBoxLibros.Location = new System.Drawing.Point(490, 171);
+            this.pictureBoxLibros.Location = new System.Drawing.Point(490, 211);
             this.pictureBoxLibros.Name = "pictureBoxLibros";
             this.pictureBoxLibros.Size = new System.Drawing.Size(177, 186);
             this.pictureBoxLibros.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -119,7 +124,7 @@ namespace BibliotecaVirtual
             // 
             this.pictureBoxArticulos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxArticulos.Image = global::BibliotecaVirtual.Properties.Resources.Articulo;
-            this.pictureBoxArticulos.Location = new System.Drawing.Point(725, 171);
+            this.pictureBoxArticulos.Location = new System.Drawing.Point(725, 211);
             this.pictureBoxArticulos.Name = "pictureBoxArticulos";
             this.pictureBoxArticulos.Size = new System.Drawing.Size(177, 186);
             this.pictureBoxArticulos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -481,11 +486,68 @@ namespace BibliotecaVirtual
             this.metroLabel2.TabIndex = 16;
             this.metroLabel2.Text = "Economía y Finanzas para la Biodiversidad";
             // 
+            // _radioComponent_1
+            // 
+            this._radioComponent_1.AutoSize = true;
+            this._radioComponent_1.Location = new System.Drawing.Point(490, 149);
+            this._radioComponent_1.Name = "_radioComponent_1";
+            this._radioComponent_1.Size = new System.Drawing.Size(102, 15);
+            this._radioComponent_1.TabIndex = 17;
+            this._radioComponent_1.Text = "Componente 1";
+            this._radioComponent_1.UseSelectable = true;
+            // 
+            // _radioComponent_2
+            // 
+            this._radioComponent_2.AutoSize = true;
+            this._radioComponent_2.Location = new System.Drawing.Point(490, 170);
+            this._radioComponent_2.Name = "_radioComponent_2";
+            this._radioComponent_2.Size = new System.Drawing.Size(102, 15);
+            this._radioComponent_2.TabIndex = 18;
+            this._radioComponent_2.Text = "Componente 2";
+            this._radioComponent_2.UseSelectable = true;
+            // 
+            // _radioComponent_3
+            // 
+            this._radioComponent_3.AutoSize = true;
+            this._radioComponent_3.Location = new System.Drawing.Point(613, 149);
+            this._radioComponent_3.Name = "_radioComponent_3";
+            this._radioComponent_3.Size = new System.Drawing.Size(102, 15);
+            this._radioComponent_3.TabIndex = 19;
+            this._radioComponent_3.Text = "Componente 3";
+            this._radioComponent_3.UseSelectable = true;
+            // 
+            // _radioComponent_4
+            // 
+            this._radioComponent_4.AutoSize = true;
+            this._radioComponent_4.Location = new System.Drawing.Point(613, 170);
+            this._radioComponent_4.Name = "_radioComponent_4";
+            this._radioComponent_4.Size = new System.Drawing.Size(102, 15);
+            this._radioComponent_4.TabIndex = 20;
+            this._radioComponent_4.Text = "Componente 4";
+            this._radioComponent_4.UseSelectable = true;
+            // 
+            // _radioMultimedia
+            // 
+            this._radioMultimedia.AutoSize = true;
+            this._radioMultimedia.Checked = true;
+            this._radioMultimedia.Location = new System.Drawing.Point(553, 133);
+            this._radioMultimedia.Name = "_radioMultimedia";
+            this._radioMultimedia.Size = new System.Drawing.Size(84, 15);
+            this._radioMultimedia.TabIndex = 21;
+            this._radioMultimedia.TabStop = true;
+            this._radioMultimedia.Text = "Multimedia";
+            this._radioMultimedia.UseSelectable = true;
+            // 
             // FormStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(995, 600);
+            this.Controls.Add(this._radioMultimedia);
+            this.Controls.Add(this._radioComponent_4);
+            this.Controls.Add(this._radioComponent_3);
+            this.Controls.Add(this._radioComponent_2);
+            this.Controls.Add(this._radioComponent_1);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.metroLabel1);
@@ -533,6 +595,11 @@ namespace BibliotecaVirtual
         private Bunifu.Framework.UI.BunifuFlatButton _pilotsSolutionsSideBar;
         private Bunifu.Framework.UI.BunifuFlatButton _componentsSideBar;
         private Bunifu.Framework.UI.BunifuFlatButton _sumarySideBar;
+        private MetroFramework.Controls.MetroRadioButton _radioComponent_1;
+        private MetroFramework.Controls.MetroRadioButton _radioComponent_2;
+        private MetroFramework.Controls.MetroRadioButton _radioComponent_3;
+        private MetroFramework.Controls.MetroRadioButton _radioComponent_4;
+        private MetroFramework.Controls.MetroRadioButton _radioMultimedia;
     }
 }
 

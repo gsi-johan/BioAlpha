@@ -29,31 +29,29 @@ namespace BibliotecaVirtual
 
         public FormStart()
         {
-            var test= SearchsTerminals.GetIntance();
-            _documentServices =new DocumentServices();
+            var test = SearchsTerminals.GetIntance();
+            _documentServices = new DocumentServices();
             InitializeComponent();
-
         }
-
 
 
         private void pictureBoxTesis_Click(object sender, EventArgs e)
         {
-            FormSearchingResult fsr = new FormSearchingResult(this,metroTextBoxSearch.Text, 0, true);
+            FormSearchingResult fsr = new FormSearchingResult(this, metroTextBoxSearch.Text, 0, true);
             fsr.Show();
             this.Hide();
         }
 
         private void pictureBoxLibros_Click(object sender, EventArgs e)
         {
-            FormSearchingResult fsr = new FormSearchingResult(this,metroTextBoxSearch.Text, 1, true);
+            FormSearchingResult fsr = new FormSearchingResult(this, metroTextBoxSearch.Text, 1, true);
             fsr.Show();
             this.Hide();
         }
 
         private void pictureBoxArticulos_Click(object sender, EventArgs e)
         {
-            FormSearchingResult fsr = new FormSearchingResult(this,metroTextBoxSearch.Text, 2, true);
+            FormSearchingResult fsr = new FormSearchingResult(this, metroTextBoxSearch.Text, 2, true);
             fsr.Show();
             this.Hide();
         }
@@ -72,16 +70,78 @@ namespace BibliotecaVirtual
 
         private void pictureBoxSearch_Click(object sender, EventArgs e)
         {
-            FormSearchingResult fsr = new FormSearchingResult(this,metroTextBoxSearch.Text, 3, true);
-            fsr.Show();
-            this.Hide();
+            if (isComponentSelected())
+            {
+                _showComponents();
+            }
+            else
+            {
+                FormSearchingResult fsr = new FormSearchingResult(this, metroTextBoxSearch.Text, 3, true);
+                fsr.Show();
+                this.Hide();
+            }
+        }
+
+        private void _showComponents()
+        {
+            if (this._radioComponent_1.Checked)
+            {
+                showDetailsView("Componente 1", new List<Documents>
+                {
+                    new Documents
+                    {
+                        Name = "asda",
+                        Url = "sdfsfs"
+                    }
+                }, "");
+            }
+
+            if (this._radioComponent_2.Checked)
+            {
+                showDetailsView("Componente 2", new List<Documents>
+                {
+                    new Documents
+                    {
+                        Name = "asda",
+                        Url = "sdfsfs"
+                    }
+                }, "");
+            }
+            if (this._radioComponent_3.Checked)
+            {
+                showDetailsView("Componente 3", new List<Documents>
+                {
+                    new Documents
+                    {
+                        Name = "asda",
+                        Url = "sdfsfs"
+                    }
+                }, "");
+            }
+            if (this._radioComponent_4.Checked)
+            {
+                showDetailsView("Componente 3", new List<Documents>
+                {
+                    new Documents
+                    {
+                        Name = "asda",
+                        Url = "sdfsfs"
+                    }
+                }, "");
+            }
+        }
+
+        private bool isComponentSelected()
+        {
+            return this._radioComponent_1.Checked || _radioComponent_2.Checked || _radioComponent_3.Checked ||
+                   _radioComponent_4.Checked;
         }
 
         private void metroTextBoxSearch_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (System.Text.RegularExpressions.Regex.IsMatch(e.KeyChar.ToString(), @"\r"))
             {
-                FormSearchingResult fsr = new FormSearchingResult(this,metroTextBoxSearch.Text, 3, true);
+                FormSearchingResult fsr = new FormSearchingResult(this, metroTextBoxSearch.Text, 3, true);
                 fsr.Show();
                 this.Hide();
             }
@@ -89,24 +149,21 @@ namespace BibliotecaVirtual
 
         private void FormStart_Load(object sender, EventArgs e)
         {
-           
             if (!Global.isStartFirst)
             {
                 var loaded = new Loaded();
                 var threadStart = new ThreadStart(() => { DoWork(this, loaded); });
-                StartProcessInBackground(threadStart, loaded); 
+                StartProcessInBackground(threadStart, loaded);
             }
             ActiveControl = metroTextBoxSearch;
         }
 
         private void DoWork(FormStart formStart, Loaded loaded)
         {
-
             _documentServices.GetDocuments();
             Global.isStartFirst = true;
             if (loaded.InvokeRequired)
                 loaded.BeginInvoke(new Action(loaded.Close));
-
         }
 
         private static void StartProcessInBackground(ThreadStart processBackground, Loaded barModal)
@@ -136,10 +193,10 @@ namespace BibliotecaVirtual
             Point endPoint = new Point(183, 560);
 
             LinearGradientBrush lgb =
-                new LinearGradientBrush(startPoint, endPoint, Color.White, System.Drawing.ColorTranslator.FromHtml("#0c5e6e"));
+                new LinearGradientBrush(startPoint, endPoint, Color.White,
+                    System.Drawing.ColorTranslator.FromHtml("#0c5e6e"));
             Graphics g = e.Graphics;
             g.FillRectangle(lgb, 0, 0, 183, 560);
-
         }
 
         private void _reportEndSideBar_Click(object sender, EventArgs e)
@@ -147,7 +204,6 @@ namespace BibliotecaVirtual
             CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\informe_final.pdf");
         }
 
-       
 
         private void _sumarySideBar_Click(object sender, EventArgs e)
         {
@@ -158,7 +214,6 @@ namespace BibliotecaVirtual
         private void _exitStrategiesSideBar_Click(object sender, EventArgs e)
         {
             CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\estrategias_de_salidas.pdf");
-
         }
 
 
@@ -184,7 +239,6 @@ namespace BibliotecaVirtual
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Warning, 120);
                 }
-
             }
             catch (Exception e)
             {
@@ -196,7 +250,49 @@ namespace BibliotecaVirtual
 
         private void _postersSideBar_Click(object sender, EventArgs e)
         {
-            DetailsView fs = new DetailsView(5);
+            showDetailsView("Posters", new List<Documents>
+            {
+                new Documents
+                {
+                    Name = "asda",
+                    Url = "sdfsfs"
+                },
+                new Documents
+                {
+                    Name = "asda",
+                    Url = "sdfsfs"
+                },
+                new Documents
+                {
+                    Name = "asda",
+                    Url = "sdfsfs"
+                },
+                new Documents
+                {
+                    Name = "asda",
+                    Url = "sdfsfs"
+                },
+                new Documents
+                {
+                    Name = "asda",
+                    Url = "sdfsfs"
+                },
+                new Documents
+                {
+                    Name = "asda",
+                    Url = "sdfsfs"
+                },
+                new Documents
+                {
+                    Name = "asda",
+                    Url = "sdfsfs"
+                }
+            }, "");
+        }
+
+        private void showDetailsView(string name, List<Documents> documents, string folder)
+        {
+            DetailsView fs = new DetailsView(name, documents, folder);
             fs.ShowDialog();
         }
     }

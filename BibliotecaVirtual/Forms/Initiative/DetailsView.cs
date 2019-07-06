@@ -6,32 +6,34 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using BibliotecaVirtual.Commun.SearchsTerminals;
 using MetroFramework.Forms;
 
 namespace BibliotecaVirtual.Forms.Initiative
 {
     public partial class DetailsView : MetroForm
     {
-        public DetailsView(int count)
+        public DetailsView(string name,List<Documents> documents, string urlFolder)
         {
-
-            int initialY = 10;
+            var initialY = 10;
             InitializeComponent();
-            this.panel1.AutoScroll = true;
+            panel1.AutoScroll = true;
+            this.Text = name;
 
-            for (int i = 0; i < count; i++)
+            foreach (var document in documents)
             {
-                TextBox t = new TextBox { Name = "text", Width = 300, Text = "dinamyc text" };
-
-                t.Location = new Point(10, initialY);
-              
-                this.panel1.Controls.Add(t);
-                initialY += 60;
+                var itemView = new ItemView(document) {Location = Location = new Point(10, initialY)};
+                this.panel1.Controls.Add(itemView);
+                initialY += 70;
 
             }
-           
+            
+        }
 
-          
+        public sealed override string Text
+        {
+            get { return base.Text; }
+            set { base.Text = value; }
         }
     }
 }

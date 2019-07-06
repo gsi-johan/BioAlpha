@@ -132,6 +132,12 @@
     <Compile Include="Forms\Initiative\DetailsView.Designer.cs">
       <DependentUpon>DetailsView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Initiative\ItemView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Initiative\ItemView.Designer.cs">
+      <DependentUpon>ItemView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Loaded.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Initiative\DetailsView.resx">
       <DependentUpon>DetailsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Initiative\ItemView.resx">
+      <DependentUpon>ItemView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Loaded.resx">
       <DependentUpon>Loaded.cs</DependentUpon>
