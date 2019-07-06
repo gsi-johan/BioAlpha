@@ -16,6 +16,7 @@ using Biblio.Business.Service;
 using BibliotecaVirtual.Commun;
 using BibliotecaVirtual.Commun.SearchsTerminals;
 using BibliotecaVirtual.Forms;
+using BibliotecaVirtual.Forms.Initiative;
 using BibliotecaVirtual.Properties;
 using MetroFramework;
 using MetroFramework.Forms;
@@ -191,6 +192,12 @@ namespace BibliotecaVirtual
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning, 120);
             }
+        }
+
+        private void _postersSideBar_Click(object sender, EventArgs e)
+        {
+            DetailsView fs = new DetailsView();
+            fs.Show();
         }
     }
 }
