@@ -179,8 +179,9 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                     Url = "Doc_3",
                     Name = "Doc 3",
                     Keys = new List<string>() { "key1", "key2" }
-                },
+                }
             };
+            comp1Resolutions.Documents = resolutionsDocuments;
         }
 
         public void CreateComponent2()
@@ -229,6 +230,7 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                     Keys = new List<string>() { "key1", "key2" }
                 },
             };
+            comp2Methodologies.Documents = methodologiesDocuments;
         }
 
         public void CreateComponent3()
@@ -243,11 +245,23 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                     Keys = new List<string>() { "key1", "key2" }
                 }
             };
+            component3.Documents = component3Documents;
         }
+
+
         public void CreateComponent4()
         {
             Folder component4 = this._folders[0].Folders[0].Folders[3];
-            List<Documents> component1Documents = new List<Documents>
+            Folder compResolutionsFolder = new Folder
+            {
+                Name = "Resoluciones",
+            };
+            Folder compFinancialSolutionsSheetsFolder = new Folder
+            {
+                Name = "Fichas de soluciones financieras",
+            };
+
+            List<Documents> component4Documents = new List<Documents>
             {
                 new Documents
                 {
@@ -257,28 +271,124 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                 },
                 new Documents
                 {
-                    Url = "Fichas_soluciones_financieras",
-                    Name = "Fichas de soluciones financieras",
-                    Keys = new List<string>() { "key1", "key2" }
-                },
-                new Documents
-                {
                     Url = "Plan_financiero",
                     Name = "Plan financiero",
                     Keys = new List<string>() { "key1", "key2" }
                 },
             };
+            component4.Folders.Add(compResolutionsFolder);
+            component4.Folders.Add(compFinancialSolutionsSheetsFolder);
+            component4.Documents = component4Documents;
+            CreateComponent4Resolutions();
+            CreateComponent4FinancialSolutionSheets();
+        }
+
+        private void CreateComponent4Resolutions()
+        {
+            Folder comp4Resolutions = this._folders[0].Folders[0].Folders[3].Folders[0];
+            List<Documents> resolutionsDocuments = new List<Documents>
+            {
+                new Documents
+                {
+                    Url = "Doc_1",
+                    Name = "Doc 1",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = "Doc_2",
+                    Name = "Doc 2",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = "Doc_3",
+                    Name = "Doc 3",
+                    Keys = new List<string>() { "key1", "key2" }
+                }
+            };
+            comp4Resolutions.Documents = resolutionsDocuments;
+        }
+
+        private void CreateComponent4FinancialSolutionSheets()
+        {
+            Folder comp4FinancialSolutions = this._folders[0].Folders[0].Folders[3].Folders[1];
+            List<Documents> financialSolutionsDocuments = new List<Documents>
+            {
+                new Documents
+                {
+                    Url = "Doc_1",
+                    Name = "Doc 1",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = "Doc_2",
+                    Name = "Doc 2",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = "Doc_3",
+                    Name = "Doc 3",
+                    Keys = new List<string>() { "key1", "key2" }
+                }
+            };
+            comp4FinancialSolutions.Documents = financialSolutionsDocuments;
         }
 
         public void CreatePilotSolutionsFolder()
         {
             Folder pilotSolutionsFolder = this._folders[0].Folders[1];
-
+            List<Documents> pilotSolutionsDocuments = new List<Documents>
+            {
+                new Documents
+                {
+                    Url = "Doc_1",
+                    Name = "Doc 1",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = "Doc_2",
+                    Name = "Doc 2",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = "Doc_3",
+                    Name = "Doc 3",
+                    Keys = new List<string>() { "key1", "key2" }
+                }
+            };
+            pilotSolutionsFolder.Documents = pilotSolutionsDocuments;
         }
 
         public void CreatePostersFolder()
         {
             Folder postersFolder = this._folders[0].Folders[2];
+            List<Documents> postersDocuments = new List<Documents>
+            {
+                new Documents
+                {
+                    Url = "Doc_1",
+                    Name = "Doc 1",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = "Doc_2",
+                    Name = "Doc 2",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = "Doc_3",
+                    Name = "Doc 3",
+                    Keys = new List<string>() { "key1", "key2" }
+                }
+            };
+            postersFolder.Documents = postersDocuments;
 
         }
     }
