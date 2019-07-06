@@ -40,7 +40,8 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             this._folders = new List<Folder>();
             Folder initiative = new Folder
             {
-                Name = "Iniciativa_Biofin"
+                Name = "Iniciativa_Biofin",
+                Folders = new List<Folder>()
             };
 
             List<Documents> initDocuments = new List<Documents>
@@ -74,21 +75,25 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             Folder initComponentsFolder = new Folder
             {
                 Name = "Informes por componentes",
+                Folders = new List<Folder>()
             };
 
             Folder initPilotsSolutionsFolder = new Folder
             {
                 Name = "Sitios de Implementación de las soluciones pilotos",
+                Folders = new List<Folder>()
             };
 
             Folder initPostersFolder = new Folder
             {
                 Name = "Posters",
+                Folders = new List<Folder>()
             };
 
             Folder initGalleryFolder = new Folder
             {
                 Name = "Galeria",
+                Folders = new List<Folder>()
             };
 
             //Adding contents to initiative folder 
@@ -109,18 +114,22 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             Folder component1Folder = new Folder
             {
                 Name = "Componente 1",
+                Folders = new List<Folder>()
             };
             Folder component2Folder = new Folder
             {
                 Name = "Componente 2",
+                Folders = new List<Folder>()
             };
             Folder component3Folder = new Folder
             {
                 Name = "Componente 3",
+                Folders = new List<Folder>()
             };
             Folder component4Folder = new Folder
             {
                 Name = "Componente 4",
+                Folders = new List<Folder>()
             };
             componentFolder.Folders.Add(component1Folder);
             componentFolder.Folders.Add(component2Folder);
@@ -137,10 +146,12 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         public void CreateComponent1()
         {
             Folder component1 = this._folders[0].Folders[0].Folders[0];
+            component1.Folders = new List<Folder>();
 
             Folder compResolutionsFolder = new Folder
             {
                 Name = "Resoluciones",
+                Folders = new List<Folder>()
             };
 
             List<Documents> component1Documents = new List<Documents>
@@ -187,9 +198,11 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         public void CreateComponent2()
         {
             Folder component2 = this._folders[0].Folders[0].Folders[1];
+
             Folder compMethodologiesFolder = new Folder
             {
                 Name = "Metodologías",
+                Folders = new List<Folder>()
             };
 
             List<Documents> component2Documents = new List<Documents>
@@ -255,10 +268,12 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             Folder compResolutionsFolder = new Folder
             {
                 Name = "Resoluciones",
+                Folders = new List<Folder>()
             };
             Folder compFinancialSolutionsSheetsFolder = new Folder
             {
                 Name = "Fichas de soluciones financieras",
+                Folders = new List<Folder>()
             };
 
             List<Documents> component4Documents = new List<Documents>
