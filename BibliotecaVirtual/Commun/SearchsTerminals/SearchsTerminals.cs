@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace BibliotecaVirtual.Commun.SearchsTerminals
@@ -19,6 +20,7 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
     {
         private List<Folder> _folders;
         private static SearchsTerminals _searchsTerminals = null;
+        private const String InitiativePath = "\\Documentos\\Iniciativa_Biofin\\";
 
         public static SearchsTerminals GetIntance()
         {
@@ -234,40 +236,40 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                 {
                     new Documents
                     {
-                        Url = "Informe_final",
-                        Name = "Informe final",
+                        Url = InitiativePath + "Informe Final Componentes.pdf",
+                        Name = "Informe Final Componentes",
                         Keys = new List<string>() { "general", "conclusiones" }
                     },
                      new Documents
                     {
-                        Url = "Resumen_ejecutivo",
-                        Name = "Resumen ejecutivo",
+                        Url = InitiativePath +"Resumen Ejecutivo.pdf",
+                        Name = "Resumen Ejecutivo",
                         Keys = new List<string>() { "resumen", "general" }
                     },
                       new Documents
                     {
-                        Url = "Estrategia_de_salida",
-                        Name = "Estrategia de salida",
+                        Url = InitiativePath +"Estrategia de Salida.pdf",
+                        Name = "Estrategia de Salida",
                         Keys = new List<string>() { "estrategia", "economia" }
                     },
                         new Documents
                     {
-                        Url = "Lecciones_aprendidas",
-                        Name = "Lecciones aprendidas",
+                        Url = InitiativePath +"Lecciones Aprendidas.pdf",
+                        Name = "Lecciones Aprendidas",
                         Keys = new List<string>() { "MINAGRI", "lecciones" }
                     },
                 };
 
             Folder initComponentsFolder = new Folder
             {
-                Name = "Informes por componentes",
+                Name = "Components",
                 Folders = new List<Folder>(),
                 Documents = new List<Documents>()
             };
 
             Folder initPilotsSolutionsFolder = new Folder
             {
-                Name = "Sitios de Implementación de las soluciones pilotos",
+                Name = "Pilots_Solutions",
                 Folders = new List<Folder>(),
                 Documents = new List<Documents>()
             };
@@ -281,7 +283,7 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
 
             Folder initGalleryFolder = new Folder
             {
-                Name = "Galeria",
+                Name = "Gallery",
                 Folders = new List<Folder>(),
                 Documents = new List<Documents>()
             };

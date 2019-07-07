@@ -175,25 +175,25 @@ namespace BibliotecaVirtual
 
         private void _reportEndSideBar_Click(object sender, EventArgs e)
         {
-            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\informe_final.pdf");
+            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\Informe Final Componentes.pdf");
         }
 
 
         private void _sumarySideBar_Click(object sender, EventArgs e)
         {
-            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\resumen_ejecutivo.pdf");
+            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\Resumen Ejecutivo.pdf");
         }
 
 
         private void _exitStrategiesSideBar_Click(object sender, EventArgs e)
         {
-            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\estrategias_de_salidas.pdf");
+            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\Estrategia de Salida.pdf");
         }
 
 
         private void _lectionsSideBar_Click(object sender, EventArgs e)
         {
-            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\estrategias_de_salidas.pdf");
+            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\Lecciones Aprendidas.pdf");
         }
 
         private void CheckAndOpenUrlPdf(string urlPdf)
