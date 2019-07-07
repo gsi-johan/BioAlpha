@@ -90,8 +90,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="TestGallery">
-      <HintPath>..\..\TestGallery.dll</HintPath>
+    <Reference Include="TestGallery, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TestGallery.dll</HintPath>
     </Reference>
     <Reference Include="Toast">
       <HintPath>W:\Salva\Programacion\Documentacion\.NET\Proyectos Ejemplos\windows-toast-notifications-master\Toast.dll</HintPath>

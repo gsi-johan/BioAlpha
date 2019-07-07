@@ -29,9 +29,9 @@ namespace BibliotecaVirtual.Forms.Initiative
             this.imageAccordion1.Add(new Thumbnail("ligtes", Image.FromFile("img\\img7.jpg")));
             this.imageAccordion1.Add(new Thumbnail("night View", Image.FromFile("img\\img8.jpg")));
             this.imageAccordion1.SelectThumnail(0);
-            imageAccordion1.HoverColor = Color.Firebrick;
-            imageAccordion1.SelectedColor = Color.Aqua;
-            imageAccordion1.BackColor = Color.Blue;
+            imageAccordion1.HoverColor = Color.FromArgb(26,98,137);
+            imageAccordion1.SelectedColor = Color.FromArgb(20,71,118);
+            imageAccordion1.BackColor = Color.WhiteSmoke;
         }
 
         private void imageAccordion2_ThumbnailChanged(int OldIndex, int NewIndex, Thumbnail thumbnail)

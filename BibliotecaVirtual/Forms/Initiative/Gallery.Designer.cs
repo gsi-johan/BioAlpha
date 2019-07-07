@@ -35,9 +35,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(23, 63);
+            this.pictureBox1.Location = new System.Drawing.Point(8, 78);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(589, 356);
+            this.pictureBox1.Size = new System.Drawing.Size(824, 422);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -46,10 +46,10 @@
             this.imageAccordion1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.imageAccordion1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.imageAccordion1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
-            this.imageAccordion1.Location = new System.Drawing.Point(23, 507);
+            this.imageAccordion1.Location = new System.Drawing.Point(0, 543);
             this.imageAccordion1.Name = "imageAccordion1";
             this.imageAccordion1.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(98)))), ((int)(((byte)(137)))));
-            this.imageAccordion1.Size = new System.Drawing.Size(589, 121);
+            this.imageAccordion1.Size = new System.Drawing.Size(842, 121);
             this.imageAccordion1.TabIndex = 0;
             this.imageAccordion1.ThumbnailChanged += new TestGallery.ImageAccordion.ThumbnailChangedDelegate(this.imageAccordion2_ThumbnailChanged);
             // 
@@ -57,10 +57,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 661);
+            this.ClientSize = new System.Drawing.Size(840, 662);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.imageAccordion1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Gallery";
+            this.Resizable = false;
             this.Text = "Gallery";
             this.Load += new System.EventHandler(this.Gallery_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
