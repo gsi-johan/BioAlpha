@@ -20,14 +20,14 @@ namespace BibliotecaVirtual.Forms.Initiative
 
         private void Gallery_Load(object sender, EventArgs e)
         {
-            this.imageAccordion1.Add(new Thumbnail("water", Image.FromFile("img\\img1.jpg")));
-            this.imageAccordion1.Add(new Thumbnail("boat", Image.FromFile("img\\img2.jpg")));
-            this.imageAccordion1.Add(new Thumbnail("flower", Image.FromFile("img\\img3.jpg")));
-            this.imageAccordion1.Add(new Thumbnail("House", Image.FromFile("img\\img4.jpg")));
-            this.imageAccordion1.Add(new Thumbnail("Sea", Image.FromFile("img\\img5.jpg")));
-            this.imageAccordion1.Add(new Thumbnail("mountain", Image.FromFile("img\\img6.jpg")));
-            this.imageAccordion1.Add(new Thumbnail("ligtes", Image.FromFile("img\\img7.jpg")));
-            this.imageAccordion1.Add(new Thumbnail("night View", Image.FromFile("img\\img8.jpg")));
+            this.imageAccordion1.Add(new Thumbnail("water", Image.FromFile("Documentos\\Iniciativa_Biofin\\Gallery\\img1.jpg")));
+            this.imageAccordion1.Add(new Thumbnail("boat", Image.FromFile("Documentos\\Iniciativa_Biofin\\Gallery\\img2.jpg")));
+            this.imageAccordion1.Add(new Thumbnail("flower", Image.FromFile("Documentos\\Iniciativa_Biofin\\Gallery\\img3.jpg")));
+            this.imageAccordion1.Add(new Thumbnail("House", Image.FromFile("Documentos\\Iniciativa_Biofin\\Gallery\\img4.jpg")));
+            this.imageAccordion1.Add(new Thumbnail("Sea", Image.FromFile("Documentos\\Iniciativa_Biofin\\Gallery\\img5.jpg")));
+            this.imageAccordion1.Add(new Thumbnail("mountain", Image.FromFile("Documentos\\Iniciativa_Biofin\\Gallery\\img6.jpg")));
+            this.imageAccordion1.Add(new Thumbnail("ligtes", Image.FromFile("Documentos\\Iniciativa_Biofin\\Gallery\\img7.jpg")));
+            this.imageAccordion1.Add(new Thumbnail("night View", Image.FromFile("Documentos\\Iniciativa_Biofin\\Gallery\\img8.jpg")));
             this.imageAccordion1.SelectThumnail(0);
             imageAccordion1.HoverColor = Color.FromArgb(26,98,137);
             imageAccordion1.SelectedColor = Color.FromArgb(20,71,118);
