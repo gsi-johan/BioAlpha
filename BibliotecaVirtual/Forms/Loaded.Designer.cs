@@ -43,7 +43,7 @@
             // 
             this.footerPictureBox.Image = global::BibliotecaVirtual.Properties.Resources.FooterFull;
             this.footerPictureBox.Location = new System.Drawing.Point(-5, 206);
-            this.footerPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.footerPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.footerPictureBox.Name = "footerPictureBox";
             this.footerPictureBox.Size = new System.Drawing.Size(968, 241);
             this.footerPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -53,7 +53,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(899, 6);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(37, 33);
             this.pictureBox1.TabIndex = 25;
@@ -63,7 +63,7 @@
             // 
             this.pictureBox2.Image = global::BibliotecaVirtual.Properties.Resources.LogoColor;
             this.pictureBox2.Location = new System.Drawing.Point(534, 60);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(401, 170);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -76,7 +76,7 @@
             this.IniciativaLabel.BackColor = System.Drawing.Color.Transparent;
             this.IniciativaLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IniciativaLabel.ForeColor = System.Drawing.Color.DimGray;
-            this.IniciativaLabel.Location = new System.Drawing.Point(564, 195);
+            this.IniciativaLabel.Location = new System.Drawing.Point(543, 195);
             this.IniciativaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.IniciativaLabel.Name = "IniciativaLabel";
             this.IniciativaLabel.Size = new System.Drawing.Size(362, 19);
@@ -108,7 +108,7 @@
             this.Controls.Add(this.footerPictureBox);
             this.DisplayHeader = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Movable = false;
