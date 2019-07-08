@@ -101,12 +101,20 @@ namespace BibliotecaVirtual
             {
                 showDetailsView("Componente 4", SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS4), "");
             }
+            if (this._radioComponents.Checked)
+            {
+                showDetailsView("Componentes", SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.ALLCOMPONENTS), "");
+            }
+            if (this._radioAll.Checked)
+            {
+                showDetailsView("Resultados de la búsqueda", SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.All), "");
+            }
         }
 
         private bool isComponentSelected()
         {
             return this._radioComponent_1.Checked || _radioComponent_2.Checked || _radioComponent_3.Checked ||
-                   _radioComponent_4.Checked;
+                   _radioComponent_4.Checked || _radioComponents.Checked || _radioAll.Checked;
         }
 
         private void metroTextBoxSearch_KeyPress(object sender, KeyPressEventArgs e)
@@ -115,9 +123,16 @@ namespace BibliotecaVirtual
 
             if (System.Text.RegularExpressions.Regex.IsMatch(e.KeyChar.ToString(), @"\r"))
             {
-                FormSearchingResult fsr = new FormSearchingResult(this, metroTextBoxSearch.Text, 3, true);
-                fsr.Show();
-                this.Hide();
+                if (isComponentSelected())
+                {
+                    _showComponents(metroTextBoxSearch.Text);
+                }
+                else
+                {
+                    FormSearchingResult fsr = new FormSearchingResult(this, metroTextBoxSearch.Text, 3, true);
+                    fsr.Show();
+                    this.Hide();
+                }
             }
         }
 
@@ -247,6 +262,13 @@ namespace BibliotecaVirtual
         {
             var gallery =new Gallery();
             gallery.ShowDialog();
+        }
+
+        private void _virtualBiblioSideBar_Click(object sender, EventArgs e)
+        {
+            FormSearchingResult fsr = new FormSearchingResult(this, metroTextBoxSearch.Text, 3, true);
+            fsr.Show();
+            this.Hide();
         }
     }
 }
