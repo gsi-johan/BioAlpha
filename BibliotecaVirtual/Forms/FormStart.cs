@@ -26,6 +26,7 @@ namespace BibliotecaVirtual
     public partial class FormStart : MetroForm
     {
         private DocumentServices _documentServices;
+        private bool _isMenuOpen = false;
 
         public FormStart()
         {
@@ -86,28 +87,34 @@ namespace BibliotecaVirtual
         {
             if (this._radioComponent_1.Checked)
             {
-                showDetailsView("Componente 1", SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS1),"");
+                showDetailsView("Componente 1",
+                    SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS1), "");
             }
 
             if (this._radioComponent_2.Checked)
             {
-                showDetailsView("Componente 2", SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS2), "");
+                showDetailsView("Componente 2",
+                    SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS2), "");
             }
             if (this._radioComponent_3.Checked)
             {
-                showDetailsView("Componente 3", SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS3), "");
+                showDetailsView("Componente 3",
+                    SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS3), "");
             }
             if (this._radioComponent_4.Checked)
             {
-                showDetailsView("Componente 4", SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS4), "");
+                showDetailsView("Componente 4",
+                    SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS4), "");
             }
             if (this._radioComponents.Checked)
             {
-                showDetailsView("Componentes", SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.ALLCOMPONENTS), "");
+                showDetailsView("Componentes",
+                    SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.ALLCOMPONENTS), "");
             }
             if (this._radioAll.Checked)
             {
-                showDetailsView("Resultados de la búsqueda", SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.All), "");
+                showDetailsView("Resultados de la búsqueda",
+                    SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.All), "");
             }
         }
 
@@ -119,8 +126,6 @@ namespace BibliotecaVirtual
 
         private void metroTextBoxSearch_KeyPress(object sender, KeyPressEventArgs e)
         {
-
-
             if (System.Text.RegularExpressions.Regex.IsMatch(e.KeyChar.ToString(), @"\r"))
             {
                 if (isComponentSelected())
@@ -239,7 +244,7 @@ namespace BibliotecaVirtual
 
         private void _postersSideBar_Click(object sender, EventArgs e)
         {
-            showDetailsView("Posters", SearchsTerminals.GetIntance().SearchByKeyAndType("",TypeSearch.POSTERS), "");
+            showDetailsView("Posters", SearchsTerminals.GetIntance().SearchByKeyAndType("", TypeSearch.POSTERS), "");
         }
 
         private void showDetailsView(string name, List<Documents> documents, string folder)
@@ -250,17 +255,19 @@ namespace BibliotecaVirtual
 
         private void _pilotsSolutionsSideBar_Click(object sender, EventArgs e)
         {
-            showDetailsView("Implementación de soluciones pilotos", SearchsTerminals.GetIntance().SearchByKeyAndType("", TypeSearch.PILOTSSOLUTIONS), "");
+            showDetailsView("Implementación de soluciones pilotos",
+                SearchsTerminals.GetIntance().SearchByKeyAndType("", TypeSearch.PILOTSSOLUTIONS), "");
         }
 
         private void _componentsSideBar_Click(object sender, EventArgs e)
         {
-            showDetailsView("Componentes", SearchsTerminals.GetIntance().SearchByKeyAndType("", TypeSearch.ALLCOMPONENTS), "");
+            showDetailsView("Componentes",
+                SearchsTerminals.GetIntance().SearchByKeyAndType("", TypeSearch.ALLCOMPONENTS), "");
         }
 
         private void _gallerySideBar_Click(object sender, EventArgs e)
         {
-            var gallerys =new Gallerys();
+            var gallerys = new Gallerys();
             gallerys.ShowDialog();
         }
 
@@ -269,6 +276,67 @@ namespace BibliotecaVirtual
             FormSearchingResult fsr = new FormSearchingResult(this, metroTextBoxSearch.Text, 3, true);
             fsr.Show();
             this.Hide();
+        }
+
+        private void componente2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            showDetailsView("Componente 2",
+                SearchsTerminals.GetIntance().SearchByKeyAndType("", TypeSearch.COMPONENTS2), "");
+        }
+
+        private void componente1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            showDetailsView("Componente 1",
+                SearchsTerminals.GetIntance().SearchByKeyAndType("", TypeSearch.COMPONENTS1), "");
+        }
+
+        private void componente3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            showDetailsView("Componente 3",
+                SearchsTerminals.GetIntance().SearchByKeyAndType("", TypeSearch.COMPONENTS3), "");
+        }
+
+        private void componente4ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            showDetailsView("Componente 4",
+                SearchsTerminals.GetIntance().SearchByKeyAndType("", TypeSearch.COMPONENTS4), "");
+        }
+
+        private void _componentsSideBar_MouseLeave(object sender, EventArgs e)
+        {
+            ctxMenuComponentes.Hide();
+        }
+
+        private void _linkTesting_MouseHover(object sender, EventArgs e)
+        {
+            ctxMenuComponentes.Show(_componentsSideBar, 197, 0);
+        }
+
+        private void bunifuGradientPanel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Location.X >= 0 && e.Location.X <= 197 && e.Location.Y >= 202 && e.Location.Y <= 232)
+            {
+                ctxMenuComponentes.Show(_componentsSideBar, 197, 0);
+            }
+        }
+
+        private void ctxMenuComponentes_MouseHover(object sender, EventArgs e)
+        {
+            _isMenuOpen = true;
+        }
+
+        private void ctxMenuComponentes_MouseLeave(object sender, EventArgs e)
+        {
+            _isMenuOpen = false;
+            ctxMenuComponentes.Hide();
+        }
+
+        private void FormStart_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Location.X >= 0 && e.Location.X <= 197 && e.Location.Y >= 202 && e.Location.Y <= 232)
+            {
+                ctxMenuComponentes.Show(_componentsSideBar, 197, 0);
+            }
         }
     }
 }
