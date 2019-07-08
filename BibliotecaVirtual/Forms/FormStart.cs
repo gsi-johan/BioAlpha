@@ -260,8 +260,8 @@ namespace BibliotecaVirtual
 
         private void _gallerySideBar_Click(object sender, EventArgs e)
         {
-            var gallery =new Gallery();
-            gallery.ShowDialog();
+            var gallerys =new Gallerys();
+            gallerys.ShowDialog();
         }
 
         private void _virtualBiblioSideBar_Click(object sender, EventArgs e)

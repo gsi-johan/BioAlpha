@@ -41,6 +41,7 @@
             // 
             // _pictureBFolder1
             // 
+            this._pictureBFolder1.Cursor = System.Windows.Forms.Cursors.Hand;
             this._pictureBFolder1.Image = global::BibliotecaVirtual.Properties.Resources.Tesis;
             this._pictureBFolder1.Location = new System.Drawing.Point(76, 103);
             this._pictureBFolder1.Name = "_pictureBFolder1";
@@ -48,27 +49,33 @@
             this._pictureBFolder1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this._pictureBFolder1.TabIndex = 0;
             this._pictureBFolder1.TabStop = false;
+            this._pictureBFolder1.Click += new System.EventHandler(this._pictureBFolder1_Click);
             // 
             // _labelFolder1
             // 
             this._labelFolder1.AutoSize = true;
+            this._labelFolder1.Cursor = System.Windows.Forms.Cursors.Hand;
             this._labelFolder1.Location = new System.Drawing.Point(76, 173);
             this._labelFolder1.Name = "_labelFolder1";
             this._labelFolder1.Size = new System.Drawing.Size(146, 20);
             this._labelFolder1.TabIndex = 2;
             this._labelFolder1.Text = "Taller Santa Clara 2018";
+            this._labelFolder1.Click += new System.EventHandler(this._labelFolder1_Click);
             // 
             // _labelFolder2
             // 
             this._labelFolder2.AutoSize = true;
+            this._labelFolder2.Cursor = System.Windows.Forms.Cursors.Hand;
             this._labelFolder2.Location = new System.Drawing.Point(76, 296);
             this._labelFolder2.Name = "_labelFolder2";
             this._labelFolder2.Size = new System.Drawing.Size(74, 20);
             this._labelFolder2.TabIndex = 4;
             this._labelFolder2.Text = "La Habana";
+            this._labelFolder2.Click += new System.EventHandler(this._labelFolder2_Click);
             // 
             // _pictureBFolder2
             // 
+            this._pictureBFolder2.Cursor = System.Windows.Forms.Cursors.Hand;
             this._pictureBFolder2.Image = global::BibliotecaVirtual.Properties.Resources.Tesis;
             this._pictureBFolder2.Location = new System.Drawing.Point(76, 226);
             this._pictureBFolder2.Name = "_pictureBFolder2";
@@ -76,18 +83,22 @@
             this._pictureBFolder2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this._pictureBFolder2.TabIndex = 3;
             this._pictureBFolder2.TabStop = false;
+            this._pictureBFolder2.Click += new System.EventHandler(this._pictureBFolder2_Click);
             // 
             // _labelFolder3
             // 
             this._labelFolder3.AutoSize = true;
+            this._labelFolder3.Cursor = System.Windows.Forms.Cursors.Hand;
             this._labelFolder3.Location = new System.Drawing.Point(76, 415);
             this._labelFolder3.Name = "_labelFolder3";
             this._labelFolder3.Size = new System.Drawing.Size(182, 20);
             this._labelFolder3.TabIndex = 6;
             this._labelFolder3.Text = "Camaguey Polígono AMEBA";
+            this._labelFolder3.Click += new System.EventHandler(this._labelFolder3_Click);
             // 
             // _pictureBFolder3
             // 
+            this._pictureBFolder3.Cursor = System.Windows.Forms.Cursors.Hand;
             this._pictureBFolder3.Image = global::BibliotecaVirtual.Properties.Resources.Tesis;
             this._pictureBFolder3.Location = new System.Drawing.Point(76, 345);
             this._pictureBFolder3.Name = "_pictureBFolder3";
@@ -95,6 +106,7 @@
             this._pictureBFolder3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this._pictureBFolder3.TabIndex = 5;
             this._pictureBFolder3.TabStop = false;
+            this._pictureBFolder3.Click += new System.EventHandler(this._pictureBFolder3_Click);
             // 
             // Gallerys
             // 
