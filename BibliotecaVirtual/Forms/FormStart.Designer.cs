@@ -62,7 +62,6 @@ namespace BibliotecaVirtual
             this.componente2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.componente3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.componente4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this._linkTesting = new MetroFramework.Controls.MetroLink();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -429,7 +428,6 @@ namespace BibliotecaVirtual
             this._componentsSideBar.Textcolor = System.Drawing.Color.White;
             this._componentsSideBar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._componentsSideBar.Click += new System.EventHandler(this._componentsSideBar_Click);
-            this._componentsSideBar.Leave += new System.EventHandler(this._componentsSideBar_Leave);
             this._componentsSideBar.MouseLeave += new System.EventHandler(this._componentsSideBar_MouseLeave);
             // 
             // _sumarySideBar
@@ -596,6 +594,8 @@ namespace BibliotecaVirtual
             // 
             // ctxMenuComponentes
             // 
+            this.ctxMenuComponentes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(106)))), ((int)(((byte)(132)))));
+            this.ctxMenuComponentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.ctxMenuComponentes.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.ctxMenuComponentes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.componente1ToolStripMenuItem,
@@ -603,56 +603,56 @@ namespace BibliotecaVirtual
             this.componente3ToolStripMenuItem,
             this.componente4ToolStripMenuItem});
             this.ctxMenuComponentes.Name = "ctxMenuComponentes";
-            this.ctxMenuComponentes.Size = new System.Drawing.Size(177, 100);
+            this.ctxMenuComponentes.ShowImageMargin = false;
+            this.ctxMenuComponentes.Size = new System.Drawing.Size(151, 120);
             this.ctxMenuComponentes.MouseLeave += new System.EventHandler(this.ctxMenuComponentes_MouseLeave);
             this.ctxMenuComponentes.MouseHover += new System.EventHandler(this.ctxMenuComponentes_MouseHover);
             // 
             // componente1ToolStripMenuItem
             // 
+            this.componente1ToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            this.componente1ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.componente1ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.componente1ToolStripMenuItem.Name = "componente1ToolStripMenuItem";
-            this.componente1ToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+            this.componente1ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.componente1ToolStripMenuItem.Text = "Componente 1";
             this.componente1ToolStripMenuItem.Click += new System.EventHandler(this.componente1ToolStripMenuItem_Click);
             // 
             // componente2ToolStripMenuItem
             // 
+            this.componente2ToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            this.componente2ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.componente2ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.componente2ToolStripMenuItem.Name = "componente2ToolStripMenuItem";
-            this.componente2ToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+            this.componente2ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.componente2ToolStripMenuItem.Text = "Componente 2";
             this.componente2ToolStripMenuItem.Click += new System.EventHandler(this.componente2ToolStripMenuItem_Click);
             // 
             // componente3ToolStripMenuItem
             // 
+            this.componente3ToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            this.componente3ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.componente3ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.componente3ToolStripMenuItem.Name = "componente3ToolStripMenuItem";
-            this.componente3ToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+            this.componente3ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.componente3ToolStripMenuItem.Text = "Componente 3";
             this.componente3ToolStripMenuItem.Click += new System.EventHandler(this.componente3ToolStripMenuItem_Click);
             // 
             // componente4ToolStripMenuItem
             // 
+            this.componente4ToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            this.componente4ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.componente4ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.componente4ToolStripMenuItem.Name = "componente4ToolStripMenuItem";
-            this.componente4ToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+            this.componente4ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.componente4ToolStripMenuItem.Text = "Componente 4";
             this.componente4ToolStripMenuItem.Click += new System.EventHandler(this.componente4ToolStripMenuItem_Click);
-            // 
-            // _linkTesting
-            // 
-            this._linkTesting.BackColor = System.Drawing.Color.Transparent;
-            this._linkTesting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this._linkTesting.Location = new System.Drawing.Point(270, 106);
-            this._linkTesting.Name = "_linkTesting";
-            this._linkTesting.Size = new System.Drawing.Size(263, 36);
-            this._linkTesting.TabIndex = 25;
-            this._linkTesting.Text = "Informes de Componentes";
-            this._linkTesting.UseSelectable = true;
-            this._linkTesting.MouseHover += new System.EventHandler(this._linkTesting_MouseHover);
             // 
             // FormStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1327, 738);
-            this.Controls.Add(this._linkTesting);
             this.Controls.Add(this._radioAll);
             this.Controls.Add(this._radioComponents);
             this.Controls.Add(this._radioMultimedia);
@@ -715,7 +715,6 @@ namespace BibliotecaVirtual
         private System.Windows.Forms.ToolStripMenuItem componente2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem componente3ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem componente4ToolStripMenuItem;
-        private MetroFramework.Controls.MetroLink _linkTesting;
     }
 }
 
