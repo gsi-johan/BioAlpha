@@ -11,5 +11,7 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         public List<Folder> Folders { get; set; }
 
         public List<Documents> Documents { get; set; }
+
+        public string FolderUrl { get; set; }
     }
 }

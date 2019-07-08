@@ -232,60 +232,67 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                 Documents = new List<Documents>()
             };
 
+            #region Documents Initiative
             List<Documents> initDocuments = new List<Documents>
+            {
+                new Documents
                 {
-                    new Documents
-                    {
-                        Url = InitiativePath + "Informe Final Componentes.pdf",
-                        Name = "Informe Final Componentes",
-                        Keys = new List<string>() { "general", "conclusiones" }
-                    },
-                     new Documents
-                    {
-                        Url = InitiativePath +"Resumen Ejecutivo.pdf",
-                        Name = "Resumen Ejecutivo",
-                        Keys = new List<string>() { "resumen", "general" }
-                    },
-                      new Documents
-                    {
-                        Url = InitiativePath +"Estrategia de Salida.pdf",
-                        Name = "Estrategia de Salida",
-                        Keys = new List<string>() { "estrategia", "economia" }
-                    },
-                        new Documents
-                    {
-                        Url = InitiativePath +"Lecciones Aprendidas.pdf",
-                        Name = "Lecciones Aprendidas",
-                        Keys = new List<string>() { "MINAGRI", "lecciones" }
-                    },
-                };
+                    Url = InitiativePath + "Informe Final Componentes.pdf",
+                    Name = "Informe Final Componentes",
+                    Keys = new List<string>() { "general", "conclusiones" }
+                },
+                new Documents
+                {
+                    Url = InitiativePath +"Resumen Ejecutivo.pdf",
+                    Name = "Resumen Ejecutivo",
+                    Keys = new List<string>() { "resumen", "general" }
+                },
+                new Documents
+                {
+                    Url = InitiativePath +"Estrategia de Salida.pdf",
+                    Name = "Estrategia de Salida",
+                    Keys = new List<string>() { "estrategia", "economia" }
+                },
+                new Documents
+                {
+                    Url = InitiativePath +"Lecciones Aprendidas.pdf",
+                    Name = "Lecciones Aprendidas",
+                    Keys = new List<string>() { "MINAGRI", "lecciones" }
+                },
+            };
+
+            #endregion
 
             Folder initComponentsFolder = new Folder
             {
                 Name = "Components",
                 Folders = new List<Folder>(),
-                Documents = new List<Documents>()
+                Documents = new List<Documents>(),
+                FolderUrl = InitiativePath + "Components\\"
             };
 
             Folder initPilotsSolutionsFolder = new Folder
             {
                 Name = "Pilots_Solutions",
                 Folders = new List<Folder>(),
-                Documents = new List<Documents>()
+                Documents = new List<Documents>(),
+                FolderUrl = InitiativePath + "Pilots_Solutions\\"
             };
 
             Folder initPostersFolder = new Folder
             {
                 Name = "Posters",
                 Folders = new List<Folder>(),
-                Documents = new List<Documents>()
+                Documents = new List<Documents>(),
+                FolderUrl = InitiativePath + "Posters\\"
             };
 
             Folder initGalleryFolder = new Folder
             {
                 Name = "Gallery",
                 Folders = new List<Folder>(),
-                Documents = new List<Documents>()
+                Documents = new List<Documents>(),
+                FolderUrl = InitiativePath + "Gallery\\"
             };
 
             //Adding contents to initiative folder 
@@ -302,35 +309,44 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         public void CreateComponentsFolder()
         {
             Folder componentFolder = this._folders[0].Folders[0];
+            string componentsPath = InitiativePath + "\\Components\\";
+
+            #region Components folders
 
             Folder component1Folder = new Folder
             {
                 Name = "Componente 1",
                 Folders = new List<Folder>(),
-                Documents = new List<Documents>()
+                Documents = new List<Documents>(),
+                FolderUrl = componentsPath + "Component_1\\"
             };
             Folder component2Folder = new Folder
             {
                 Name = "Componente 2",
                 Folders = new List<Folder>(),
-                Documents = new List<Documents>()
+                Documents = new List<Documents>(),
+                FolderUrl = componentsPath + "Component_2\\"
             };
             Folder component3Folder = new Folder
             {
                 Name = "Componente 3",
                 Folders = new List<Folder>(),
-                Documents = new List<Documents>()
+                Documents = new List<Documents>(),
+                FolderUrl = componentsPath + "Component_3\\"
             };
             Folder component4Folder = new Folder
             {
                 Name = "Componente 4",
                 Folders = new List<Folder>(),
-                Documents = new List<Documents>()
+                Documents = new List<Documents>(),
+                FolderUrl = componentsPath + "Component_4\\"
             };
             componentFolder.Folders.Add(component1Folder);
             componentFolder.Folders.Add(component2Folder);
             componentFolder.Folders.Add(component3Folder);
             componentFolder.Folders.Add(component4Folder);
+
+            #endregion
 
             CreateComponent1();
             CreateComponent2();
@@ -348,15 +364,16 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             {
                 Name = "Resoluciones",
                 Folders = new List<Folder>(),
-                Documents = new List<Documents>()
+                Documents = new List<Documents>(),
+                FolderUrl = component1.FolderUrl + "Resolutions\\"
             };
 
             List<Documents> component1Documents = new List<Documents>
             {
                 new Documents
                 {
-                    Url = "Informe_final",
-                    Name = "Informe final",
+                    Url = component1.FolderUrl +"Informe final Componente 1.pdf",
+                    Name = "Informe final Componente 1",
                     Keys = new List<string>() { "Componente 1", "Conclusion","economia cubana" }
                 }
             };
@@ -368,25 +385,20 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         private void CreateComponent1Resolutions()
         {
             Folder comp1Resolutions = this._folders[0].Folders[0].Folders[0].Folders[0];
+
             List<Documents> resolutionsDocuments = new List<Documents>
             {
                 new Documents
                 {
-                    Url = "Doc_1",
-                    Name = "Doc 1",
+                    Url = comp1Resolutions.FolderUrl+"Res 101 Componente 1.pdf",
+                    Name = "Res 101 Componente 1",
                     Keys = new List<string>() { "Documento", "componente 1" }
                 },
                 new Documents
                 {
-                    Url = "Doc_2",
-                    Name = "Doc 2",
+                    Url = comp1Resolutions.FolderUrl+"Res 102 Componente 1.pdf",
+                    Name = "Res 102 Componente 1",
                     Keys = new List<string>() { "MINAGRI", "agricultura" }
-                },
-                new Documents
-                {
-                    Url = "Doc_3",
-                    Name = "Doc 3",
-                    Keys = new List<string>() { "agricultura 2019", "estrategia" }
                 }
             };
             comp1Resolutions.Documents = resolutionsDocuments;
@@ -400,15 +412,16 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             {
                 Name = "Metodologías",
                 Folders = new List<Folder>(),
-                Documents = new List<Documents>()
+                Documents = new List<Documents>(),
+                FolderUrl = component2.FolderUrl + "Methodologies\\"
             };
 
             List<Documents> component2Documents = new List<Documents>
             {
                 new Documents
                 {
-                    Url = "Informe_final",
-                    Name = "Informe final",
+                    Url = component2.FolderUrl+"Informe final Componente 2.pdf",
+                    Name = "Informe final Componente 2",
                     Keys = new List<string>() { "key1", "key2" }
                 }
             };
@@ -424,22 +437,16 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             {
                 new Documents
                 {
-                    Url = "Doc_1",
-                    Name = "Doc 1",
+                    Url = comp2Methodologies.FolderUrl+"Met 101 Componente 2.pdf",
+                    Name = "Met 101 Componente 2",
                     Keys = new List<string>() { "key1", "key2" }
                 },
                 new Documents
                 {
-                    Url = "Doc_2",
-                    Name = "Doc 2",
+                    Url = comp2Methodologies.FolderUrl+"Met 102 Componente 2.pdf",
+                    Name = "Met 102 Componente 2",
                     Keys = new List<string>() { "key1", "key2" }
-                },
-                new Documents
-                {
-                    Url = "Doc_3",
-                    Name = "Doc 3",
-                    Keys = new List<string>() { "key1", "key2" }
-                },
+                }
             };
             comp2Methodologies.Documents = methodologiesDocuments;
         }
@@ -451,8 +458,8 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             {
                 new Documents
                 {
-                    Url = "Informe_final",
-                    Name = "Informe final",
+                    Url = component3.FolderUrl+"Informe final Componente 3.pdf",
+                    Name = "Informe final Componente 3",
                     Keys = new List<string>() { "key1", "key2" }
                 }
             };
@@ -463,32 +470,35 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         public void CreateComponent4()
         {
             Folder component4 = this._folders[0].Folders[0].Folders[3];
+            
             Folder compResolutionsFolder = new Folder
             {
                 Name = "Resoluciones",
                 Folders = new List<Folder>(),
-                Documents = new List<Documents>()
+                Documents = new List<Documents>(),
+                FolderUrl = component4.FolderUrl + "Resolutions\\"
             };
             Folder compFinancialSolutionsSheetsFolder = new Folder
             {
                 Name = "Fichas de soluciones financieras",
                 Folders = new List<Folder>(),
-                Documents = new List<Documents>()
+                Documents = new List<Documents>(),
+                FolderUrl = component4.FolderUrl + "Financial_Solutions\\"
             };
 
             List<Documents> component4Documents = new List<Documents>
             {
                 new Documents
                 {
-                    Url = "Informe_final",
-                    Name = "Informe final",
-                    Keys = new List<string>() { "lecciones", "key2" }
+                    Url = component4.FolderUrl+"Copia Informe final Componente 4.pdf",
+                    Name = "Copia Informe final Componente 4",
+                    Keys = new List<string>() { "componente 4", "conclusiones" }
                 },
                 new Documents
                 {
-                    Url = "Plan_financiero",
-                    Name = "Plan financiero",
-                    Keys = new List<string>() { "key1", "key2" }
+                    Url = component4.FolderUrl+"Plan Financiero Componente 4.pdf",
+                    Name = "Plan Financiero Componente 4",
+                    Keys = new List<string>() { "economia cubana", "key2" }
                 },
             };
             component4.Folders.Add(compResolutionsFolder);
@@ -501,28 +511,88 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         private void CreateComponent4Resolutions()
         {
             Folder comp4Resolutions = this._folders[0].Folders[0].Folders[3].Folders[0];
+
+            #region Resolutions Component 4
+
             List<Documents> resolutionsDocuments = new List<Documents>
             {
                 new Documents
                 {
-                    Url = "Doc_1",
-                    Name = "Doc 1",
+                    Url = comp4Resolutions.FolderUrl+"Res 401 Componente 4.pdf",
+                    Name = "Res 401 Componente 4",
                     Keys = new List<string>() { "key1", "key2" }
                 },
                 new Documents
                 {
-                    Url = "Doc_2",
-                    Name = "Doc 2",
+                    Url = comp4Resolutions.FolderUrl+"Res 402 Componente 4.pdf",
+                    Name = "Res 402 Componente 4",
                     Keys = new List<string>() { "key1", "key2" }
                 },
                 new Documents
                 {
-                    Url = "Doc_3",
-                    Name = "Doc 3",
+                    Url = comp4Resolutions.FolderUrl+"Res 403 Componente 4.pdf",
+                    Name = "Res 403 Componente 4",
                     Keys = new List<string>() { "key1", "key2" }
-                }
+                },
+                new Documents
+                {
+                    Url = comp4Resolutions.FolderUrl+"Res 404 Componente 4.pdf",
+                    Name = "Res 404 Componente 4",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = comp4Resolutions.FolderUrl+"Res 405 Componente 4.pdf",
+                    Name = "Res 405 Componente 4",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = comp4Resolutions.FolderUrl+"Res 406 Componente 4.pdf",
+                    Name = "Res 406 Componente 4",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = comp4Resolutions.FolderUrl+"Res 407 Componente 4.pdf",
+                    Name = "Res 407 Componente 4",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = comp4Resolutions.FolderUrl+"Res 408 Componente 4.pdf",
+                    Name = "Res 408 Componente 4",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = comp4Resolutions.FolderUrl+"Res 409 Componente 4.pdf",
+                    Name = "Res 409 Componente 4",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = comp4Resolutions.FolderUrl+"Res 410 Componente 4.pdf",
+                    Name = "Res 410 Componente 4",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = comp4Resolutions.FolderUrl+"Res 411 Componente 4.pdf",
+                    Name = "Res 411 Componente 4",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = comp4Resolutions.FolderUrl+"Res 412 Componente 4.pdf",
+                    Name = "Res 412 Componente 4",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
             };
             comp4Resolutions.Documents = resolutionsDocuments;
+            #endregion
+
+
         }
 
         private void CreateComponent4FinancialSolutionSheets()
@@ -532,22 +602,16 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             {
                 new Documents
                 {
-                    Url = "Doc_1",
-                    Name = "Doc 1",
+                    Url = comp4FinancialSolutions.FolderUrl+"Soluciones 1 financieras Componente 4.pdf",
+                    Name = "Soluciones 1 financieras Componente 4",
                     Keys = new List<string>() { "key1", "key2" }
                 },
                 new Documents
                 {
-                    Url = "Doc_2",
-                    Name = "Doc 2",
+                    Url = comp4FinancialSolutions.FolderUrl+"Soluciones 2 financieras Componente 4.pdf",
+                    Name = "Soluciones 2 financieras Componente 4",
                     Keys = new List<string>() { "key1", "key2" }
                 },
-                new Documents
-                {
-                    Url = "Doc_3",
-                    Name = "Doc 3",
-                    Keys = new List<string>() { "lecciones", "key2" }
-                }
             };
             comp4FinancialSolutions.Documents = financialSolutionsDocuments;
         }
@@ -559,22 +623,34 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             {
                 new Documents
                 {
-                    Url = "Doc_1",
-                    Name = "Doc 1",
+                    Url = pilotSolutionsFolder.FolderUrl+"Solucion 1.pdf",
+                    Name = "Solucion 1",
                     Keys = new List<string>() { "key1", "key2" }
                 },
                 new Documents
                 {
-                    Url = "Doc_2",
-                    Name = "Doc 2",
+                    Url = pilotSolutionsFolder.FolderUrl+"Solucion 2.pdf",
+                    Name = "Solucion 2",
                     Keys = new List<string>() { "key1", "key2" }
                 },
                 new Documents
                 {
-                    Url = "Doc_3",
-                    Name = "Doc 3",
+                    Url = pilotSolutionsFolder.FolderUrl+"Solucion 3.pdf",
+                    Name = "Solucion 3",
                     Keys = new List<string>() { "key1", "key2" }
-                }
+                },
+                new Documents
+                {
+                    Url = pilotSolutionsFolder.FolderUrl+"Solucion 4.pdf",
+                    Name = "Solucion 4",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = pilotSolutionsFolder.FolderUrl+"Solucion 5.pdf",
+                    Name = "Solucion 5",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
             };
             pilotSolutionsFolder.Documents = pilotSolutionsDocuments;
         }
@@ -586,22 +662,34 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             {
                 new Documents
                 {
-                    Url = "Doc_1",
-                    Name = "Doc 1",
+                    Url = postersFolder.FolderUrl+"Poster 1.pdf",
+                    Name = "Poster 1",
                     Keys = new List<string>() { "key1", "key2" }
                 },
                 new Documents
                 {
-                    Url = "Doc_2",
-                    Name = "Doc 2",
+                    Url = postersFolder.FolderUrl+"Poster 2.pdf",
+                    Name = "Poster 2",
                     Keys = new List<string>() { "key1", "key2" }
                 },
                 new Documents
                 {
-                    Url = "Doc_3",
-                    Name = "Doc 3",
+                    Url = postersFolder.FolderUrl+"Poster 3.pdf",
+                    Name = "Poster 3",
                     Keys = new List<string>() { "key1", "key2" }
-                }
+                },
+                new Documents
+                {
+                    Url = postersFolder.FolderUrl+"Poster 4.pdf",
+                    Name = "Poster 4",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = postersFolder.FolderUrl+"Poster 5.pdf",
+                    Name = "Poster 5",
+                    Keys = new List<string>() { "key1", "key2" }
+                },
             };
             postersFolder.Documents = postersDocuments;
         }
