@@ -20,6 +20,10 @@ namespace BibliotecaVirtual.Forms.Initiative
 
         private void Gallery_Load(object sender, EventArgs e)
         {
+            //todo read all pictures in the file and add to imageAccordion1 control
+
+            InsertPicturesFromGallery();
+
             this.imageAccordion1.Add(new Thumbnail("water", Image.FromFile("Documentos\\Iniciativa_Biofin\\Gallery\\img1.jpg")));
             this.imageAccordion1.Add(new Thumbnail("boat", Image.FromFile("Documentos\\Iniciativa_Biofin\\Gallery\\img2.jpg")));
             this.imageAccordion1.Add(new Thumbnail("flower", Image.FromFile("Documentos\\Iniciativa_Biofin\\Gallery\\img3.jpg")));
@@ -39,6 +43,11 @@ namespace BibliotecaVirtual.Forms.Initiative
             pictureBox1.BackgroundImage = thumbnail.Image;
 //            label1.Text = thumbnail.Text;
 //            label1.Left = (panel1.Width - label1.Width) / 2;
+        }
+
+        private void InsertPicturesFromGallery()
+        {
+            return;
         }
     }
 }

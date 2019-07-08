@@ -490,8 +490,8 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             {
                 new Documents
                 {
-                    Url = component4.FolderUrl+"Copia Informe final Componente 4.pdf",
-                    Name = "Copia Informe final Componente 4",
+                    Url = component4.FolderUrl+"Informe final Componente 4.pdf",
+                    Name = "Informe final Componente 4",
                     Keys = new List<string>() { "componente 4", "conclusiones" }
                 },
                 new Documents

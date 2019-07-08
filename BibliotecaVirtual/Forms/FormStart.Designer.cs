@@ -56,6 +56,8 @@ namespace BibliotecaVirtual
             this._radioComponent_3 = new MetroFramework.Controls.MetroRadioButton();
             this._radioComponent_4 = new MetroFramework.Controls.MetroRadioButton();
             this._radioMultimedia = new MetroFramework.Controls.MetroRadioButton();
+            this._virtualBiblioSideBar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTesis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLibros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArticulos)).BeginInit();
@@ -189,6 +191,8 @@ namespace BibliotecaVirtual
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuDropdown1);
+            this.bunifuGradientPanel1.Controls.Add(this._virtualBiblioSideBar);
             this.bunifuGradientPanel1.Controls.Add(this._gallerySideBar);
             this.bunifuGradientPanel1.Controls.Add(this._lectionsSideBar);
             this.bunifuGradientPanel1.Controls.Add(this._exitStrategiesSideBar);
@@ -230,7 +234,7 @@ namespace BibliotecaVirtual
             this._gallerySideBar.IconVisible = false;
             this._gallerySideBar.IconZoom = 90D;
             this._gallerySideBar.IsTab = false;
-            this._gallerySideBar.Location = new System.Drawing.Point(0, 558);
+            this._gallerySideBar.Location = new System.Drawing.Point(0, 554);
             this._gallerySideBar.Margin = new System.Windows.Forms.Padding(5);
             this._gallerySideBar.Name = "_gallerySideBar";
             this._gallerySideBar.Normalcolor = System.Drawing.Color.Transparent;
@@ -266,7 +270,7 @@ namespace BibliotecaVirtual
             this._lectionsSideBar.IconVisible = false;
             this._lectionsSideBar.IconZoom = 90D;
             this._lectionsSideBar.IsTab = false;
-            this._lectionsSideBar.Location = new System.Drawing.Point(0, 494);
+            this._lectionsSideBar.Location = new System.Drawing.Point(0, 496);
             this._lectionsSideBar.Margin = new System.Windows.Forms.Padding(5);
             this._lectionsSideBar.Name = "_lectionsSideBar";
             this._lectionsSideBar.Normalcolor = System.Drawing.Color.Transparent;
@@ -395,7 +399,7 @@ namespace BibliotecaVirtual
             this._componentsSideBar.BackColor = System.Drawing.Color.Transparent;
             this._componentsSideBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this._componentsSideBar.BorderRadius = 0;
-            this._componentsSideBar.ButtonText = "Componentes";
+            this._componentsSideBar.ButtonText = "Informes por Componentes";
             this._componentsSideBar.Cursor = System.Windows.Forms.Cursors.Hand;
             this._componentsSideBar.DisabledColor = System.Drawing.Color.Gray;
             this._componentsSideBar.Iconcolor = System.Drawing.Color.Transparent;
@@ -419,7 +423,7 @@ namespace BibliotecaVirtual
             this._componentsSideBar.selected = false;
             this._componentsSideBar.Size = new System.Drawing.Size(263, 36);
             this._componentsSideBar.TabIndex = 5;
-            this._componentsSideBar.Text = "Componentes";
+            this._componentsSideBar.Text = "Informes por Componentes";
             this._componentsSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this._componentsSideBar.Textcolor = System.Drawing.Color.White;
             this._componentsSideBar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -565,6 +569,62 @@ namespace BibliotecaVirtual
             this._radioMultimedia.Text = "Multimedia";
             this._radioMultimedia.UseSelectable = true;
             // 
+            // _virtualBiblioSideBar
+            // 
+            this._virtualBiblioSideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
+            this._virtualBiblioSideBar.BackColor = System.Drawing.Color.Transparent;
+            this._virtualBiblioSideBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._virtualBiblioSideBar.BorderRadius = 0;
+            this._virtualBiblioSideBar.ButtonText = "Biblioteca Virtual";
+            this._virtualBiblioSideBar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._virtualBiblioSideBar.DisabledColor = System.Drawing.Color.Gray;
+            this._virtualBiblioSideBar.Iconcolor = System.Drawing.Color.Transparent;
+            this._virtualBiblioSideBar.Iconimage = ((System.Drawing.Image)(resources.GetObject("_virtualBiblioSideBar.Iconimage")));
+            this._virtualBiblioSideBar.Iconimage_right = null;
+            this._virtualBiblioSideBar.Iconimage_right_Selected = null;
+            this._virtualBiblioSideBar.Iconimage_Selected = null;
+            this._virtualBiblioSideBar.IconMarginLeft = 0;
+            this._virtualBiblioSideBar.IconMarginRight = 0;
+            this._virtualBiblioSideBar.IconRightVisible = true;
+            this._virtualBiblioSideBar.IconRightZoom = 0D;
+            this._virtualBiblioSideBar.IconVisible = false;
+            this._virtualBiblioSideBar.IconZoom = 90D;
+            this._virtualBiblioSideBar.IsTab = false;
+            this._virtualBiblioSideBar.Location = new System.Drawing.Point(-5, 612);
+            this._virtualBiblioSideBar.Margin = new System.Windows.Forms.Padding(5);
+            this._virtualBiblioSideBar.Name = "_virtualBiblioSideBar";
+            this._virtualBiblioSideBar.Normalcolor = System.Drawing.Color.Transparent;
+            this._virtualBiblioSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
+            this._virtualBiblioSideBar.OnHoverTextColor = System.Drawing.Color.White;
+            this._virtualBiblioSideBar.selected = false;
+            this._virtualBiblioSideBar.Size = new System.Drawing.Size(263, 36);
+            this._virtualBiblioSideBar.TabIndex = 11;
+            this._virtualBiblioSideBar.Text = "Biblioteca Virtual";
+            this._virtualBiblioSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this._virtualBiblioSideBar.Textcolor = System.Drawing.Color.White;
+            this._virtualBiblioSideBar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // bunifuDropdown1
+            // 
+            this.bunifuDropdown1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuDropdown1.BorderRadius = 3;
+            this.bunifuDropdown1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuDropdown1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuDropdown1.ForeColor = System.Drawing.Color.White;
+            this.bunifuDropdown1.Items = new string[] {
+        "Biblioteca Virtual",
+        "Tesis",
+        "Libros",
+        "Artículos"};
+            this.bunifuDropdown1.Location = new System.Drawing.Point(0, 661);
+            this.bunifuDropdown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuDropdown1.Name = "bunifuDropdown1";
+            this.bunifuDropdown1.NomalColor = System.Drawing.Color.Transparent;
+            this.bunifuDropdown1.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
+            this.bunifuDropdown1.selectedIndex = 0;
+            this.bunifuDropdown1.Size = new System.Drawing.Size(263, 43);
+            this.bunifuDropdown1.TabIndex = 12;
+            // 
             // FormStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -629,6 +689,8 @@ namespace BibliotecaVirtual
         private MetroFramework.Controls.MetroRadioButton _radioComponent_3;
         private MetroFramework.Controls.MetroRadioButton _radioComponent_4;
         private MetroFramework.Controls.MetroRadioButton _radioMultimedia;
+        private Bunifu.Framework.UI.BunifuFlatButton _virtualBiblioSideBar;
+        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown1;
     }
 }
 

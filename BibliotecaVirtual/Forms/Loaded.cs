@@ -21,7 +21,7 @@ namespace BibliotecaVirtual.Forms
         public Loaded()
         {
             InitializeComponent();
-            FontCustomizable.SetFont(label1, 20);
+//            FontCustomizable.SetFont(label1, 20);
             Color logoBioFin = Color.FromArgb(255, 86, 133, 196);
             IniciativaLabel.ForeColor = logoBioFin;
             //FontCustomizable.SetFont(IniciativaLabel, 11,logoBioFin);
@@ -30,6 +30,11 @@ namespace BibliotecaVirtual.Forms
 
         private void Loaded_Load(object sender, EventArgs e)
         {
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
