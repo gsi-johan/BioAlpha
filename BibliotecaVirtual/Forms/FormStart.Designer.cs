@@ -34,9 +34,6 @@ namespace BibliotecaVirtual
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStart));
             this.metroTextBoxSearch = new MetroFramework.Controls.MetroTextBox();
-            this.pictureBoxTesis = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLibros = new System.Windows.Forms.PictureBox();
-            this.pictureBoxArticulos = new System.Windows.Forms.PictureBox();
             this.pictureBoxSearch = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -59,9 +56,6 @@ namespace BibliotecaVirtual
             this._radioMultimedia = new MetroFramework.Controls.MetroRadioButton();
             this._radioComponents = new MetroFramework.Controls.MetroRadioButton();
             this._radioAll = new MetroFramework.Controls.MetroRadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTesis)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLibros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -74,7 +68,7 @@ namespace BibliotecaVirtual
             // 
             // 
             this.metroTextBoxSearch.CustomButton.Image = null;
-            this.metroTextBoxSearch.CustomButton.Location = new System.Drawing.Point(499, 2);
+            this.metroTextBoxSearch.CustomButton.Location = new System.Drawing.Point(647, 2);
             this.metroTextBoxSearch.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.metroTextBoxSearch.CustomButton.Name = "";
             this.metroTextBoxSearch.CustomButton.Size = new System.Drawing.Size(25, 25);
@@ -84,7 +78,7 @@ namespace BibliotecaVirtual
             this.metroTextBoxSearch.CustomButton.UseSelectable = true;
             this.metroTextBoxSearch.CustomButton.Visible = false;
             this.metroTextBoxSearch.Lines = new string[0];
-            this.metroTextBoxSearch.Location = new System.Drawing.Point(510, 285);
+            this.metroTextBoxSearch.Location = new System.Drawing.Point(429, 256);
             this.metroTextBoxSearch.Margin = new System.Windows.Forms.Padding(4);
             this.metroTextBoxSearch.MaxLength = 32767;
             this.metroTextBoxSearch.Name = "metroTextBoxSearch";
@@ -94,58 +88,19 @@ namespace BibliotecaVirtual
             this.metroTextBoxSearch.SelectionLength = 0;
             this.metroTextBoxSearch.SelectionStart = 0;
             this.metroTextBoxSearch.ShortcutsEnabled = true;
-            this.metroTextBoxSearch.Size = new System.Drawing.Size(527, 30);
+            this.metroTextBoxSearch.Size = new System.Drawing.Size(675, 30);
             this.metroTextBoxSearch.TabIndex = 8;
             this.metroTextBoxSearch.UseSelectable = true;
             this.metroTextBoxSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBoxSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.metroTextBoxSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.metroTextBoxSearch_KeyPress);
             // 
-            // pictureBoxTesis
-            // 
-            this.pictureBoxTesis.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxTesis.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxTesis.Image")));
-            this.pictureBoxTesis.Location = new System.Drawing.Point(1097, 69);
-            this.pictureBoxTesis.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBoxTesis.Name = "pictureBoxTesis";
-            this.pictureBoxTesis.Size = new System.Drawing.Size(129, 106);
-            this.pictureBoxTesis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxTesis.TabIndex = 6;
-            this.pictureBoxTesis.TabStop = false;
-            this.pictureBoxTesis.Click += new System.EventHandler(this.pictureBoxTesis_Click);
-            // 
-            // pictureBoxLibros
-            // 
-            this.pictureBoxLibros.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxLibros.Image = global::BibliotecaVirtual.Properties.Resources.Libros;
-            this.pictureBoxLibros.Location = new System.Drawing.Point(1097, 209);
-            this.pictureBoxLibros.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBoxLibros.Name = "pictureBoxLibros";
-            this.pictureBoxLibros.Size = new System.Drawing.Size(129, 106);
-            this.pictureBoxLibros.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLibros.TabIndex = 5;
-            this.pictureBoxLibros.TabStop = false;
-            this.pictureBoxLibros.Click += new System.EventHandler(this.pictureBoxLibros_Click);
-            // 
-            // pictureBoxArticulos
-            // 
-            this.pictureBoxArticulos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxArticulos.Image = global::BibliotecaVirtual.Properties.Resources.Articulo;
-            this.pictureBoxArticulos.Location = new System.Drawing.Point(1097, 348);
-            this.pictureBoxArticulos.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBoxArticulos.Name = "pictureBoxArticulos";
-            this.pictureBoxArticulos.Size = new System.Drawing.Size(127, 106);
-            this.pictureBoxArticulos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxArticulos.TabIndex = 4;
-            this.pictureBoxArticulos.TabStop = false;
-            this.pictureBoxArticulos.Click += new System.EventHandler(this.pictureBoxArticulos_Click);
-            // 
             // pictureBoxSearch
             // 
             this.pictureBoxSearch.BackgroundImage = global::BibliotecaVirtual.Properties.Resources.search;
             this.pictureBoxSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxSearch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBoxSearch.Location = new System.Drawing.Point(1008, 288);
+            this.pictureBoxSearch.Location = new System.Drawing.Point(1075, 259);
             this.pictureBoxSearch.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxSearch.Name = "pictureBoxSearch";
             this.pictureBoxSearch.Size = new System.Drawing.Size(24, 22);
@@ -181,7 +136,7 @@ namespace BibliotecaVirtual
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel1.Location = new System.Drawing.Point(517, 258);
+            this.metroLabel1.Location = new System.Drawing.Point(436, 229);
             this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(55, 20);
@@ -551,7 +506,7 @@ namespace BibliotecaVirtual
             // _radioComponent_1
             // 
             this._radioComponent_1.AutoSize = true;
-            this._radioComponent_1.Location = new System.Drawing.Point(510, 343);
+            this._radioComponent_1.Location = new System.Drawing.Point(761, 292);
             this._radioComponent_1.Margin = new System.Windows.Forms.Padding(4);
             this._radioComponent_1.Name = "_radioComponent_1";
             this._radioComponent_1.Size = new System.Drawing.Size(110, 17);
@@ -562,7 +517,7 @@ namespace BibliotecaVirtual
             // _radioComponent_2
             // 
             this._radioComponent_2.AutoSize = true;
-            this._radioComponent_2.Location = new System.Drawing.Point(510, 369);
+            this._radioComponent_2.Location = new System.Drawing.Point(761, 318);
             this._radioComponent_2.Margin = new System.Windows.Forms.Padding(4);
             this._radioComponent_2.Name = "_radioComponent_2";
             this._radioComponent_2.Size = new System.Drawing.Size(110, 17);
@@ -573,7 +528,7 @@ namespace BibliotecaVirtual
             // _radioComponent_3
             // 
             this._radioComponent_3.AutoSize = true;
-            this._radioComponent_3.Location = new System.Drawing.Point(674, 343);
+            this._radioComponent_3.Location = new System.Drawing.Point(761, 343);
             this._radioComponent_3.Margin = new System.Windows.Forms.Padding(4);
             this._radioComponent_3.Name = "_radioComponent_3";
             this._radioComponent_3.Size = new System.Drawing.Size(110, 17);
@@ -584,7 +539,7 @@ namespace BibliotecaVirtual
             // _radioComponent_4
             // 
             this._radioComponent_4.AutoSize = true;
-            this._radioComponent_4.Location = new System.Drawing.Point(674, 369);
+            this._radioComponent_4.Location = new System.Drawing.Point(761, 368);
             this._radioComponent_4.Margin = new System.Windows.Forms.Padding(4);
             this._radioComponent_4.Name = "_radioComponent_4";
             this._radioComponent_4.Size = new System.Drawing.Size(110, 17);
@@ -595,7 +550,7 @@ namespace BibliotecaVirtual
             // _radioMultimedia
             // 
             this._radioMultimedia.AutoSize = true;
-            this._radioMultimedia.Location = new System.Drawing.Point(510, 318);
+            this._radioMultimedia.Location = new System.Drawing.Point(597, 343);
             this._radioMultimedia.Margin = new System.Windows.Forms.Padding(4);
             this._radioMultimedia.Name = "_radioMultimedia";
             this._radioMultimedia.Size = new System.Drawing.Size(89, 17);
@@ -606,7 +561,7 @@ namespace BibliotecaVirtual
             // _radioComponents
             // 
             this._radioComponents.AutoSize = true;
-            this._radioComponents.Location = new System.Drawing.Point(674, 320);
+            this._radioComponents.Location = new System.Drawing.Point(597, 318);
             this._radioComponents.Margin = new System.Windows.Forms.Padding(4);
             this._radioComponents.Name = "_radioComponents";
             this._radioComponents.Size = new System.Drawing.Size(105, 17);
@@ -618,7 +573,7 @@ namespace BibliotecaVirtual
             // 
             this._radioAll.AutoSize = true;
             this._radioAll.Checked = true;
-            this._radioAll.Location = new System.Drawing.Point(811, 324);
+            this._radioAll.Location = new System.Drawing.Point(597, 292);
             this._radioAll.Margin = new System.Windows.Forms.Padding(4);
             this._radioAll.Name = "_radioAll";
             this._radioAll.Size = new System.Drawing.Size(54, 17);
@@ -642,9 +597,6 @@ namespace BibliotecaVirtual
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.metroLabel1);
-            this.Controls.Add(this.pictureBoxTesis);
-            this.Controls.Add(this.pictureBoxLibros);
-            this.Controls.Add(this.pictureBoxArticulos);
             this.Controls.Add(this.pictureBoxSearch);
             this.Controls.Add(this.metroTextBoxSearch);
             this.Controls.Add(this.pictureBox2);
@@ -657,9 +609,6 @@ namespace BibliotecaVirtual
             this.TransparencyKey = System.Drawing.Color.SteelBlue;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormStart_FormClosed);
             this.Load += new System.EventHandler(this.FormStart_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTesis)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLibros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArticulos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -670,9 +619,6 @@ namespace BibliotecaVirtual
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBoxArticulos;
-        private System.Windows.Forms.PictureBox pictureBoxLibros;
-        private System.Windows.Forms.PictureBox pictureBoxTesis;
         private MetroFramework.Controls.MetroTextBox metroTextBoxSearch;
         private System.Windows.Forms.PictureBox pictureBoxSearch;
         private System.Windows.Forms.PictureBox pictureBox1;

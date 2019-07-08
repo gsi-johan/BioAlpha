@@ -142,6 +142,12 @@
     <Compile Include="Forms\Initiative\Gallery.Designer.cs">
       <DependentUpon>Gallery.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Initiative\Gallerys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Initiative\Gallerys.Designer.cs">
+      <DependentUpon>Gallerys.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Initiative\ItemView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -179,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Initiative\Gallery.resx">
       <DependentUpon>Gallery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Initiative\Gallerys.resx">
+      <DependentUpon>Gallerys.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Initiative\ItemView.resx">
       <DependentUpon>ItemView.cs</DependentUpon>
