@@ -66,7 +66,7 @@
             this.MinimizeBox = false;
             this.Name = "Gallery";
             this.Resizable = false;
-            this.Text = "Gallery";
+            this.Text = "Galería";
             this.Load += new System.EventHandler(this.Gallery_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

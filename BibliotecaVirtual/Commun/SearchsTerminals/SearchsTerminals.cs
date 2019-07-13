@@ -12,7 +12,7 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         COMPONENTS3 = 3,
         COMPONENTS4 = 4,
         POSTERS =5,
-        PILOTSSOLUTIONS=6,
+        PILOTSSITES=6,
         ALLCOMPONENTS=7
     }
 
@@ -59,7 +59,7 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                     results = SearchInPosters(key);
                     break;
                 case 6:
-                    results = SearchInPilotSolutions(key);
+                    results = SearchInPilotSites(key);
                     break;
                 case 7:
                     results = AllComponents();
@@ -89,16 +89,28 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             return results;
         }
 
-        private List<Documents> SearchInPilotSolutions(string key)
+        private List<Documents> SearchInPilotSites(string key)
         {
             var results = new List<Documents>();
-            Folder pilotSolutionsFolder = this._folders[0].Folders[1];
-            if (string.IsNullOrEmpty(key))
+            Folder folderToSearch = this._folders[0].Folders[1];
+
+            if (folderToSearch.Documents != null)
             {
-                results.AddRange(pilotSolutionsFolder.Documents);
-                return results;
+                results = folderToSearch.Documents.Where(find => find.Name.ToLower().Contains(key) ||
+                                                                 find.Keys.Any(k => k.ToLower().Contains(key)))
+                    .OrderByDescending(n => n.Name)
+                    .ToList();
             }
-            return SearchInDocuments(key, pilotSolutionsFolder);
+            int foldersCount = folderToSearch.Folders.Count - 1;
+            while (foldersCount >= 0)
+            {
+                results.AddRange(folderToSearch.Folders[foldersCount].Documents.Where(find => find.Name.ToLower().Contains(key) || find.Keys.Any(k => k.ToLower().Contains(key)))
+                    .OrderByDescending(n => n.Name)
+                    .ToList());
+
+                foldersCount--;
+            }
+            return results;
         }
 
         private List<Documents> SearchInPosters(string key)
@@ -211,6 +223,7 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                 foldersCount--;
             }
 
+            results.AddRange(SearchInPilotSites(key));
             results.AddRange(SearchInComponent1(key));
             results.AddRange(SearchInComponent2(key));
             results.AddRange(SearchInComponent3(key));
@@ -271,12 +284,12 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                 FolderUrl = InitiativePath + "Components\\"
             };
 
-            Folder initPilotsSolutionsFolder = new Folder
+            Folder initPilotsSitesFolder = new Folder
             {
-                Name = "Pilots_Solutions",
+                Name = "Pilots_Sites",
                 Folders = new List<Folder>(),
                 Documents = new List<Documents>(),
-                FolderUrl = InitiativePath + "Pilots_Solutions\\"
+                FolderUrl = InitiativePath + "Pilots_Sites\\"
             };
 
             Folder initPostersFolder = new Folder
@@ -298,7 +311,7 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             //Adding contents to initiative folder 
             initiative.Documents = initDocuments;
             initiative.Folders.Add(initComponentsFolder);
-            initiative.Folders.Add(initPilotsSolutionsFolder);
+            initiative.Folders.Add(initPilotsSitesFolder);
             initiative.Folders.Add(initPostersFolder);
             initiative.Folders.Add(initGalleryFolder);
 
@@ -532,7 +545,6 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             };
             component4.Folders.Add(compFinancialSolutionsSheetsFolder);
             component4.Documents = component4Documents;
-            CreateComponent4Resolutions();
             CreateComponent4FinancialSolutionSheets();
         }
 
@@ -628,7 +640,7 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
 
         private void CreateComponent4FinancialSolutionSheets()
         {
-            Folder comp4FinancialSolutions = this._folders[0].Folders[0].Folders[3].Folders[1];
+            Folder comp4FinancialSolutions = this._folders[0].Folders[0].Folders[3].Folders[0];
             List<Documents> financialSolutionsDocuments = new List<Documents>
             {
                 new Documents
@@ -649,41 +661,57 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
 
         public void CreatePilotSolutionsFolder()
         {
-            Folder pilotSolutionsFolder = this._folders[0].Folders[1];
-            List<Documents> pilotSolutionsDocuments = new List<Documents>
+            Folder pilotSitesFolder = this._folders[0].Folders[1];
+            Folder financialJustificationCienaga = new Folder
+            {
+                Name = "APRM P C.Zapata",
+                Folders = new List<Folder>(),
+                Documents = new List<Documents>(),
+                FolderUrl = pilotSitesFolder.FolderUrl + "APRM P C.ZAPATA\\"
+            };
+            Folder financialJustificationGuanahacabibes = new Folder
+            {
+                Name = "PN P.Guanahacabibes",
+                Folders = new List<Folder>(),
+                Documents = new List<Documents>(),
+                FolderUrl = pilotSitesFolder.FolderUrl + "PN P.GUANAHACABIBES\\"
+            };
+            pilotSitesFolder.Folders.Add(financialJustificationCienaga);
+            pilotSitesFolder.Folders.Add(financialJustificationGuanahacabibes);
+            CreatePilotSitesFinancialDocumentsCienaga();
+            CreatePilotSitesFinancialDocumentsGC();
+        }
+
+        private void CreatePilotSitesFinancialDocumentsCienaga()
+        {
+            Folder pilotSitesCienaga = this._folders[0].Folders[1].Folders[0];
+            List<Documents> pilotSitesCienagaDocuments = new List<Documents>
             {
                 new Documents
                 {
-                    Url = pilotSolutionsFolder.FolderUrl+"Solucion 1.pdf",
-                    Name = "Solucion 1",
-                    Keys = new List<string>() { "key1", "key2" }
-                },
-                new Documents
-                {
-                    Url = pilotSolutionsFolder.FolderUrl+"Solucion 2.pdf",
-                    Name = "Solucion 2",
-                    Keys = new List<string>() { "key1", "key2" }
-                },
-                new Documents
-                {
-                    Url = pilotSolutionsFolder.FolderUrl+"Solucion 3.pdf",
-                    Name = "Solucion 3",
-                    Keys = new List<string>() { "key1", "key2" }
-                },
-                new Documents
-                {
-                    Url = pilotSolutionsFolder.FolderUrl+"Solucion 4.pdf",
-                    Name = "Solucion 4",
-                    Keys = new List<string>() { "key1", "key2" }
-                },
-                new Documents
-                {
-                    Url = pilotSolutionsFolder.FolderUrl+"Solucion 5.pdf",
-                    Name = "Solucion 5",
-                    Keys = new List<string>() { "key1", "key2" }
-                },
+                    Url = pilotSitesCienaga.FolderUrl+"justificacion.pdf",
+                    Name = "Ciénaga de Zapata.Justificación Financiera",
+                    Keys = new List<string>() { "Ciénaga Zapata", "sitio" }
+                }
             };
-            pilotSolutionsFolder.Documents = pilotSolutionsDocuments;
+            pilotSitesCienaga.Documents = pilotSitesCienagaDocuments;
+
+        }
+
+        private void CreatePilotSitesFinancialDocumentsGC()
+        {
+            Folder pilotSitesGC = this._folders[0].Folders[1].Folders[1];
+            List<Documents> pilotSitesGCDocuments = new List<Documents>
+            {
+                new Documents
+                {
+                    Url = pilotSitesGC.FolderUrl+"justificacion.pdf",
+                    Name = "Guanahacabibes.Justificación Financiera",
+                    Keys = new List<string>() { "Guanahacabibes", "sitio" }
+                }
+            };
+            pilotSitesGC.Documents = pilotSitesGCDocuments;
+
         }
 
         public void CreatePostersFolder()

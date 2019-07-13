@@ -255,8 +255,8 @@ namespace BibliotecaVirtual
 
         private void _pilotsSolutionsSideBar_Click(object sender, EventArgs e)
         {
-            showDetailsView("Implementación de soluciones pilotos",
-                SearchsTerminals.GetIntance().SearchByKeyAndType("", TypeSearch.PILOTSSOLUTIONS), "");
+            var sites = new Sites();
+            sites.ShowDialog();
         }
 
         private void _componentsSideBar_Click(object sender, EventArgs e)
