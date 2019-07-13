@@ -360,14 +360,6 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             Folder component1 = this._folders[0].Folders[0].Folders[0];
             component1.Folders = new List<Folder>();
 
-            Folder compResolutionsFolder = new Folder
-            {
-                Name = "Resoluciones",
-                Folders = new List<Folder>(),
-                Documents = new List<Documents>(),
-                FolderUrl = component1.FolderUrl + "Resolutions\\"
-            };
-
             List<Documents> component1Documents = new List<Documents>
             {
                 new Documents
@@ -375,13 +367,20 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                     Url = component1.FolderUrl +"Informe final Componente 1.pdf",
                     Name = "Informe final Componente 1",
                     Keys = new List<string>() { "Componente 1", "Conclusion","economia cubana" }
+                },
+                new Documents
+                {
+                    Url = component1.FolderUrl +"Resumen Componente 1.pdf",
+                    Name = "Resumen Componente 1",
+                    Keys = new List<string>() { "Componente 1", "Resumen","Conclusiones" }
                 }
             };
-            component1.Folders.Add(compResolutionsFolder);
             component1.Documents = component1Documents;
-            CreateComponent1Resolutions();
         }
 
+        /// <summary>
+        /// Deprecated
+        /// </summary>
         private void CreateComponent1Resolutions()
         {
             Folder comp1Resolutions = this._folders[0].Folders[0].Folders[0].Folders[0];
@@ -423,6 +422,12 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                     Url = component2.FolderUrl+"Informe final Componente 2.pdf",
                     Name = "Informe final Componente 2",
                     Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = component2.FolderUrl+"Resumen Componente 2.pdf",
+                    Name = "Resumen Componente 2",
+                    Keys = new List<string>() { "key1", "key2" }
                 }
             };
             component2.Folders.Add(compMethodologiesFolder);
@@ -437,14 +442,8 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             {
                 new Documents
                 {
-                    Url = comp2Methodologies.FolderUrl+"Met 101 Componente 2.pdf",
-                    Name = "Met 101 Componente 2",
-                    Keys = new List<string>() { "key1", "key2" }
-                },
-                new Documents
-                {
-                    Url = comp2Methodologies.FolderUrl+"Met 102 Componente 2.pdf",
-                    Name = "Met 102 Componente 2",
+                    Url = comp2Methodologies.FolderUrl+"METODOLOGIA AGBD CUBA.pdf",
+                    Name = "Metodología AGBD Cuba",
                     Keys = new List<string>() { "key1", "key2" }
                 }
             };
@@ -454,6 +453,14 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         public void CreateComponent3()
         {
             Folder component3 = this._folders[0].Folders[0].Folders[2];
+            Folder compMethodologiesFolder = new Folder
+            {
+                Name = "Metodologías",
+                Folders = new List<Folder>(),
+                Documents = new List<Documents>(),
+                FolderUrl = component3.FolderUrl + "Methodologies\\"
+            };
+
             List<Documents> component3Documents = new List<Documents>
             {
                 new Documents
@@ -461,9 +468,32 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                     Url = component3.FolderUrl+"Informe final Componente 3.pdf",
                     Name = "Informe final Componente 3",
                     Keys = new List<string>() { "key1", "key2" }
+                },
+                new Documents
+                {
+                    Url = component3.FolderUrl+"Resumen Componente 3.pdf",
+                    Name = "Resumen Componente 3",
+                    Keys = new List<string>() { "key1", "key2" }
                 }
             };
             component3.Documents = component3Documents;
+            component3.Folders.Add(compMethodologiesFolder);
+            CreateComponent3Methodologies();
+        }
+
+        private void CreateComponent3Methodologies()
+        {
+            Folder comp3Methodologies = this._folders[0].Folders[0].Folders[2].Folders[0];
+            List<Documents> methodologiesDocuments = new List<Documents>
+            {
+                new Documents
+                {
+                    Url = comp3Methodologies.FolderUrl+"METODOLOGIA FNA CUBA.pdf",
+                    Name = "Metodología FNA Cuba",
+                    Keys = new List<string>() { "key1", "key2" }
+                }
+            };
+            comp3Methodologies.Documents = methodologiesDocuments;
         }
 
 
@@ -471,13 +501,6 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         {
             Folder component4 = this._folders[0].Folders[0].Folders[3];
             
-            Folder compResolutionsFolder = new Folder
-            {
-                Name = "Resoluciones",
-                Folders = new List<Folder>(),
-                Documents = new List<Documents>(),
-                FolderUrl = component4.FolderUrl + "Resolutions\\"
-            };
             Folder compFinancialSolutionsSheetsFolder = new Folder
             {
                 Name = "Fichas de soluciones financieras",
@@ -496,18 +519,26 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                 },
                 new Documents
                 {
-                    Url = component4.FolderUrl+"Plan Financiero Componente 4.pdf",
-                    Name = "Plan Financiero Componente 4",
+                    Url = component4.FolderUrl+"Plan Financiero hasta 2025.pptx",
+                    Name = "Plan Financiero hasta 2025.pptx",
+                    Keys = new List<string>() { "economia cubana", "key2" }
+                },
+                new Documents
+                {
+                    Url = component4.FolderUrl+"Resumen Componente 4.pdf",
+                    Name = "Resumen Componente 4",
                     Keys = new List<string>() { "economia cubana", "key2" }
                 },
             };
-            component4.Folders.Add(compResolutionsFolder);
             component4.Folders.Add(compFinancialSolutionsSheetsFolder);
             component4.Documents = component4Documents;
             CreateComponent4Resolutions();
             CreateComponent4FinancialSolutionSheets();
         }
 
+        /// <summary>
+        /// DEPRECATED
+        /// </summary>
         private void CreateComponent4Resolutions()
         {
             Folder comp4Resolutions = this._folders[0].Folders[0].Folders[3].Folders[0];
@@ -663,7 +694,7 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                 new Documents
                 {
                     Url = postersFolder.FolderUrl+"Poster 1.jpg",
-                    Name = "Poster 1",
+                    Name = "Financiamiento de la Biodiversidad en Cuba una solución financiera actual",
                     Keys = new List<string>() { "key1", "key2" }
                 },
                 new Documents
