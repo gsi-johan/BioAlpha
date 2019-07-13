@@ -91,9 +91,9 @@
             this._labelFolder3.Cursor = System.Windows.Forms.Cursors.Hand;
             this._labelFolder3.Location = new System.Drawing.Point(76, 415);
             this._labelFolder3.Name = "_labelFolder3";
-            this._labelFolder3.Size = new System.Drawing.Size(182, 20);
+            this._labelFolder3.Size = new System.Drawing.Size(180, 20);
             this._labelFolder3.TabIndex = 6;
-            this._labelFolder3.Text = "Camaguey Polígono AMEBA";
+            this._labelFolder3.Text = "Collage Fotos de la Ciénaga";
             this._labelFolder3.Click += new System.EventHandler(this._labelFolder3_Click);
             // 
             // _pictureBFolder3

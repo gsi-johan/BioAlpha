@@ -662,34 +662,28 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             {
                 new Documents
                 {
-                    Url = postersFolder.FolderUrl+"Poster 1.pdf",
+                    Url = postersFolder.FolderUrl+"Poster 1.jpg",
                     Name = "Poster 1",
                     Keys = new List<string>() { "key1", "key2" }
                 },
                 new Documents
                 {
-                    Url = postersFolder.FolderUrl+"Poster 2.pdf",
+                    Url = postersFolder.FolderUrl+"Poster 2.jpg",
                     Name = "Poster 2",
                     Keys = new List<string>() { "key1", "key2" }
                 },
                 new Documents
                 {
-                    Url = postersFolder.FolderUrl+"Poster 3.pdf",
+                    Url = postersFolder.FolderUrl+"Poster 3.jpg",
                     Name = "Poster 3",
                     Keys = new List<string>() { "key1", "key2" }
                 },
                 new Documents
                 {
-                    Url = postersFolder.FolderUrl+"Poster 4.pdf",
+                    Url = postersFolder.FolderUrl+"Poster 4.jpg",
                     Name = "Poster 4",
                     Keys = new List<string>() { "key1", "key2" }
-                },
-                new Documents
-                {
-                    Url = postersFolder.FolderUrl+"Poster 5.pdf",
-                    Name = "Poster 5",
-                    Keys = new List<string>() { "key1", "key2" }
-                },
+                }
             };
             postersFolder.Documents = postersDocuments;
         }

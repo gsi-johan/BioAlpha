@@ -49,14 +49,14 @@ namespace BibliotecaVirtual.Forms.Initiative
         private void _pictureBFolder3_Click(object sender, EventArgs e)
         {
             string currentDir = Environment.CurrentDirectory;
-            string directory = currentDir + "\\Documentos\\Iniciativa_Biofin\\Gallery\\Camaguey Polígono AMEBA";
+            string directory = currentDir + "\\Documentos\\Iniciativa_Biofin\\Gallery\\Collage Fotos de la Ciénaga";
             loadImagesFromFolder(directory);
         }
 
         private void _labelFolder3_Click(object sender, EventArgs e)
         {
             string currentDir = Environment.CurrentDirectory;
-            string directory = currentDir + "\\Documentos\\Iniciativa_Biofin\\Gallery\\Camaguey Polígono AMEBA";
+            string directory = currentDir + "\\Documentos\\Iniciativa_Biofin\\Gallery\\Collage Fotos de la Ciénaga";
             loadImagesFromFolder(directory);
         }
         private static String[] GetFilesFrom(String searchFolder, String[] filters, bool isRecursive)
