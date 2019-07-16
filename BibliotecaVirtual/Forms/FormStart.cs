@@ -27,6 +27,9 @@ namespace BibliotecaVirtual
     {
         private DocumentServices _documentServices;
         private bool _isMenuOpen = false;
+        private Color _activeColorBtn = Color.FromArgb(46, 139, 87);
+        private Color _noActiveColorBtn = Color.FromArgb(29, 115, 153);
+        private TypeSearch _typeSearch = TypeSearch.All;
 
         public FormStart()
         {
@@ -85,33 +88,33 @@ namespace BibliotecaVirtual
 
         private void _showComponents(string key)
         {
-            if (this._radioComponent_1.Checked)
+            if (this._typeSearch ==TypeSearch.COMPONENTS1)
             {
                 showDetailsView("Componente 1",
                     SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS1), "");
             }
 
-            if (this._radioComponent_2.Checked)
+            if (this._typeSearch == TypeSearch.COMPONENTS2)
             {
                 showDetailsView("Componente 2",
                     SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS2), "");
             }
-            if (this._radioComponent_3.Checked)
+            if (this._typeSearch == TypeSearch.COMPONENTS3)
             {
                 showDetailsView("Componente 3",
                     SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS3), "");
             }
-            if (this._radioComponent_4.Checked)
+            if (this._typeSearch == TypeSearch.COMPONENTS4)
             {
                 showDetailsView("Componente 4",
                     SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.COMPONENTS4), "");
             }
-            if (this._radioComponents.Checked)
+            if (this._typeSearch == TypeSearch.ALLCOMPONENTS)
             {
                 showDetailsView("Componentes",
                     SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.ALLCOMPONENTS), "");
             }
-            if (this._radioAll.Checked)
+            if (this._typeSearch == TypeSearch.All)
             {
                 showDetailsView("Resultados de la búsqueda",
                     SearchsTerminals.GetIntance().SearchByKeyAndType(key, TypeSearch.All), "");
@@ -120,8 +123,9 @@ namespace BibliotecaVirtual
 
         private bool isComponentSelected()
         {
-            return this._radioComponent_1.Checked || _radioComponent_2.Checked || _radioComponent_3.Checked ||
-                   _radioComponent_4.Checked || _radioComponents.Checked || _radioAll.Checked;
+            return _typeSearch != TypeSearch.APP;
+            //return this._radioComponent_1.Checked || _radioComponent_2.Checked || _radioComponent_3.Checked ||
+            //       _radioComponent_4.Checked || _radioComponents.Checked || _radioAll.Checked;
         }
 
         private void metroTextBoxSearch_KeyPress(object sender, KeyPressEventArgs e)
@@ -337,6 +341,177 @@ namespace BibliotecaVirtual
             {
                 ctxMenuComponentes.Show(_componentsSideBar, 197, 0);
             }
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\Informe Final Componentes.pdf");
+        }
+
+        private void metroLabel3_Click(object sender, EventArgs e)
+        {
+            var about= new About_1();
+            about.ShowDialog(this);
+        }
+
+        private void metroLabel4_Click(object sender, EventArgs e)
+        {
+
+            var names = new List<string>();
+
+                for (int i = 0; i < 30; i++)
+            {
+                names.Add( "Names " + i);
+            }
+
+            var about = new About_2(names);
+            about.ShowDialog(this);
+        }
+
+        private void allBtn_Click(object sender, EventArgs e)
+        {
+            _typeSearch = TypeSearch.All;
+            this.allBtn.Normalcolor = this._activeColorBtn;
+            this.allBtn.OnHovercolor = this._activeColorBtn;
+
+            this.componentsBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentsBtn.OnHovercolor = this._noActiveColorBtn;
+
+            this.appBtn.Normalcolor = this._noActiveColorBtn;
+            this.appBtn.OnHovercolor = this._noActiveColorBtn;
+
+            this.componentABtn.Normalcolor = this._noActiveColorBtn;
+            this.componentABtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentBBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentBBtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentCBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentCBtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentDBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentDBtn.OnHovercolor = this._noActiveColorBtn;
+            
+            
+        }
+
+        private void componentsBtn_Click(object sender, EventArgs e)
+        {
+            _typeSearch = TypeSearch.ALLCOMPONENTS;
+            this.allBtn.Normalcolor = this._noActiveColorBtn;
+            this.allBtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentsBtn.Normalcolor = this._activeColorBtn;
+            this.componentsBtn.OnHovercolor = this._activeColorBtn;
+
+            this.appBtn.Normalcolor = this._noActiveColorBtn;
+            this.appBtn.OnHovercolor = this._noActiveColorBtn;
+
+            this.componentABtn.Normalcolor = this._noActiveColorBtn;
+            this.componentABtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentBBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentBBtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentCBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentCBtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentDBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentDBtn.OnHovercolor = this._noActiveColorBtn;
+        }
+
+        private void appBtn_Click(object sender, EventArgs e)
+        {
+            _typeSearch = TypeSearch.APP;
+            this.allBtn.Normalcolor = this._noActiveColorBtn;
+            this.allBtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentsBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentsBtn.OnHovercolor = this._noActiveColorBtn;
+
+            this.appBtn.Normalcolor = this._activeColorBtn;
+            this.appBtn.OnHovercolor = this._activeColorBtn;
+
+            this.componentABtn.Normalcolor = this._noActiveColorBtn;
+            this.componentABtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentBBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentBBtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentCBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentCBtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentDBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentDBtn.OnHovercolor = this._noActiveColorBtn;
+        }
+
+        private void componentABtn_Click(object sender, EventArgs e)
+        {
+            _typeSearch = TypeSearch.COMPONENTS1;
+            this.allBtn.Normalcolor = this._noActiveColorBtn;
+            this.allBtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentsBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentsBtn.OnHovercolor = this._noActiveColorBtn;
+
+            this.appBtn.Normalcolor = this._noActiveColorBtn;
+            this.appBtn.OnHovercolor = this._noActiveColorBtn;
+
+            this.componentABtn.Normalcolor = this._activeColorBtn;
+            this.componentABtn.OnHovercolor = this._activeColorBtn;
+            this.componentBBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentBBtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentCBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentCBtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentDBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentDBtn.OnHovercolor = this._noActiveColorBtn;
+        }
+
+        private void componentBBtn_Click(object sender, EventArgs e)
+        {
+            _typeSearch = TypeSearch.COMPONENTS2;
+            this.allBtn.Normalcolor = this._noActiveColorBtn;
+            this.allBtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentsBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentsBtn.OnHovercolor = this._noActiveColorBtn;
+
+            this.appBtn.Normalcolor = this._noActiveColorBtn;
+            this.appBtn.OnHovercolor = this._noActiveColorBtn;
+
+            this.componentABtn.Normalcolor = this._noActiveColorBtn;
+            this.componentABtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentBBtn.Normalcolor = this._activeColorBtn;
+            this.componentBBtn.OnHovercolor = this._activeColorBtn;
+            this.componentCBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentCBtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentDBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentDBtn.OnHovercolor = this._noActiveColorBtn;
+        }
+
+        private void componentCBtn_Click(object sender, EventArgs e)
+        {
+            _typeSearch = TypeSearch.COMPONENTS3;
+            this.allBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentsBtn.Normalcolor = this._noActiveColorBtn;
+
+            this.appBtn.Normalcolor = this._noActiveColorBtn;
+            this.appBtn.OnHovercolor = this._noActiveColorBtn;
+
+            this.componentABtn.Normalcolor = _noActiveColorBtn;
+            this.componentBBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentCBtn.Normalcolor = this._activeColorBtn;
+            this.componentCBtn.OnHovercolor = this._activeColorBtn;
+            this.componentDBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentDBtn.OnHovercolor = this._noActiveColorBtn;
+        }
+
+        private void componentDBtn_Click(object sender, EventArgs e)
+        {
+            _typeSearch = TypeSearch.COMPONENTS4;
+            this.allBtn.Normalcolor = this._noActiveColorBtn;
+            this.allBtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentsBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentsBtn.OnHovercolor = this._noActiveColorBtn;
+
+            this.appBtn.Normalcolor = this._noActiveColorBtn;
+            this.appBtn.OnHovercolor = this._noActiveColorBtn;
+
+            this.componentABtn.Normalcolor = this._noActiveColorBtn;
+            this.componentABtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentBBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentBBtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentCBtn.Normalcolor = this._noActiveColorBtn;
+            this.componentCBtn.OnHovercolor = this._noActiveColorBtn;
+            this.componentDBtn.Normalcolor = this._activeColorBtn;
+            this.componentDBtn.OnHovercolor = this._activeColorBtn;
         }
     }
 }
