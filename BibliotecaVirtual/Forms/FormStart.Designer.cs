@@ -40,6 +40,7 @@ namespace BibliotecaVirtual
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this._virtualBiblioSideBar = new Bunifu.Framework.UI.BunifuFlatButton();
             this._gallerySideBar = new Bunifu.Framework.UI.BunifuFlatButton();
             this._lectionsSideBar = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -50,18 +51,21 @@ namespace BibliotecaVirtual
             this._sumarySideBar = new Bunifu.Framework.UI.BunifuFlatButton();
             this._reportEndSideBar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this._radioComponent_1 = new MetroFramework.Controls.MetroRadioButton();
-            this._radioComponent_2 = new MetroFramework.Controls.MetroRadioButton();
-            this._radioComponent_3 = new MetroFramework.Controls.MetroRadioButton();
-            this._radioComponent_4 = new MetroFramework.Controls.MetroRadioButton();
-            this._radioMultimedia = new MetroFramework.Controls.MetroRadioButton();
-            this._radioComponents = new MetroFramework.Controls.MetroRadioButton();
-            this._radioAll = new MetroFramework.Controls.MetroRadioButton();
             this.ctxMenuComponentes = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.componente1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.componente2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.componente3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.componente4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.allBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.componentsBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.appBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.componentABtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.componentBBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.componentCBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.componentDBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -75,18 +79,16 @@ namespace BibliotecaVirtual
             // 
             // 
             this.metroTextBoxSearch.CustomButton.Image = null;
-            this.metroTextBoxSearch.CustomButton.Location = new System.Drawing.Point(647, 2);
-            this.metroTextBoxSearch.CustomButton.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTextBoxSearch.CustomButton.Location = new System.Drawing.Point(484, 2);
             this.metroTextBoxSearch.CustomButton.Name = "";
-            this.metroTextBoxSearch.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.metroTextBoxSearch.CustomButton.Size = new System.Drawing.Size(19, 19);
             this.metroTextBoxSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBoxSearch.CustomButton.TabIndex = 1;
             this.metroTextBoxSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBoxSearch.CustomButton.UseSelectable = true;
             this.metroTextBoxSearch.CustomButton.Visible = false;
             this.metroTextBoxSearch.Lines = new string[0];
-            this.metroTextBoxSearch.Location = new System.Drawing.Point(429, 256);
-            this.metroTextBoxSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTextBoxSearch.Location = new System.Drawing.Point(347, 135);
             this.metroTextBoxSearch.MaxLength = 32767;
             this.metroTextBoxSearch.Name = "metroTextBoxSearch";
             this.metroTextBoxSearch.PasswordChar = '\0';
@@ -95,7 +97,7 @@ namespace BibliotecaVirtual
             this.metroTextBoxSearch.SelectionLength = 0;
             this.metroTextBoxSearch.SelectionStart = 0;
             this.metroTextBoxSearch.ShortcutsEnabled = true;
-            this.metroTextBoxSearch.Size = new System.Drawing.Size(675, 30);
+            this.metroTextBoxSearch.Size = new System.Drawing.Size(506, 24);
             this.metroTextBoxSearch.TabIndex = 8;
             this.metroTextBoxSearch.UseSelectable = true;
             this.metroTextBoxSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -107,10 +109,9 @@ namespace BibliotecaVirtual
             this.pictureBoxSearch.BackgroundImage = global::BibliotecaVirtual.Properties.Resources.search;
             this.pictureBoxSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxSearch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBoxSearch.Location = new System.Drawing.Point(1075, 259);
-            this.pictureBoxSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxSearch.Location = new System.Drawing.Point(831, 137);
             this.pictureBoxSearch.Name = "pictureBoxSearch";
-            this.pictureBoxSearch.Size = new System.Drawing.Size(24, 22);
+            this.pictureBoxSearch.Size = new System.Drawing.Size(18, 18);
             this.pictureBoxSearch.TabIndex = 9;
             this.pictureBoxSearch.TabStop = false;
             this.pictureBoxSearch.Click += new System.EventHandler(this.pictureBoxSearch_Click);
@@ -122,9 +123,8 @@ namespace BibliotecaVirtual
             this.pictureBox1.BackgroundImage = global::BibliotecaVirtual.Properties.Resources.LogoColor;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(263, 112);
+            this.pictureBox1.Size = new System.Drawing.Size(197, 91);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -132,10 +132,9 @@ namespace BibliotecaVirtual
             // 
             this.pictureBox2.BackgroundImage = global::BibliotecaVirtual.Properties.Resources.FooterFull;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(260, 543);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(195, 441);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1067, 197);
+            this.pictureBox2.Size = new System.Drawing.Size(800, 160);
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
             // 
@@ -143,10 +142,9 @@ namespace BibliotecaVirtual
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel1.Location = new System.Drawing.Point(436, 229);
-            this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel1.Location = new System.Drawing.Point(352, 113);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(55, 20);
+            this.metroLabel1.Size = new System.Drawing.Size(52, 19);
             this.metroLabel1.TabIndex = 13;
             this.metroLabel1.Text = "Buscar:";
             // 
@@ -154,6 +152,7 @@ namespace BibliotecaVirtual
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuFlatButton1);
             this.bunifuGradientPanel1.Controls.Add(this._virtualBiblioSideBar);
             this.bunifuGradientPanel1.Controls.Add(this._gallerySideBar);
             this.bunifuGradientPanel1.Controls.Add(this._lectionsSideBar);
@@ -168,17 +167,52 @@ namespace BibliotecaVirtual
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(138)))));
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(87)))), ((int)(((byte)(146)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 6);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 5);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 100;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(263, 734);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(197, 596);
             this.bunifuGradientPanel1.TabIndex = 14;
             this.bunifuGradientPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.bunifuGradientPanel1_MouseMove);
             // 
+            // bunifuFlatButton1
+            // 
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(10)))));
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.ButtonText = "Resoluciones";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = true;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = false;
+            this.bunifuFlatButton1.IconZoom = 90D;
+            this.bunifuFlatButton1.IsTab = false;
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(4, 101);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(197, 29);
+            this.bunifuFlatButton1.TabIndex = 12;
+            this.bunifuFlatButton1.Text = "Resoluciones";
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
+            // 
             // _virtualBiblioSideBar
             // 
-            this._virtualBiblioSideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
+            this._virtualBiblioSideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(10)))));
             this._virtualBiblioSideBar.BackColor = System.Drawing.Color.Transparent;
             this._virtualBiblioSideBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this._virtualBiblioSideBar.BorderRadius = 0;
@@ -197,14 +231,14 @@ namespace BibliotecaVirtual
             this._virtualBiblioSideBar.IconVisible = false;
             this._virtualBiblioSideBar.IconZoom = 90D;
             this._virtualBiblioSideBar.IsTab = false;
-            this._virtualBiblioSideBar.Location = new System.Drawing.Point(-5, 612);
-            this._virtualBiblioSideBar.Margin = new System.Windows.Forms.Padding(5);
+            this._virtualBiblioSideBar.Location = new System.Drawing.Point(-4, 513);
+            this._virtualBiblioSideBar.Margin = new System.Windows.Forms.Padding(4);
             this._virtualBiblioSideBar.Name = "_virtualBiblioSideBar";
             this._virtualBiblioSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._virtualBiblioSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._virtualBiblioSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._virtualBiblioSideBar.selected = false;
-            this._virtualBiblioSideBar.Size = new System.Drawing.Size(263, 36);
+            this._virtualBiblioSideBar.Size = new System.Drawing.Size(197, 29);
             this._virtualBiblioSideBar.TabIndex = 11;
             this._virtualBiblioSideBar.Text = "Biblioteca Virtual";
             this._virtualBiblioSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -214,7 +248,7 @@ namespace BibliotecaVirtual
             // 
             // _gallerySideBar
             // 
-            this._gallerySideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
+            this._gallerySideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(10)))));
             this._gallerySideBar.BackColor = System.Drawing.Color.Transparent;
             this._gallerySideBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this._gallerySideBar.BorderRadius = 0;
@@ -233,14 +267,14 @@ namespace BibliotecaVirtual
             this._gallerySideBar.IconVisible = false;
             this._gallerySideBar.IconZoom = 90D;
             this._gallerySideBar.IsTab = false;
-            this._gallerySideBar.Location = new System.Drawing.Point(0, 554);
-            this._gallerySideBar.Margin = new System.Windows.Forms.Padding(5);
+            this._gallerySideBar.Location = new System.Drawing.Point(0, 466);
+            this._gallerySideBar.Margin = new System.Windows.Forms.Padding(4);
             this._gallerySideBar.Name = "_gallerySideBar";
             this._gallerySideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._gallerySideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._gallerySideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._gallerySideBar.selected = false;
-            this._gallerySideBar.Size = new System.Drawing.Size(263, 36);
+            this._gallerySideBar.Size = new System.Drawing.Size(197, 29);
             this._gallerySideBar.TabIndex = 10;
             this._gallerySideBar.Text = "Galeria de Fotos";
             this._gallerySideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -250,7 +284,7 @@ namespace BibliotecaVirtual
             // 
             // _lectionsSideBar
             // 
-            this._lectionsSideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
+            this._lectionsSideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(10)))));
             this._lectionsSideBar.BackColor = System.Drawing.Color.Transparent;
             this._lectionsSideBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this._lectionsSideBar.BorderRadius = 0;
@@ -269,14 +303,14 @@ namespace BibliotecaVirtual
             this._lectionsSideBar.IconVisible = false;
             this._lectionsSideBar.IconZoom = 90D;
             this._lectionsSideBar.IsTab = false;
-            this._lectionsSideBar.Location = new System.Drawing.Point(0, 496);
-            this._lectionsSideBar.Margin = new System.Windows.Forms.Padding(5);
+            this._lectionsSideBar.Location = new System.Drawing.Point(0, 419);
+            this._lectionsSideBar.Margin = new System.Windows.Forms.Padding(4);
             this._lectionsSideBar.Name = "_lectionsSideBar";
             this._lectionsSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._lectionsSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._lectionsSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._lectionsSideBar.selected = false;
-            this._lectionsSideBar.Size = new System.Drawing.Size(263, 36);
+            this._lectionsSideBar.Size = new System.Drawing.Size(197, 29);
             this._lectionsSideBar.TabIndex = 9;
             this._lectionsSideBar.Text = "Lecciones aprendidas";
             this._lectionsSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -286,7 +320,7 @@ namespace BibliotecaVirtual
             // 
             // _exitStrategiesSideBar
             // 
-            this._exitStrategiesSideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
+            this._exitStrategiesSideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(10)))));
             this._exitStrategiesSideBar.BackColor = System.Drawing.Color.Transparent;
             this._exitStrategiesSideBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this._exitStrategiesSideBar.BorderRadius = 0;
@@ -305,14 +339,14 @@ namespace BibliotecaVirtual
             this._exitStrategiesSideBar.IconVisible = false;
             this._exitStrategiesSideBar.IconZoom = 90D;
             this._exitStrategiesSideBar.IsTab = false;
-            this._exitStrategiesSideBar.Location = new System.Drawing.Point(0, 433);
-            this._exitStrategiesSideBar.Margin = new System.Windows.Forms.Padding(5);
+            this._exitStrategiesSideBar.Location = new System.Drawing.Point(0, 368);
+            this._exitStrategiesSideBar.Margin = new System.Windows.Forms.Padding(4);
             this._exitStrategiesSideBar.Name = "_exitStrategiesSideBar";
             this._exitStrategiesSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._exitStrategiesSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._exitStrategiesSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._exitStrategiesSideBar.selected = false;
-            this._exitStrategiesSideBar.Size = new System.Drawing.Size(263, 36);
+            this._exitStrategiesSideBar.Size = new System.Drawing.Size(197, 29);
             this._exitStrategiesSideBar.TabIndex = 8;
             this._exitStrategiesSideBar.Text = "Estrategías de salidas";
             this._exitStrategiesSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -322,7 +356,7 @@ namespace BibliotecaVirtual
             // 
             // _postersSideBar
             // 
-            this._postersSideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
+            this._postersSideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(10)))));
             this._postersSideBar.BackColor = System.Drawing.Color.Transparent;
             this._postersSideBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this._postersSideBar.BorderRadius = 0;
@@ -341,14 +375,14 @@ namespace BibliotecaVirtual
             this._postersSideBar.IconVisible = false;
             this._postersSideBar.IconZoom = 90D;
             this._postersSideBar.IsTab = false;
-            this._postersSideBar.Location = new System.Drawing.Point(0, 378);
-            this._postersSideBar.Margin = new System.Windows.Forms.Padding(5);
+            this._postersSideBar.Location = new System.Drawing.Point(0, 323);
+            this._postersSideBar.Margin = new System.Windows.Forms.Padding(4);
             this._postersSideBar.Name = "_postersSideBar";
             this._postersSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._postersSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._postersSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._postersSideBar.selected = false;
-            this._postersSideBar.Size = new System.Drawing.Size(263, 36);
+            this._postersSideBar.Size = new System.Drawing.Size(197, 29);
             this._postersSideBar.TabIndex = 7;
             this._postersSideBar.Text = "Porters";
             this._postersSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -358,7 +392,7 @@ namespace BibliotecaVirtual
             // 
             // _pilotsSolutionsSideBar
             // 
-            this._pilotsSolutionsSideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
+            this._pilotsSolutionsSideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(10)))));
             this._pilotsSolutionsSideBar.BackColor = System.Drawing.Color.Transparent;
             this._pilotsSolutionsSideBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this._pilotsSolutionsSideBar.BorderRadius = 0;
@@ -377,14 +411,14 @@ namespace BibliotecaVirtual
             this._pilotsSolutionsSideBar.IconVisible = false;
             this._pilotsSolutionsSideBar.IconZoom = 90D;
             this._pilotsSolutionsSideBar.IsTab = false;
-            this._pilotsSolutionsSideBar.Location = new System.Drawing.Point(0, 318);
-            this._pilotsSolutionsSideBar.Margin = new System.Windows.Forms.Padding(5);
+            this._pilotsSolutionsSideBar.Location = new System.Drawing.Point(0, 274);
+            this._pilotsSolutionsSideBar.Margin = new System.Windows.Forms.Padding(4);
             this._pilotsSolutionsSideBar.Name = "_pilotsSolutionsSideBar";
             this._pilotsSolutionsSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._pilotsSolutionsSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._pilotsSolutionsSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._pilotsSolutionsSideBar.selected = false;
-            this._pilotsSolutionsSideBar.Size = new System.Drawing.Size(263, 36);
+            this._pilotsSolutionsSideBar.Size = new System.Drawing.Size(197, 29);
             this._pilotsSolutionsSideBar.TabIndex = 6;
             this._pilotsSolutionsSideBar.Text = "Implementación de soluciones pilotos";
             this._pilotsSolutionsSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -394,7 +428,7 @@ namespace BibliotecaVirtual
             // 
             // _componentsSideBar
             // 
-            this._componentsSideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
+            this._componentsSideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(10)))));
             this._componentsSideBar.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this._componentsSideBar.BackColor = System.Drawing.Color.Transparent;
             this._componentsSideBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -414,14 +448,14 @@ namespace BibliotecaVirtual
             this._componentsSideBar.IconVisible = false;
             this._componentsSideBar.IconZoom = 90D;
             this._componentsSideBar.IsTab = false;
-            this._componentsSideBar.Location = new System.Drawing.Point(0, 250);
-            this._componentsSideBar.Margin = new System.Windows.Forms.Padding(5);
+            this._componentsSideBar.Location = new System.Drawing.Point(0, 219);
+            this._componentsSideBar.Margin = new System.Windows.Forms.Padding(4);
             this._componentsSideBar.Name = "_componentsSideBar";
             this._componentsSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._componentsSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._componentsSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._componentsSideBar.selected = false;
-            this._componentsSideBar.Size = new System.Drawing.Size(263, 36);
+            this._componentsSideBar.Size = new System.Drawing.Size(197, 29);
             this._componentsSideBar.TabIndex = 5;
             this._componentsSideBar.Text = "Informes por Componentes";
             this._componentsSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -432,7 +466,7 @@ namespace BibliotecaVirtual
             // 
             // _sumarySideBar
             // 
-            this._sumarySideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
+            this._sumarySideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(10)))));
             this._sumarySideBar.BackColor = System.Drawing.Color.Transparent;
             this._sumarySideBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this._sumarySideBar.BorderRadius = 0;
@@ -451,14 +485,14 @@ namespace BibliotecaVirtual
             this._sumarySideBar.IconVisible = false;
             this._sumarySideBar.IconZoom = 90D;
             this._sumarySideBar.IsTab = false;
-            this._sumarySideBar.Location = new System.Drawing.Point(0, 204);
-            this._sumarySideBar.Margin = new System.Windows.Forms.Padding(5);
+            this._sumarySideBar.Location = new System.Drawing.Point(0, 182);
+            this._sumarySideBar.Margin = new System.Windows.Forms.Padding(4);
             this._sumarySideBar.Name = "_sumarySideBar";
             this._sumarySideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._sumarySideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._sumarySideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._sumarySideBar.selected = false;
-            this._sumarySideBar.Size = new System.Drawing.Size(263, 36);
+            this._sumarySideBar.Size = new System.Drawing.Size(197, 29);
             this._sumarySideBar.TabIndex = 4;
             this._sumarySideBar.Text = "Resumen Ejecutivo";
             this._sumarySideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -468,7 +502,7 @@ namespace BibliotecaVirtual
             // 
             // _reportEndSideBar
             // 
-            this._reportEndSideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
+            this._reportEndSideBar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(10)))));
             this._reportEndSideBar.BackColor = System.Drawing.Color.Transparent;
             this._reportEndSideBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this._reportEndSideBar.BorderRadius = 0;
@@ -487,14 +521,14 @@ namespace BibliotecaVirtual
             this._reportEndSideBar.IconVisible = false;
             this._reportEndSideBar.IconZoom = 90D;
             this._reportEndSideBar.IsTab = false;
-            this._reportEndSideBar.Location = new System.Drawing.Point(0, 150);
-            this._reportEndSideBar.Margin = new System.Windows.Forms.Padding(5);
+            this._reportEndSideBar.Location = new System.Drawing.Point(0, 139);
+            this._reportEndSideBar.Margin = new System.Windows.Forms.Padding(4);
             this._reportEndSideBar.Name = "_reportEndSideBar";
             this._reportEndSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._reportEndSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._reportEndSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._reportEndSideBar.selected = false;
-            this._reportEndSideBar.Size = new System.Drawing.Size(263, 36);
+            this._reportEndSideBar.Size = new System.Drawing.Size(197, 29);
             this._reportEndSideBar.TabIndex = 3;
             this._reportEndSideBar.Text = "Informe Final";
             this._reportEndSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -506,91 +540,11 @@ namespace BibliotecaVirtual
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel2.Location = new System.Drawing.Point(300, 46);
-            this.metroLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel2.Location = new System.Drawing.Point(225, 37);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(347, 25);
+            this.metroLabel2.Size = new System.Drawing.Size(333, 25);
             this.metroLabel2.TabIndex = 16;
             this.metroLabel2.Text = "Economía y Finanzas para la Biodiversidad";
-            // 
-            // _radioComponent_1
-            // 
-            this._radioComponent_1.AutoSize = true;
-            this._radioComponent_1.Location = new System.Drawing.Point(761, 292);
-            this._radioComponent_1.Margin = new System.Windows.Forms.Padding(4);
-            this._radioComponent_1.Name = "_radioComponent_1";
-            this._radioComponent_1.Size = new System.Drawing.Size(110, 17);
-            this._radioComponent_1.TabIndex = 17;
-            this._radioComponent_1.Text = "Componente 1";
-            this._radioComponent_1.UseSelectable = true;
-            // 
-            // _radioComponent_2
-            // 
-            this._radioComponent_2.AutoSize = true;
-            this._radioComponent_2.Location = new System.Drawing.Point(761, 318);
-            this._radioComponent_2.Margin = new System.Windows.Forms.Padding(4);
-            this._radioComponent_2.Name = "_radioComponent_2";
-            this._radioComponent_2.Size = new System.Drawing.Size(110, 17);
-            this._radioComponent_2.TabIndex = 18;
-            this._radioComponent_2.Text = "Componente 2";
-            this._radioComponent_2.UseSelectable = true;
-            // 
-            // _radioComponent_3
-            // 
-            this._radioComponent_3.AutoSize = true;
-            this._radioComponent_3.Location = new System.Drawing.Point(761, 343);
-            this._radioComponent_3.Margin = new System.Windows.Forms.Padding(4);
-            this._radioComponent_3.Name = "_radioComponent_3";
-            this._radioComponent_3.Size = new System.Drawing.Size(110, 17);
-            this._radioComponent_3.TabIndex = 19;
-            this._radioComponent_3.Text = "Componente 3";
-            this._radioComponent_3.UseSelectable = true;
-            // 
-            // _radioComponent_4
-            // 
-            this._radioComponent_4.AutoSize = true;
-            this._radioComponent_4.Location = new System.Drawing.Point(761, 368);
-            this._radioComponent_4.Margin = new System.Windows.Forms.Padding(4);
-            this._radioComponent_4.Name = "_radioComponent_4";
-            this._radioComponent_4.Size = new System.Drawing.Size(110, 17);
-            this._radioComponent_4.TabIndex = 20;
-            this._radioComponent_4.Text = "Componente 4";
-            this._radioComponent_4.UseSelectable = true;
-            // 
-            // _radioMultimedia
-            // 
-            this._radioMultimedia.AutoSize = true;
-            this._radioMultimedia.Location = new System.Drawing.Point(597, 343);
-            this._radioMultimedia.Margin = new System.Windows.Forms.Padding(4);
-            this._radioMultimedia.Name = "_radioMultimedia";
-            this._radioMultimedia.Size = new System.Drawing.Size(89, 17);
-            this._radioMultimedia.TabIndex = 21;
-            this._radioMultimedia.Text = "Multimedia";
-            this._radioMultimedia.UseSelectable = true;
-            // 
-            // _radioComponents
-            // 
-            this._radioComponents.AutoSize = true;
-            this._radioComponents.Location = new System.Drawing.Point(597, 318);
-            this._radioComponents.Margin = new System.Windows.Forms.Padding(4);
-            this._radioComponents.Name = "_radioComponents";
-            this._radioComponents.Size = new System.Drawing.Size(105, 17);
-            this._radioComponents.TabIndex = 22;
-            this._radioComponents.Text = "Componentes";
-            this._radioComponents.UseSelectable = true;
-            // 
-            // _radioAll
-            // 
-            this._radioAll.AutoSize = true;
-            this._radioAll.Checked = true;
-            this._radioAll.Location = new System.Drawing.Point(597, 292);
-            this._radioAll.Margin = new System.Windows.Forms.Padding(4);
-            this._radioAll.Name = "_radioAll";
-            this._radioAll.Size = new System.Drawing.Size(54, 17);
-            this._radioAll.TabIndex = 23;
-            this._radioAll.TabStop = true;
-            this._radioAll.Text = "Todo";
-            this._radioAll.UseSelectable = true;
             // 
             // ctxMenuComponentes
             // 
@@ -604,7 +558,7 @@ namespace BibliotecaVirtual
             this.componente4ToolStripMenuItem});
             this.ctxMenuComponentes.Name = "ctxMenuComponentes";
             this.ctxMenuComponentes.ShowImageMargin = false;
-            this.ctxMenuComponentes.Size = new System.Drawing.Size(151, 120);
+            this.ctxMenuComponentes.Size = new System.Drawing.Size(119, 92);
             this.ctxMenuComponentes.MouseLeave += new System.EventHandler(this.ctxMenuComponentes_MouseLeave);
             this.ctxMenuComponentes.MouseHover += new System.EventHandler(this.ctxMenuComponentes_MouseHover);
             // 
@@ -614,7 +568,7 @@ namespace BibliotecaVirtual
             this.componente1ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.componente1ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.componente1ToolStripMenuItem.Name = "componente1ToolStripMenuItem";
-            this.componente1ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.componente1ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.componente1ToolStripMenuItem.Text = "Componente 1";
             this.componente1ToolStripMenuItem.Click += new System.EventHandler(this.componente1ToolStripMenuItem_Click);
             // 
@@ -624,7 +578,7 @@ namespace BibliotecaVirtual
             this.componente2ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.componente2ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.componente2ToolStripMenuItem.Name = "componente2ToolStripMenuItem";
-            this.componente2ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.componente2ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.componente2ToolStripMenuItem.Text = "Componente 2";
             this.componente2ToolStripMenuItem.Click += new System.EventHandler(this.componente2ToolStripMenuItem_Click);
             // 
@@ -634,7 +588,7 @@ namespace BibliotecaVirtual
             this.componente3ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.componente3ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.componente3ToolStripMenuItem.Name = "componente3ToolStripMenuItem";
-            this.componente3ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.componente3ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.componente3ToolStripMenuItem.Text = "Componente 3";
             this.componente3ToolStripMenuItem.Click += new System.EventHandler(this.componente3ToolStripMenuItem_Click);
             // 
@@ -644,22 +598,308 @@ namespace BibliotecaVirtual
             this.componente4ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.componente4ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.componente4ToolStripMenuItem.Name = "componente4ToolStripMenuItem";
-            this.componente4ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.componente4ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.componente4ToolStripMenuItem.Text = "Componente 4";
             this.componente4ToolStripMenuItem.Click += new System.EventHandler(this.componente4ToolStripMenuItem_Click);
             // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.metroLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.metroLabel3.Location = new System.Drawing.Point(929, 24);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(54, 19);
+            this.metroLabel3.TabIndex = 24;
+            this.metroLabel3.Text = "About 1";
+            this.metroLabel3.UseCustomBackColor = true;
+            this.metroLabel3.UseCustomForeColor = true;
+            this.metroLabel3.Click += new System.EventHandler(this.metroLabel3_Click);
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.metroLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.metroLabel4.Location = new System.Drawing.Point(867, 24);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(56, 19);
+            this.metroLabel4.TabIndex = 25;
+            this.metroLabel4.Text = "About 2";
+            this.metroLabel4.UseCustomBackColor = true;
+            this.metroLabel4.UseCustomForeColor = true;
+            this.metroLabel4.Click += new System.EventHandler(this.metroLabel4_Click);
+            // 
+            // allBtn
+            // 
+            this.allBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.allBtn.BackColor = System.Drawing.Color.SeaGreen;
+            this.allBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.allBtn.BorderRadius = 0;
+            this.allBtn.ButtonText = "Todo";
+            this.allBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.allBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.allBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.allBtn.Iconimage = null;
+            this.allBtn.Iconimage_right = null;
+            this.allBtn.Iconimage_right_Selected = null;
+            this.allBtn.Iconimage_Selected = null;
+            this.allBtn.IconMarginLeft = 0;
+            this.allBtn.IconMarginRight = 0;
+            this.allBtn.IconRightVisible = true;
+            this.allBtn.IconRightZoom = 0D;
+            this.allBtn.IconVisible = true;
+            this.allBtn.IconZoom = 90D;
+            this.allBtn.IsTab = false;
+            this.allBtn.Location = new System.Drawing.Point(230, 206);
+            this.allBtn.Name = "allBtn";
+            this.allBtn.Normalcolor = System.Drawing.Color.SeaGreen;
+            this.allBtn.OnHovercolor = System.Drawing.Color.SeaGreen;
+            this.allBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.allBtn.selected = false;
+            this.allBtn.Size = new System.Drawing.Size(217, 72);
+            this.allBtn.TabIndex = 26;
+            this.allBtn.Text = "Todo";
+            this.allBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.allBtn.Textcolor = System.Drawing.Color.White;
+            this.allBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.allBtn.Click += new System.EventHandler(this.allBtn_Click);
+            // 
+            // componentsBtn
+            // 
+            this.componentsBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.componentsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.componentsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.componentsBtn.BorderRadius = 0;
+            this.componentsBtn.ButtonText = "Componentes";
+            this.componentsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.componentsBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.componentsBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.componentsBtn.Iconimage = null;
+            this.componentsBtn.Iconimage_right = null;
+            this.componentsBtn.Iconimage_right_Selected = null;
+            this.componentsBtn.Iconimage_Selected = null;
+            this.componentsBtn.IconMarginLeft = 0;
+            this.componentsBtn.IconMarginRight = 0;
+            this.componentsBtn.IconRightVisible = true;
+            this.componentsBtn.IconRightZoom = 0D;
+            this.componentsBtn.IconVisible = true;
+            this.componentsBtn.IconZoom = 90D;
+            this.componentsBtn.IsTab = false;
+            this.componentsBtn.Location = new System.Drawing.Point(500, 206);
+            this.componentsBtn.Name = "componentsBtn";
+            this.componentsBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.componentsBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.componentsBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.componentsBtn.selected = false;
+            this.componentsBtn.Size = new System.Drawing.Size(217, 72);
+            this.componentsBtn.TabIndex = 27;
+            this.componentsBtn.Text = "Componentes";
+            this.componentsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.componentsBtn.Textcolor = System.Drawing.Color.White;
+            this.componentsBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.componentsBtn.Click += new System.EventHandler(this.componentsBtn_Click);
+            // 
+            // appBtn
+            // 
+            this.appBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.appBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.appBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.appBtn.BorderRadius = 0;
+            this.appBtn.ButtonText = "Multimedia";
+            this.appBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.appBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.appBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.appBtn.Iconimage = null;
+            this.appBtn.Iconimage_right = null;
+            this.appBtn.Iconimage_right_Selected = null;
+            this.appBtn.Iconimage_Selected = null;
+            this.appBtn.IconMarginLeft = 0;
+            this.appBtn.IconMarginRight = 0;
+            this.appBtn.IconRightVisible = true;
+            this.appBtn.IconRightZoom = 0D;
+            this.appBtn.IconVisible = true;
+            this.appBtn.IconZoom = 90D;
+            this.appBtn.IsTab = false;
+            this.appBtn.Location = new System.Drawing.Point(760, 206);
+            this.appBtn.Name = "appBtn";
+            this.appBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.appBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.appBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.appBtn.selected = false;
+            this.appBtn.Size = new System.Drawing.Size(217, 72);
+            this.appBtn.TabIndex = 28;
+            this.appBtn.Text = "Multimedia";
+            this.appBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.appBtn.Textcolor = System.Drawing.Color.White;
+            this.appBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.appBtn.Click += new System.EventHandler(this.appBtn_Click);
+            // 
+            // componentABtn
+            // 
+            this.componentABtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.componentABtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.componentABtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.componentABtn.BorderRadius = 0;
+            this.componentABtn.ButtonText = "Componente 1";
+            this.componentABtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.componentABtn.DisabledColor = System.Drawing.Color.Gray;
+            this.componentABtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.componentABtn.Iconimage = null;
+            this.componentABtn.Iconimage_right = null;
+            this.componentABtn.Iconimage_right_Selected = null;
+            this.componentABtn.Iconimage_Selected = null;
+            this.componentABtn.IconMarginLeft = 0;
+            this.componentABtn.IconMarginRight = 0;
+            this.componentABtn.IconRightVisible = true;
+            this.componentABtn.IconRightZoom = 0D;
+            this.componentABtn.IconVisible = true;
+            this.componentABtn.IconZoom = 90D;
+            this.componentABtn.IsTab = false;
+            this.componentABtn.Location = new System.Drawing.Point(246, 326);
+            this.componentABtn.Name = "componentABtn";
+            this.componentABtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.componentABtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.componentABtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.componentABtn.selected = false;
+            this.componentABtn.Size = new System.Drawing.Size(131, 72);
+            this.componentABtn.TabIndex = 29;
+            this.componentABtn.Text = "Componente 1";
+            this.componentABtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.componentABtn.Textcolor = System.Drawing.Color.White;
+            this.componentABtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.componentABtn.Click += new System.EventHandler(this.componentABtn_Click);
+            // 
+            // componentBBtn
+            // 
+            this.componentBBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.componentBBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.componentBBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.componentBBtn.BorderRadius = 0;
+            this.componentBBtn.ButtonText = "Componente 2";
+            this.componentBBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.componentBBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.componentBBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.componentBBtn.Iconimage = null;
+            this.componentBBtn.Iconimage_right = null;
+            this.componentBBtn.Iconimage_right_Selected = null;
+            this.componentBBtn.Iconimage_Selected = null;
+            this.componentBBtn.IconMarginLeft = 0;
+            this.componentBBtn.IconMarginRight = 0;
+            this.componentBBtn.IconRightVisible = true;
+            this.componentBBtn.IconRightZoom = 0D;
+            this.componentBBtn.IconVisible = true;
+            this.componentBBtn.IconZoom = 90D;
+            this.componentBBtn.IsTab = false;
+            this.componentBBtn.Location = new System.Drawing.Point(432, 326);
+            this.componentBBtn.Name = "componentBBtn";
+            this.componentBBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.componentBBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.componentBBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.componentBBtn.selected = false;
+            this.componentBBtn.Size = new System.Drawing.Size(131, 72);
+            this.componentBBtn.TabIndex = 30;
+            this.componentBBtn.Text = "Componente 2";
+            this.componentBBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.componentBBtn.Textcolor = System.Drawing.Color.White;
+            this.componentBBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.componentBBtn.Click += new System.EventHandler(this.componentBBtn_Click);
+            // 
+            // componentCBtn
+            // 
+            this.componentCBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.componentCBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.componentCBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.componentCBtn.BorderRadius = 0;
+            this.componentCBtn.ButtonText = "Componente 3";
+            this.componentCBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.componentCBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.componentCBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.componentCBtn.Iconimage = null;
+            this.componentCBtn.Iconimage_right = null;
+            this.componentCBtn.Iconimage_right_Selected = null;
+            this.componentCBtn.Iconimage_Selected = null;
+            this.componentCBtn.IconMarginLeft = 0;
+            this.componentCBtn.IconMarginRight = 0;
+            this.componentCBtn.IconRightVisible = true;
+            this.componentCBtn.IconRightZoom = 0D;
+            this.componentCBtn.IconVisible = true;
+            this.componentCBtn.IconZoom = 90D;
+            this.componentCBtn.IsTab = false;
+            this.componentCBtn.Location = new System.Drawing.Point(618, 326);
+            this.componentCBtn.Name = "componentCBtn";
+            this.componentCBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.componentCBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.componentCBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.componentCBtn.selected = false;
+            this.componentCBtn.Size = new System.Drawing.Size(131, 72);
+            this.componentCBtn.TabIndex = 31;
+            this.componentCBtn.Text = "Componente 3";
+            this.componentCBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.componentCBtn.Textcolor = System.Drawing.Color.White;
+            this.componentCBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.componentCBtn.Click += new System.EventHandler(this.componentCBtn_Click);
+            // 
+            // componentDBtn
+            // 
+            this.componentDBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.componentDBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.componentDBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.componentDBtn.BorderRadius = 0;
+            this.componentDBtn.ButtonText = "Componente 4";
+            this.componentDBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.componentDBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.componentDBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.componentDBtn.Iconimage = null;
+            this.componentDBtn.Iconimage_right = null;
+            this.componentDBtn.Iconimage_right_Selected = null;
+            this.componentDBtn.Iconimage_Selected = null;
+            this.componentDBtn.IconMarginLeft = 0;
+            this.componentDBtn.IconMarginRight = 0;
+            this.componentDBtn.IconRightVisible = true;
+            this.componentDBtn.IconRightZoom = 0D;
+            this.componentDBtn.IconVisible = true;
+            this.componentDBtn.IconZoom = 90D;
+            this.componentDBtn.IsTab = false;
+            this.componentDBtn.Location = new System.Drawing.Point(797, 326);
+            this.componentDBtn.Name = "componentDBtn";
+            this.componentDBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.componentDBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
+            this.componentDBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.componentDBtn.selected = false;
+            this.componentDBtn.Size = new System.Drawing.Size(131, 72);
+            this.componentDBtn.TabIndex = 32;
+            this.componentDBtn.Text = "Componente 4";
+            this.componentDBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.componentDBtn.Textcolor = System.Drawing.Color.White;
+            this.componentDBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.componentDBtn.Click += new System.EventHandler(this.componentDBtn_Click);
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel5.Location = new System.Drawing.Point(230, 173);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(31, 19);
+            this.metroLabel5.TabIndex = 33;
+            this.metroLabel5.Text = "En :";
+            // 
             // FormStart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1327, 738);
-            this.Controls.Add(this._radioAll);
-            this.Controls.Add(this._radioComponents);
-            this.Controls.Add(this._radioMultimedia);
-            this.Controls.Add(this._radioComponent_4);
-            this.Controls.Add(this._radioComponent_3);
-            this.Controls.Add(this._radioComponent_2);
-            this.Controls.Add(this._radioComponent_1);
+            this.ClientSize = new System.Drawing.Size(995, 600);
+            this.Controls.Add(this.metroLabel5);
+            this.Controls.Add(this.componentDBtn);
+            this.Controls.Add(this.componentCBtn);
+            this.Controls.Add(this.componentBBtn);
+            this.Controls.Add(this.componentABtn);
+            this.Controls.Add(this.appBtn);
+            this.Controls.Add(this.componentsBtn);
+            this.Controls.Add(this.allBtn);
+            this.Controls.Add(this.metroLabel4);
+            this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.metroLabel1);
@@ -667,10 +907,8 @@ namespace BibliotecaVirtual
             this.Controls.Add(this.metroTextBoxSearch);
             this.Controls.Add(this.pictureBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FormStart";
-            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Resizable = false;
             this.TransparencyKey = System.Drawing.Color.SteelBlue;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormStart_FormClosed);
@@ -702,19 +940,23 @@ namespace BibliotecaVirtual
         private Bunifu.Framework.UI.BunifuFlatButton _pilotsSolutionsSideBar;
         private Bunifu.Framework.UI.BunifuFlatButton _componentsSideBar;
         private Bunifu.Framework.UI.BunifuFlatButton _sumarySideBar;
-        private MetroFramework.Controls.MetroRadioButton _radioComponent_1;
-        private MetroFramework.Controls.MetroRadioButton _radioComponent_2;
-        private MetroFramework.Controls.MetroRadioButton _radioComponent_3;
-        private MetroFramework.Controls.MetroRadioButton _radioComponent_4;
-        private MetroFramework.Controls.MetroRadioButton _radioMultimedia;
         private Bunifu.Framework.UI.BunifuFlatButton _virtualBiblioSideBar;
-        private MetroFramework.Controls.MetroRadioButton _radioComponents;
-        private MetroFramework.Controls.MetroRadioButton _radioAll;
         private MetroFramework.Controls.MetroContextMenu ctxMenuComponentes;
         private System.Windows.Forms.ToolStripMenuItem componente1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem componente2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem componente3ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem componente4ToolStripMenuItem;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private Bunifu.Framework.UI.BunifuFlatButton allBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton componentsBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton appBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton componentABtn;
+        private Bunifu.Framework.UI.BunifuFlatButton componentBBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton componentCBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton componentDBtn;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
     }
 }
 
