@@ -68,10 +68,10 @@
             // 
             // 
             this.metroTextBoxSearch.CustomButton.Image = null;
-            this.metroTextBoxSearch.CustomButton.Location = new System.Drawing.Point(300, 2);
-            this.metroTextBoxSearch.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTextBoxSearch.CustomButton.Location = new System.Drawing.Point(225, 2);
+            this.metroTextBoxSearch.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.metroTextBoxSearch.CustomButton.Name = "";
-            this.metroTextBoxSearch.CustomButton.Size = new System.Drawing.Size(33, 31);
+            this.metroTextBoxSearch.CustomButton.Size = new System.Drawing.Size(25, 25);
             this.metroTextBoxSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBoxSearch.CustomButton.TabIndex = 1;
             this.metroTextBoxSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -79,7 +79,7 @@
             this.metroTextBoxSearch.CustomButton.Visible = false;
             this.metroTextBoxSearch.Lines = new string[0];
             this.metroTextBoxSearch.Location = new System.Drawing.Point(759, 55);
-            this.metroTextBoxSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTextBoxSearch.Margin = new System.Windows.Forms.Padding(4);
             this.metroTextBoxSearch.MaxLength = 32767;
             this.metroTextBoxSearch.Name = "metroTextBoxSearch";
             this.metroTextBoxSearch.PasswordChar = '\0';
@@ -136,7 +136,7 @@
             this.metroGridSearchRes.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGridSearchRes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.metroGridSearchRes.Location = new System.Drawing.Point(56, 165);
-            this.metroGridSearchRes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroGridSearchRes.Margin = new System.Windows.Forms.Padding(4);
             this.metroGridSearchRes.MultiSelect = false;
             this.metroGridSearchRes.Name = "metroGridSearchRes";
             this.metroGridSearchRes.ReadOnly = true;
@@ -168,9 +168,9 @@
             this.metroTabControl2.Controls.Add(this.result);
             this.metroTabControl2.Controls.Add(this.administrator);
             this.metroTabControl2.Location = new System.Drawing.Point(0, 43);
-            this.metroTabControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTabControl2.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabControl2.Name = "metroTabControl2";
-            this.metroTabControl2.SelectedIndex = 0;
+            this.metroTabControl2.SelectedIndex = 4;
             this.metroTabControl2.Size = new System.Drawing.Size(1067, 700);
             this.metroTabControl2.TabIndex = 23;
             this.metroTabControl2.UseSelectable = true;
@@ -180,7 +180,7 @@
             // 
             this.thesis.BackColor = System.Drawing.Color.White;
             this.thesis.Location = new System.Drawing.Point(4, 38);
-            this.thesis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.thesis.Margin = new System.Windows.Forms.Padding(4);
             this.thesis.Name = "thesis";
             this.thesis.Size = new System.Drawing.Size(1059, 658);
             this.thesis.TabIndex = 4;
@@ -190,7 +190,7 @@
             // 
             this.book.BackColor = System.Drawing.Color.White;
             this.book.Location = new System.Drawing.Point(4, 38);
-            this.book.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.book.Margin = new System.Windows.Forms.Padding(4);
             this.book.Name = "book";
             this.book.Size = new System.Drawing.Size(1059, 658);
             this.book.TabIndex = 5;
@@ -200,7 +200,7 @@
             // 
             this.article.BackColor = System.Drawing.Color.White;
             this.article.Location = new System.Drawing.Point(4, 38);
-            this.article.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.article.Margin = new System.Windows.Forms.Padding(4);
             this.article.Name = "article";
             this.article.Size = new System.Drawing.Size(1059, 658);
             this.article.TabIndex = 6;
@@ -210,7 +210,7 @@
             // 
             this.result.BackColor = System.Drawing.Color.White;
             this.result.Location = new System.Drawing.Point(4, 38);
-            this.result.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.result.Margin = new System.Windows.Forms.Padding(4);
             this.result.Name = "result";
             this.result.Size = new System.Drawing.Size(1059, 658);
             this.result.TabIndex = 3;
@@ -220,7 +220,7 @@
             // 
             this.administrator.BackColor = System.Drawing.Color.White;
             this.administrator.Location = new System.Drawing.Point(4, 38);
-            this.administrator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.administrator.Margin = new System.Windows.Forms.Padding(4);
             this.administrator.Name = "administrator";
             this.administrator.Size = new System.Drawing.Size(1059, 658);
             this.administrator.TabIndex = 7;
@@ -234,7 +234,7 @@
             this.metroPanelNav.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanelNav.HorizontalScrollbarSize = 12;
             this.metroPanelNav.Location = new System.Drawing.Point(-9, 92);
-            this.metroPanelNav.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroPanelNav.Margin = new System.Windows.Forms.Padding(4);
             this.metroPanelNav.Name = "metroPanelNav";
             this.metroPanelNav.Size = new System.Drawing.Size(1091, 46);
             this.metroPanelNav.TabIndex = 19;
@@ -268,7 +268,7 @@
             this.pictureBoxSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxSearch.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBoxSearch.Location = new System.Drawing.Point(983, 59);
-            this.pictureBoxSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxSearch.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxSearch.Name = "pictureBoxSearch";
             this.pictureBoxSearch.Size = new System.Drawing.Size(24, 22);
             this.pictureBoxSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -284,7 +284,7 @@
             this.CreatePictureBox.BackgroundImage = global::BibliotecaVirtual.Properties.Resources.plusFloat;
             this.CreatePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CreatePictureBox.Location = new System.Drawing.Point(967, 537);
-            this.CreatePictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreatePictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.CreatePictureBox.Name = "CreatePictureBox";
             this.CreatePictureBox.Size = new System.Drawing.Size(85, 76);
             this.CreatePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -297,7 +297,7 @@
             // 
             this.loginPictureBox.Image = global::BibliotecaVirtual.Properties.Resources.login;
             this.loginPictureBox.Location = new System.Drawing.Point(1017, 49);
-            this.loginPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.loginPictureBox.Name = "loginPictureBox";
             this.loginPictureBox.Size = new System.Drawing.Size(37, 34);
             this.loginPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -310,7 +310,7 @@
             this.pictureBox1.BackgroundImage = global::BibliotecaVirtual.Properties.Resources.footer;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(0, 615);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1067, 123);
             this.pictureBox1.TabIndex = 33;
@@ -320,7 +320,7 @@
             // 
             this.ErrorMessagePictureBox.Image = global::BibliotecaVirtual.Properties.Resources.emoticon;
             this.ErrorMessagePictureBox.Location = new System.Drawing.Point(455, 222);
-            this.ErrorMessagePictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ErrorMessagePictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.ErrorMessagePictureBox.Name = "ErrorMessagePictureBox";
             this.ErrorMessagePictureBox.Size = new System.Drawing.Size(141, 124);
             this.ErrorMessagePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -345,7 +345,7 @@
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::BibliotecaVirtual.Properties.Resources.home;
             this.pictureBox2.Location = new System.Drawing.Point(12, 97);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(37, 34);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -371,7 +371,7 @@
             this.Controls.Add(this.metroLabelSearch);
             this.Controls.Add(this.metroTabControl2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FormSearchingResult";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
