@@ -63,7 +63,7 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
                     results = SearchInPilotSites(key);
                     break;
                 case 7:
-                    results = AllComponents();
+                    results = AllComponents(key);
                     break;
                 default:
                     results = SearchInAllFiles(key);
@@ -80,13 +80,13 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             return SearchInAllDocuments(key, allFolders);
         }
 
-        private List<Documents> AllComponents()
+        private List<Documents> AllComponents(string key)
         {
             var results = new List<Documents>();
-            results.AddRange(SearchInComponent1(""));
-           results.AddRange(SearchInComponent2(""));
-           results.AddRange(SearchInComponent3(""));
-           results.AddRange(SearchInComponent4(""));
+            results.AddRange(SearchInComponent1(key));
+           results.AddRange(SearchInComponent2(key));
+           results.AddRange(SearchInComponent3(key));
+           results.AddRange(SearchInComponent4(key));
             return results;
         }
 
