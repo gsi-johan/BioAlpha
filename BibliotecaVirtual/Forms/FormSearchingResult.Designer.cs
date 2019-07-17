@@ -40,7 +40,6 @@
             this.book = new System.Windows.Forms.TabPage();
             this.article = new System.Windows.Forms.TabPage();
             this.result = new System.Windows.Forms.TabPage();
-            this.administrator = new System.Windows.Forms.TabPage();
             this.metroPanelNav = new MetroFramework.Controls.MetroPanel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.CantResultadoMetroLabel = new MetroFramework.Controls.MetroLabel();
@@ -51,6 +50,7 @@
             this.ErrorMessagePictureBox = new System.Windows.Forms.PictureBox();
             this.ErrorMessageMetroLabel = new MetroFramework.Controls.MetroLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.administrator = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.metroGridSearchRes)).BeginInit();
             this.metroTabControl2.SuspendLayout();
             this.metroPanelNav.SuspendLayout();
@@ -167,10 +167,10 @@
             this.metroTabControl2.Controls.Add(this.article);
             this.metroTabControl2.Controls.Add(this.result);
             this.metroTabControl2.Controls.Add(this.administrator);
-            this.metroTabControl2.Location = new System.Drawing.Point(0, 43);
+            this.metroTabControl2.Location = new System.Drawing.Point(0, 38);
             this.metroTabControl2.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabControl2.Name = "metroTabControl2";
-            this.metroTabControl2.SelectedIndex = 4;
+            this.metroTabControl2.SelectedIndex = 0;
             this.metroTabControl2.Size = new System.Drawing.Size(1067, 700);
             this.metroTabControl2.TabIndex = 23;
             this.metroTabControl2.UseSelectable = true;
@@ -215,16 +215,6 @@
             this.result.Size = new System.Drawing.Size(1059, 658);
             this.result.TabIndex = 3;
             this.result.Text = "Todos";
-            // 
-            // administrator
-            // 
-            this.administrator.BackColor = System.Drawing.Color.White;
-            this.administrator.Location = new System.Drawing.Point(4, 38);
-            this.administrator.Margin = new System.Windows.Forms.Padding(4);
-            this.administrator.Name = "administrator";
-            this.administrator.Size = new System.Drawing.Size(1059, 658);
-            this.administrator.TabIndex = 7;
-            this.administrator.Text = "Administración";
             // 
             // metroPanelNav
             // 
@@ -353,6 +343,14 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // administrator
+            // 
+            this.administrator.Location = new System.Drawing.Point(4, 38);
+            this.administrator.Name = "administrator";
+            this.administrator.Size = new System.Drawing.Size(1059, 658);
+            this.administrator.TabIndex = 7;
+            this.administrator.Text = "Administración";
+            // 
             // FormSearchingResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -399,13 +397,12 @@
         private MetroFramework.Controls.MetroLabel metroLabelSearch;
         private MetroFramework.Controls.MetroGrid metroGridSearchRes;
         private MetroFramework.Controls.MetroTabControl metroTabControl2;
-        private System.Windows.Forms.TabPage result;
         private System.Windows.Forms.TabPage thesis;
         private System.Windows.Forms.TabPage book;
         private System.Windows.Forms.TabPage article;
+        private System.Windows.Forms.TabPage result;
         private System.Windows.Forms.PictureBox pictureBoxSearch;
         private MetroFramework.Controls.MetroPanel metroPanelNav;
-        private System.Windows.Forms.TabPage administrator;
         private System.Windows.Forms.PictureBox CreatePictureBox;
         private System.Windows.Forms.PictureBox loginPictureBox;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -414,5 +411,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel CantResultadoMetroLabel;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TabPage administrator;
     }
 }

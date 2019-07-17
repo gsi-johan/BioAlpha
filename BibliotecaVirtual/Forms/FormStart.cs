@@ -345,7 +345,7 @@ namespace BibliotecaVirtual
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\Informe Final Componentes.pdf");
+            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\GOC-2019-O3 RC 6-2018 MINCEX-MFP Reglamento sobre Normas de Origen.pdf");
         }
 
         private void metroLabel3_Click(object sender, EventArgs e)
