@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using BibliotecaVirtual.Properties;
 using MetroFramework;
 using MetroFramework.Forms;
+using TestGallery;
 
 namespace BibliotecaVirtual.Forms.Initiative
 {
@@ -18,45 +19,31 @@ namespace BibliotecaVirtual.Forms.Initiative
         public Sites()
         {
             InitializeComponent();
+            OpenGallery();
         }
 
-        private void _pictureBFolder1_Click_1(object sender, EventArgs e)
+        private void OpenGallery()
         {
             string currentDir = Environment.CurrentDirectory;
-            string directory = currentDir + "\\Documentos\\Iniciativa_Biofin\\Pilots_Sites\\APRM P C.ZAPATA\\Mensajes comunicativos\\";
-            loadImagesFromFolder(directory);
+            string directory = "";
+            if (TabSites.SelectedIndex == 0)
+            {
+                directory = currentDir +
+                            "\\Documentos\\Iniciativa_Biofin\\Pilots_Sites\\APRM P C.ZAPATA\\Mensajes comunicativos\\";
+                LoadImagesFromFolder(directory);
+                SetGalleryReady(accordionCienaga);
+            }
+
+              
+            else
+            {
+                directory = currentDir +
+                            "\\Documentos\\Iniciativa_Biofin\\Pilots_Sites\\PN P.GUANAHACABIBES\\Mensajes comunicativos\\";
+                LoadImagesFromFolder(directory);
+                SetGalleryReady(accordionGC);
+            }
         }
 
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-            string currentDir = Environment.CurrentDirectory;
-            string directory = currentDir + "\\Documentos\\Iniciativa_Biofin\\Pilots_Sites\\PN P.GUANAHACABIBES\\Mensajes comunicativos\\";
-            loadImagesFromFolder(directory);
-        }
-
-        private void metroLabel1_Click_1(object sender, EventArgs e)
-        {
-            string currentDir = Environment.CurrentDirectory;
-            string directory = currentDir + "\\Documentos\\Iniciativa_Biofin\\Pilots_Sites\\PN P.GUANAHACABIBES\\Mensajes comunicativos\\";
-            loadImagesFromFolder(directory);
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\Pilots_Sites\\PN P.GUANAHACABIBES\\Justificacion.pdf");
-        }
-
-        private void metroLabel3_Click(object sender, EventArgs e)
-        {
-            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\Pilots_Sites\\PN P.GUANAHACABIBES\\Justificacion.pdf");
-        }
-
-        private void _labelFolder1_Click(object sender, EventArgs e)
-        {
-            string currentDir = Environment.CurrentDirectory;
-            string directory = currentDir + "\\Documentos\\Iniciativa_Biofin\\Pilots_Sites\\APRM P C.ZAPATA\\Mensajes comunicativos\\";
-            loadImagesFromFolder(directory);
-        }
         private static String[] GetFilesFrom(String searchFolder, String[] filters, bool isRecursive)
         {
             List<String> filesFound = new List<String>();
@@ -67,27 +54,18 @@ namespace BibliotecaVirtual.Forms.Initiative
             }
             return filesFound.ToArray();
         }
-        private static void loadImagesFromFolder(string imagePath)
+
+        private void LoadImagesFromFolder(string imagePath)
         {
             if (Directory.Exists(imagePath))
             {
-                var filters = new String[] { "jpg", "jpeg", "png" };
+                var filters = new String[] {"jpg", "jpeg", "png"};
                 var files = GetFilesFrom(imagePath, filters, false);
 
-                var gallery = new Gallery(files);
-                gallery.ShowDialog();
+                InsertPicturesFromGallery(files);
             }
         }
 
-        private void pictureBoxJFF1_Click(object sender, EventArgs e)
-        {
-            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\Pilots_Sites\\APRM P C.ZAPATA\\Justificacion.pdf");
-        }
-
-        private void labelJFF1_Click(object sender, EventArgs e)
-        {
-            CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\Pilots_Sites\\APRM P C.ZAPATA\\Justificacion.pdf");
-        }
         private void CheckAndOpenUrlPdf(string urlPdf)
         {
             try
@@ -114,9 +92,64 @@ namespace BibliotecaVirtual.Forms.Initiative
             }
         }
 
-        private void linkTarifas_Click(object sender, EventArgs e)
+        private void TabSites_SelectedIndexChanged(object sender, EventArgs e)
         {
+            OpenGallery();
+        }
 
+        #region Gallery
+
+        private void SetGalleryReady(ImageAccordion imageAccordion)
+        {
+            imageAccordion.SelectThumnail(0);
+            imageAccordion.HoverColor = Color.FromArgb(26, 98, 137);
+            imageAccordion.SelectedColor = Color.FromArgb(20, 71, 118);
+            imageAccordion.BackColor = Color.WhiteSmoke;
+        }
+
+        private void InsertPicturesFromGallery(string[] files)
+        {
+            ImageAccordion imageAccordion = TabSites.SelectedIndex == 0 ? accordionCienaga : accordionGC;
+            foreach (var file in files)
+            {
+                var nameIndex = file.LastIndexOf('\\') + 1;
+                string fileName = file.Substring(nameIndex, file.Length - nameIndex);
+                imageAccordion.Add(new Thumbnail(fileName, Image.FromFile(file)));
+            }
+        }
+
+
+        #endregion
+
+        private void accordionCienaga_ThumbnailChanged(int OldIndex, int NewIndex, Thumbnail thumbnail)
+        {
+            galleryCienaga.BackgroundImage = thumbnail.Image;
+        }
+
+        private void accordionGC_ThumbnailChanged(int OldIndex, int NewIndex, Thumbnail thumbnail)
+        {
+            galleryGC.BackgroundImage = thumbnail.Image;
+        }
+
+        private void Sites_Load(object sender, EventArgs e)
+        {
+            if (TabSites.SelectedIndex == 0)
+                SetGalleryReady(accordionCienaga);
+            else
+            {
+                SetGalleryReady(accordionGC);
+            }
+        }
+
+        private void metroLabel4_Click(object sender, EventArgs e)
+        {
+            if (TabSites.SelectedIndex == 0)
+                CheckAndOpenUrlPdf("\\Documentos\\Iniciativa_Biofin\\Pilots_Sites\\APRM P C.ZAPATA\\Justificacion.pdf");
+            else
+            {
+                CheckAndOpenUrlPdf(
+                    "\\Documentos\\Iniciativa_Biofin\\Pilots_Sites\\PN P.GUANAHACABIBES\\Justificacion.pdf");
+            }
         }
     }
 }

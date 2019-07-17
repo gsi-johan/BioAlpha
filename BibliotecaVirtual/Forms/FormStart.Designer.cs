@@ -79,16 +79,18 @@ namespace BibliotecaVirtual
             // 
             // 
             this.metroTextBoxSearch.CustomButton.Image = null;
-            this.metroTextBoxSearch.CustomButton.Location = new System.Drawing.Point(484, 2);
+            this.metroTextBoxSearch.CustomButton.Location = new System.Drawing.Point(863, 2);
+            this.metroTextBoxSearch.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTextBoxSearch.CustomButton.Name = "";
-            this.metroTextBoxSearch.CustomButton.Size = new System.Drawing.Size(19, 19);
+            this.metroTextBoxSearch.CustomButton.Size = new System.Drawing.Size(33, 31);
             this.metroTextBoxSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBoxSearch.CustomButton.TabIndex = 1;
             this.metroTextBoxSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBoxSearch.CustomButton.UseSelectable = true;
             this.metroTextBoxSearch.CustomButton.Visible = false;
             this.metroTextBoxSearch.Lines = new string[0];
-            this.metroTextBoxSearch.Location = new System.Drawing.Point(347, 135);
+            this.metroTextBoxSearch.Location = new System.Drawing.Point(463, 166);
+            this.metroTextBoxSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTextBoxSearch.MaxLength = 32767;
             this.metroTextBoxSearch.Name = "metroTextBoxSearch";
             this.metroTextBoxSearch.PasswordChar = '\0';
@@ -97,7 +99,7 @@ namespace BibliotecaVirtual
             this.metroTextBoxSearch.SelectionLength = 0;
             this.metroTextBoxSearch.SelectionStart = 0;
             this.metroTextBoxSearch.ShortcutsEnabled = true;
-            this.metroTextBoxSearch.Size = new System.Drawing.Size(506, 24);
+            this.metroTextBoxSearch.Size = new System.Drawing.Size(675, 30);
             this.metroTextBoxSearch.TabIndex = 8;
             this.metroTextBoxSearch.UseSelectable = true;
             this.metroTextBoxSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -109,9 +111,10 @@ namespace BibliotecaVirtual
             this.pictureBoxSearch.BackgroundImage = global::BibliotecaVirtual.Properties.Resources.search;
             this.pictureBoxSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxSearch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBoxSearch.Location = new System.Drawing.Point(831, 137);
+            this.pictureBoxSearch.Location = new System.Drawing.Point(1108, 169);
+            this.pictureBoxSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxSearch.Name = "pictureBoxSearch";
-            this.pictureBoxSearch.Size = new System.Drawing.Size(18, 18);
+            this.pictureBoxSearch.Size = new System.Drawing.Size(24, 22);
             this.pictureBoxSearch.TabIndex = 9;
             this.pictureBoxSearch.TabStop = false;
             this.pictureBoxSearch.Click += new System.EventHandler(this.pictureBoxSearch_Click);
@@ -123,8 +126,9 @@ namespace BibliotecaVirtual
             this.pictureBox1.BackgroundImage = global::BibliotecaVirtual.Properties.Resources.LogoColor;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(197, 91);
+            this.pictureBox1.Size = new System.Drawing.Size(263, 112);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -132,9 +136,10 @@ namespace BibliotecaVirtual
             // 
             this.pictureBox2.BackgroundImage = global::BibliotecaVirtual.Properties.Resources.FooterFull;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(195, 441);
+            this.pictureBox2.Location = new System.Drawing.Point(260, 543);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(800, 160);
+            this.pictureBox2.Size = new System.Drawing.Size(1067, 197);
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
             // 
@@ -142,9 +147,10 @@ namespace BibliotecaVirtual
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel1.Location = new System.Drawing.Point(352, 113);
+            this.metroLabel1.Location = new System.Drawing.Point(469, 139);
+            this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(52, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(55, 20);
             this.metroLabel1.TabIndex = 13;
             this.metroLabel1.Text = "Buscar:";
             // 
@@ -167,10 +173,11 @@ namespace BibliotecaVirtual
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(128)))), ((int)(((byte)(138)))));
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(87)))), ((int)(((byte)(146)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 5);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 6);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 100;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(197, 596);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(263, 734);
             this.bunifuGradientPanel1.TabIndex = 14;
             this.bunifuGradientPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.bunifuGradientPanel1_MouseMove);
             // 
@@ -195,14 +202,14 @@ namespace BibliotecaVirtual
             this.bunifuFlatButton1.IconVisible = false;
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(4, 101);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(5, 124);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(197, 29);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(263, 36);
             this.bunifuFlatButton1.TabIndex = 12;
             this.bunifuFlatButton1.Text = "Resoluciones";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -231,14 +238,14 @@ namespace BibliotecaVirtual
             this._virtualBiblioSideBar.IconVisible = false;
             this._virtualBiblioSideBar.IconZoom = 90D;
             this._virtualBiblioSideBar.IsTab = false;
-            this._virtualBiblioSideBar.Location = new System.Drawing.Point(-4, 513);
-            this._virtualBiblioSideBar.Margin = new System.Windows.Forms.Padding(4);
+            this._virtualBiblioSideBar.Location = new System.Drawing.Point(-5, 631);
+            this._virtualBiblioSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._virtualBiblioSideBar.Name = "_virtualBiblioSideBar";
             this._virtualBiblioSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._virtualBiblioSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._virtualBiblioSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._virtualBiblioSideBar.selected = false;
-            this._virtualBiblioSideBar.Size = new System.Drawing.Size(197, 29);
+            this._virtualBiblioSideBar.Size = new System.Drawing.Size(263, 36);
             this._virtualBiblioSideBar.TabIndex = 11;
             this._virtualBiblioSideBar.Text = "Biblioteca Virtual";
             this._virtualBiblioSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -267,14 +274,14 @@ namespace BibliotecaVirtual
             this._gallerySideBar.IconVisible = false;
             this._gallerySideBar.IconZoom = 90D;
             this._gallerySideBar.IsTab = false;
-            this._gallerySideBar.Location = new System.Drawing.Point(0, 466);
-            this._gallerySideBar.Margin = new System.Windows.Forms.Padding(4);
+            this._gallerySideBar.Location = new System.Drawing.Point(0, 574);
+            this._gallerySideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._gallerySideBar.Name = "_gallerySideBar";
             this._gallerySideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._gallerySideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._gallerySideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._gallerySideBar.selected = false;
-            this._gallerySideBar.Size = new System.Drawing.Size(197, 29);
+            this._gallerySideBar.Size = new System.Drawing.Size(263, 36);
             this._gallerySideBar.TabIndex = 10;
             this._gallerySideBar.Text = "Galeria de Fotos";
             this._gallerySideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -303,14 +310,14 @@ namespace BibliotecaVirtual
             this._lectionsSideBar.IconVisible = false;
             this._lectionsSideBar.IconZoom = 90D;
             this._lectionsSideBar.IsTab = false;
-            this._lectionsSideBar.Location = new System.Drawing.Point(0, 419);
-            this._lectionsSideBar.Margin = new System.Windows.Forms.Padding(4);
+            this._lectionsSideBar.Location = new System.Drawing.Point(0, 516);
+            this._lectionsSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._lectionsSideBar.Name = "_lectionsSideBar";
             this._lectionsSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._lectionsSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._lectionsSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._lectionsSideBar.selected = false;
-            this._lectionsSideBar.Size = new System.Drawing.Size(197, 29);
+            this._lectionsSideBar.Size = new System.Drawing.Size(263, 36);
             this._lectionsSideBar.TabIndex = 9;
             this._lectionsSideBar.Text = "Lecciones aprendidas";
             this._lectionsSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -339,14 +346,14 @@ namespace BibliotecaVirtual
             this._exitStrategiesSideBar.IconVisible = false;
             this._exitStrategiesSideBar.IconZoom = 90D;
             this._exitStrategiesSideBar.IsTab = false;
-            this._exitStrategiesSideBar.Location = new System.Drawing.Point(0, 368);
-            this._exitStrategiesSideBar.Margin = new System.Windows.Forms.Padding(4);
+            this._exitStrategiesSideBar.Location = new System.Drawing.Point(0, 453);
+            this._exitStrategiesSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._exitStrategiesSideBar.Name = "_exitStrategiesSideBar";
             this._exitStrategiesSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._exitStrategiesSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._exitStrategiesSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._exitStrategiesSideBar.selected = false;
-            this._exitStrategiesSideBar.Size = new System.Drawing.Size(197, 29);
+            this._exitStrategiesSideBar.Size = new System.Drawing.Size(263, 36);
             this._exitStrategiesSideBar.TabIndex = 8;
             this._exitStrategiesSideBar.Text = "Estrategías de salidas";
             this._exitStrategiesSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -375,14 +382,14 @@ namespace BibliotecaVirtual
             this._postersSideBar.IconVisible = false;
             this._postersSideBar.IconZoom = 90D;
             this._postersSideBar.IsTab = false;
-            this._postersSideBar.Location = new System.Drawing.Point(0, 323);
-            this._postersSideBar.Margin = new System.Windows.Forms.Padding(4);
+            this._postersSideBar.Location = new System.Drawing.Point(0, 398);
+            this._postersSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._postersSideBar.Name = "_postersSideBar";
             this._postersSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._postersSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._postersSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._postersSideBar.selected = false;
-            this._postersSideBar.Size = new System.Drawing.Size(197, 29);
+            this._postersSideBar.Size = new System.Drawing.Size(263, 36);
             this._postersSideBar.TabIndex = 7;
             this._postersSideBar.Text = "Porters";
             this._postersSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -411,14 +418,14 @@ namespace BibliotecaVirtual
             this._pilotsSolutionsSideBar.IconVisible = false;
             this._pilotsSolutionsSideBar.IconZoom = 90D;
             this._pilotsSolutionsSideBar.IsTab = false;
-            this._pilotsSolutionsSideBar.Location = new System.Drawing.Point(0, 274);
-            this._pilotsSolutionsSideBar.Margin = new System.Windows.Forms.Padding(4);
+            this._pilotsSolutionsSideBar.Location = new System.Drawing.Point(0, 337);
+            this._pilotsSolutionsSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._pilotsSolutionsSideBar.Name = "_pilotsSolutionsSideBar";
             this._pilotsSolutionsSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._pilotsSolutionsSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._pilotsSolutionsSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._pilotsSolutionsSideBar.selected = false;
-            this._pilotsSolutionsSideBar.Size = new System.Drawing.Size(197, 29);
+            this._pilotsSolutionsSideBar.Size = new System.Drawing.Size(263, 36);
             this._pilotsSolutionsSideBar.TabIndex = 6;
             this._pilotsSolutionsSideBar.Text = "Implementación de soluciones pilotos";
             this._pilotsSolutionsSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -448,14 +455,14 @@ namespace BibliotecaVirtual
             this._componentsSideBar.IconVisible = false;
             this._componentsSideBar.IconZoom = 90D;
             this._componentsSideBar.IsTab = false;
-            this._componentsSideBar.Location = new System.Drawing.Point(0, 219);
-            this._componentsSideBar.Margin = new System.Windows.Forms.Padding(4);
+            this._componentsSideBar.Location = new System.Drawing.Point(0, 270);
+            this._componentsSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._componentsSideBar.Name = "_componentsSideBar";
             this._componentsSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._componentsSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._componentsSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._componentsSideBar.selected = false;
-            this._componentsSideBar.Size = new System.Drawing.Size(197, 29);
+            this._componentsSideBar.Size = new System.Drawing.Size(263, 36);
             this._componentsSideBar.TabIndex = 5;
             this._componentsSideBar.Text = "Informes por Componentes";
             this._componentsSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -485,14 +492,14 @@ namespace BibliotecaVirtual
             this._sumarySideBar.IconVisible = false;
             this._sumarySideBar.IconZoom = 90D;
             this._sumarySideBar.IsTab = false;
-            this._sumarySideBar.Location = new System.Drawing.Point(0, 182);
-            this._sumarySideBar.Margin = new System.Windows.Forms.Padding(4);
+            this._sumarySideBar.Location = new System.Drawing.Point(0, 224);
+            this._sumarySideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._sumarySideBar.Name = "_sumarySideBar";
             this._sumarySideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._sumarySideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._sumarySideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._sumarySideBar.selected = false;
-            this._sumarySideBar.Size = new System.Drawing.Size(197, 29);
+            this._sumarySideBar.Size = new System.Drawing.Size(263, 36);
             this._sumarySideBar.TabIndex = 4;
             this._sumarySideBar.Text = "Resumen Ejecutivo";
             this._sumarySideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -521,14 +528,14 @@ namespace BibliotecaVirtual
             this._reportEndSideBar.IconVisible = false;
             this._reportEndSideBar.IconZoom = 90D;
             this._reportEndSideBar.IsTab = false;
-            this._reportEndSideBar.Location = new System.Drawing.Point(0, 139);
-            this._reportEndSideBar.Margin = new System.Windows.Forms.Padding(4);
+            this._reportEndSideBar.Location = new System.Drawing.Point(0, 171);
+            this._reportEndSideBar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this._reportEndSideBar.Name = "_reportEndSideBar";
             this._reportEndSideBar.Normalcolor = System.Drawing.Color.Transparent;
             this._reportEndSideBar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
             this._reportEndSideBar.OnHoverTextColor = System.Drawing.Color.White;
             this._reportEndSideBar.selected = false;
-            this._reportEndSideBar.Size = new System.Drawing.Size(197, 29);
+            this._reportEndSideBar.Size = new System.Drawing.Size(263, 36);
             this._reportEndSideBar.TabIndex = 3;
             this._reportEndSideBar.Text = "Informe Final";
             this._reportEndSideBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -540,9 +547,10 @@ namespace BibliotecaVirtual
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel2.Location = new System.Drawing.Point(225, 37);
+            this.metroLabel2.Location = new System.Drawing.Point(300, 46);
+            this.metroLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(333, 25);
+            this.metroLabel2.Size = new System.Drawing.Size(347, 25);
             this.metroLabel2.TabIndex = 16;
             this.metroLabel2.Text = "Economía y Finanzas para la Biodiversidad";
             // 
@@ -558,7 +566,7 @@ namespace BibliotecaVirtual
             this.componente4ToolStripMenuItem});
             this.ctxMenuComponentes.Name = "ctxMenuComponentes";
             this.ctxMenuComponentes.ShowImageMargin = false;
-            this.ctxMenuComponentes.Size = new System.Drawing.Size(119, 92);
+            this.ctxMenuComponentes.Size = new System.Drawing.Size(144, 92);
             this.ctxMenuComponentes.MouseLeave += new System.EventHandler(this.ctxMenuComponentes_MouseLeave);
             this.ctxMenuComponentes.MouseHover += new System.EventHandler(this.ctxMenuComponentes_MouseHover);
             // 
@@ -568,7 +576,7 @@ namespace BibliotecaVirtual
             this.componente1ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.componente1ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.componente1ToolStripMenuItem.Name = "componente1ToolStripMenuItem";
-            this.componente1ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.componente1ToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.componente1ToolStripMenuItem.Text = "Componente 1";
             this.componente1ToolStripMenuItem.Click += new System.EventHandler(this.componente1ToolStripMenuItem_Click);
             // 
@@ -578,7 +586,7 @@ namespace BibliotecaVirtual
             this.componente2ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.componente2ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.componente2ToolStripMenuItem.Name = "componente2ToolStripMenuItem";
-            this.componente2ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.componente2ToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.componente2ToolStripMenuItem.Text = "Componente 2";
             this.componente2ToolStripMenuItem.Click += new System.EventHandler(this.componente2ToolStripMenuItem_Click);
             // 
@@ -588,7 +596,7 @@ namespace BibliotecaVirtual
             this.componente3ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.componente3ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.componente3ToolStripMenuItem.Name = "componente3ToolStripMenuItem";
-            this.componente3ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.componente3ToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.componente3ToolStripMenuItem.Text = "Componente 3";
             this.componente3ToolStripMenuItem.Click += new System.EventHandler(this.componente3ToolStripMenuItem_Click);
             // 
@@ -598,7 +606,7 @@ namespace BibliotecaVirtual
             this.componente4ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.componente4ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.componente4ToolStripMenuItem.Name = "componente4ToolStripMenuItem";
-            this.componente4ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.componente4ToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.componente4ToolStripMenuItem.Text = "Componente 4";
             this.componente4ToolStripMenuItem.Click += new System.EventHandler(this.componente4ToolStripMenuItem_Click);
             // 
@@ -607,9 +615,10 @@ namespace BibliotecaVirtual
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
-            this.metroLabel3.Location = new System.Drawing.Point(929, 24);
+            this.metroLabel3.Location = new System.Drawing.Point(1239, 30);
+            this.metroLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(54, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(55, 20);
             this.metroLabel3.TabIndex = 24;
             this.metroLabel3.Text = "About 1";
             this.metroLabel3.UseCustomBackColor = true;
@@ -621,9 +630,10 @@ namespace BibliotecaVirtual
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
-            this.metroLabel4.Location = new System.Drawing.Point(867, 24);
+            this.metroLabel4.Location = new System.Drawing.Point(1156, 30);
+            this.metroLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(56, 19);
+            this.metroLabel4.Size = new System.Drawing.Size(58, 20);
             this.metroLabel4.TabIndex = 25;
             this.metroLabel4.Text = "About 2";
             this.metroLabel4.UseCustomBackColor = true;
@@ -651,13 +661,14 @@ namespace BibliotecaVirtual
             this.allBtn.IconVisible = true;
             this.allBtn.IconZoom = 90D;
             this.allBtn.IsTab = false;
-            this.allBtn.Location = new System.Drawing.Point(230, 206);
+            this.allBtn.Location = new System.Drawing.Point(307, 254);
+            this.allBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.allBtn.Name = "allBtn";
             this.allBtn.Normalcolor = System.Drawing.Color.SeaGreen;
             this.allBtn.OnHovercolor = System.Drawing.Color.SeaGreen;
             this.allBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.allBtn.selected = false;
-            this.allBtn.Size = new System.Drawing.Size(217, 72);
+            this.allBtn.Size = new System.Drawing.Size(289, 89);
             this.allBtn.TabIndex = 26;
             this.allBtn.Text = "Todo";
             this.allBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -686,13 +697,14 @@ namespace BibliotecaVirtual
             this.componentsBtn.IconVisible = true;
             this.componentsBtn.IconZoom = 90D;
             this.componentsBtn.IsTab = false;
-            this.componentsBtn.Location = new System.Drawing.Point(500, 206);
+            this.componentsBtn.Location = new System.Drawing.Point(667, 254);
+            this.componentsBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.componentsBtn.Name = "componentsBtn";
             this.componentsBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
             this.componentsBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
             this.componentsBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.componentsBtn.selected = false;
-            this.componentsBtn.Size = new System.Drawing.Size(217, 72);
+            this.componentsBtn.Size = new System.Drawing.Size(289, 89);
             this.componentsBtn.TabIndex = 27;
             this.componentsBtn.Text = "Componentes";
             this.componentsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -721,13 +733,14 @@ namespace BibliotecaVirtual
             this.appBtn.IconVisible = true;
             this.appBtn.IconZoom = 90D;
             this.appBtn.IsTab = false;
-            this.appBtn.Location = new System.Drawing.Point(760, 206);
+            this.appBtn.Location = new System.Drawing.Point(1013, 254);
+            this.appBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.appBtn.Name = "appBtn";
             this.appBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
             this.appBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
             this.appBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.appBtn.selected = false;
-            this.appBtn.Size = new System.Drawing.Size(217, 72);
+            this.appBtn.Size = new System.Drawing.Size(289, 89);
             this.appBtn.TabIndex = 28;
             this.appBtn.Text = "Multimedia";
             this.appBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -756,13 +769,14 @@ namespace BibliotecaVirtual
             this.componentABtn.IconVisible = true;
             this.componentABtn.IconZoom = 90D;
             this.componentABtn.IsTab = false;
-            this.componentABtn.Location = new System.Drawing.Point(246, 326);
+            this.componentABtn.Location = new System.Drawing.Point(328, 401);
+            this.componentABtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.componentABtn.Name = "componentABtn";
             this.componentABtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
             this.componentABtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
             this.componentABtn.OnHoverTextColor = System.Drawing.Color.White;
             this.componentABtn.selected = false;
-            this.componentABtn.Size = new System.Drawing.Size(131, 72);
+            this.componentABtn.Size = new System.Drawing.Size(175, 89);
             this.componentABtn.TabIndex = 29;
             this.componentABtn.Text = "Componente 1";
             this.componentABtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -791,13 +805,14 @@ namespace BibliotecaVirtual
             this.componentBBtn.IconVisible = true;
             this.componentBBtn.IconZoom = 90D;
             this.componentBBtn.IsTab = false;
-            this.componentBBtn.Location = new System.Drawing.Point(432, 326);
+            this.componentBBtn.Location = new System.Drawing.Point(576, 401);
+            this.componentBBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.componentBBtn.Name = "componentBBtn";
             this.componentBBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
             this.componentBBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
             this.componentBBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.componentBBtn.selected = false;
-            this.componentBBtn.Size = new System.Drawing.Size(131, 72);
+            this.componentBBtn.Size = new System.Drawing.Size(175, 89);
             this.componentBBtn.TabIndex = 30;
             this.componentBBtn.Text = "Componente 2";
             this.componentBBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -826,13 +841,14 @@ namespace BibliotecaVirtual
             this.componentCBtn.IconVisible = true;
             this.componentCBtn.IconZoom = 90D;
             this.componentCBtn.IsTab = false;
-            this.componentCBtn.Location = new System.Drawing.Point(618, 326);
+            this.componentCBtn.Location = new System.Drawing.Point(824, 401);
+            this.componentCBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.componentCBtn.Name = "componentCBtn";
             this.componentCBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
             this.componentCBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
             this.componentCBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.componentCBtn.selected = false;
-            this.componentCBtn.Size = new System.Drawing.Size(131, 72);
+            this.componentCBtn.Size = new System.Drawing.Size(175, 89);
             this.componentCBtn.TabIndex = 31;
             this.componentCBtn.Text = "Componente 3";
             this.componentCBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -861,13 +877,14 @@ namespace BibliotecaVirtual
             this.componentDBtn.IconVisible = true;
             this.componentDBtn.IconZoom = 90D;
             this.componentDBtn.IsTab = false;
-            this.componentDBtn.Location = new System.Drawing.Point(797, 326);
+            this.componentDBtn.Location = new System.Drawing.Point(1063, 401);
+            this.componentDBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.componentDBtn.Name = "componentDBtn";
             this.componentDBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
             this.componentDBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(115)))), ((int)(((byte)(153)))));
             this.componentDBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.componentDBtn.selected = false;
-            this.componentDBtn.Size = new System.Drawing.Size(131, 72);
+            this.componentDBtn.Size = new System.Drawing.Size(175, 89);
             this.componentDBtn.TabIndex = 32;
             this.componentDBtn.Text = "Componente 4";
             this.componentDBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -879,17 +896,18 @@ namespace BibliotecaVirtual
             // 
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel5.Location = new System.Drawing.Point(230, 173);
+            this.metroLabel5.Location = new System.Drawing.Point(307, 213);
+            this.metroLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(31, 19);
+            this.metroLabel5.Size = new System.Drawing.Size(32, 20);
             this.metroLabel5.TabIndex = 33;
             this.metroLabel5.Text = "En :";
             // 
             // FormStart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(995, 600);
+            this.ClientSize = new System.Drawing.Size(1327, 738);
             this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.componentDBtn);
             this.Controls.Add(this.componentCBtn);
@@ -907,8 +925,10 @@ namespace BibliotecaVirtual
             this.Controls.Add(this.metroTextBoxSearch);
             this.Controls.Add(this.pictureBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "FormStart";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Resizable = false;
             this.TransparencyKey = System.Drawing.Color.SteelBlue;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormStart_FormClosed);
