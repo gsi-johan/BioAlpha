@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Data;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -17,17 +18,24 @@ namespace BibliotecaVirtual.Forms.Initiative
     {
         private readonly Documents _document
             ;
+
         public ItemView(Documents documents)
         {
             this._document = documents;
             InitializeComponent();
-            nameCustomLabel.Text = this._document.Name;
-
+            SetName();
         }
 
-        private void bunifuCards1_Paint(object sender, PaintEventArgs e)
+        private void SetName()
         {
-
+            nameCustomLabel.Text = _document.Name;
+            if (nameCustomLabel.Width < TextRenderer.MeasureText(nameCustomLabel.Text,
+                        new Font(nameCustomLabel.Font.FontFamily, nameCustomLabel.Font.Size,
+                            nameCustomLabel.Font.Style))
+                    .Width)
+            {
+                nameCustomLabel.Text = _document.Name.Substring(0, 42) + "..";
+            }
         }
 
         private void CheckAndOpenUrlPdf(string urlPdf)
@@ -47,7 +55,6 @@ namespace BibliotecaVirtual.Forms.Initiative
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Warning, 120);
                 }
-
             }
             catch (Exception e)
             {
@@ -60,6 +67,11 @@ namespace BibliotecaVirtual.Forms.Initiative
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
             this.CheckAndOpenUrlPdf(this._document.Url);
+        }
+
+        private void nameCustomLabel_MouseHover(object sender, EventArgs e)
+        {
+            toolTName.SetToolTip(nameCustomLabel, _document.Name);
         }
     }
 }
