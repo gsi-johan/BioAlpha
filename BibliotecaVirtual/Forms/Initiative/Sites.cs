@@ -113,5 +113,10 @@ namespace BibliotecaVirtual.Forms.Initiative
                     MessageBoxIcon.Warning, 120);
             }
         }
+
+        private void linkTarifas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

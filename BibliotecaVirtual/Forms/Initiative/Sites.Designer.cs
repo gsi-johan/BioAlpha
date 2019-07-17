@@ -30,22 +30,17 @@
         {
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this._labelFolder1 = new MetroFramework.Controls.MetroLabel();
-            this.labelJFF1 = new MetroFramework.Controls.MetroLabel();
-            this.pictureBoxJFF1 = new System.Windows.Forms.PictureBox();
-            this._pictureBFolder1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.labelJFF2 = new MetroFramework.Controls.MetroLabel();
-            this.pictureBoxJFF2 = new System.Windows.Forms.PictureBox();
-            this._labelFolder2 = new MetroFramework.Controls.MetroLabel();
-            this._pictureBFolder2 = new System.Windows.Forms.PictureBox();
+            this.galleryCienaga = new System.Windows.Forms.PictureBox();
+            this.accordionCienaga = new TestGallery.ImageAccordion();
+            this.galleryGC = new System.Windows.Forms.PictureBox();
+            this.accordionGC = new TestGallery.ImageAccordion();
+            this.linkTarifas = new MetroFramework.Controls.MetroLink();
             this.metroTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJFF1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._pictureBFolder1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJFF2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._pictureBFolder2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.galleryCienaga)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.galleryGC)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -62,130 +57,83 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this._labelFolder1);
-            this.tabPage1.Controls.Add(this.labelJFF1);
-            this.tabPage1.Controls.Add(this.pictureBoxJFF1);
-            this.tabPage1.Controls.Add(this._pictureBFolder1);
+            this.tabPage1.Controls.Add(this.galleryCienaga);
+            this.tabPage1.Controls.Add(this.accordionCienaga);
             this.tabPage1.Location = new System.Drawing.Point(4, 38);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(843, 550);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "APRM P C.Zapata";
             // 
-            // _labelFolder1
-            // 
-            this._labelFolder1.AutoSize = true;
-            this._labelFolder1.BackColor = System.Drawing.Color.Transparent;
-            this._labelFolder1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._labelFolder1.Location = new System.Drawing.Point(43, 179);
-            this._labelFolder1.Name = "_labelFolder1";
-            this._labelFolder1.Size = new System.Drawing.Size(159, 20);
-            this._labelFolder1.TabIndex = 10;
-            this._labelFolder1.Text = "Mensajes comunicativos";
-            this._labelFolder1.Click += new System.EventHandler(this._labelFolder1_Click);
-            // 
-            // labelJFF1
-            // 
-            this.labelJFF1.AutoSize = true;
-            this.labelJFF1.BackColor = System.Drawing.Color.Transparent;
-            this.labelJFF1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelJFF1.Location = new System.Drawing.Point(437, 183);
-            this.labelJFF1.Name = "labelJFF1";
-            this.labelJFF1.Size = new System.Drawing.Size(149, 20);
-            this.labelJFF1.TabIndex = 12;
-            this.labelJFF1.Text = "Justificación Financiera";
-            this.labelJFF1.Click += new System.EventHandler(this.labelJFF1_Click);
-            // 
-            // pictureBoxJFF1
-            // 
-            this.pictureBoxJFF1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxJFF1.Image = global::BibliotecaVirtual.Properties.Resources.Tesis;
-            this.pictureBoxJFF1.Location = new System.Drawing.Point(437, 40);
-            this.pictureBoxJFF1.Name = "pictureBoxJFF1";
-            this.pictureBoxJFF1.Size = new System.Drawing.Size(155, 137);
-            this.pictureBoxJFF1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxJFF1.TabIndex = 11;
-            this.pictureBoxJFF1.TabStop = false;
-            this.pictureBoxJFF1.Click += new System.EventHandler(this.pictureBoxJFF1_Click);
-            // 
-            // _pictureBFolder1
-            // 
-            this._pictureBFolder1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._pictureBFolder1.Image = global::BibliotecaVirtual.Properties.Resources.Tesis;
-            this._pictureBFolder1.Location = new System.Drawing.Point(40, 40);
-            this._pictureBFolder1.Name = "_pictureBFolder1";
-            this._pictureBFolder1.Size = new System.Drawing.Size(155, 137);
-            this._pictureBFolder1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this._pictureBFolder1.TabIndex = 9;
-            this._pictureBFolder1.TabStop = false;
-            this._pictureBFolder1.Click += new System.EventHandler(this._pictureBFolder1_Click_1);
-            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.labelJFF2);
-            this.tabPage2.Controls.Add(this.pictureBoxJFF2);
-            this.tabPage2.Controls.Add(this._labelFolder2);
-            this.tabPage2.Controls.Add(this._pictureBFolder2);
+            this.tabPage2.Controls.Add(this.galleryGC);
+            this.tabPage2.Controls.Add(this.accordionGC);
             this.tabPage2.Location = new System.Drawing.Point(4, 38);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Size = new System.Drawing.Size(843, 550);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "PN P.Guanahacabibes";
             // 
-            // labelJFF2
+            // galleryCienaga
             // 
-            this.labelJFF2.AutoSize = true;
-            this.labelJFF2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.labelJFF2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelJFF2.Location = new System.Drawing.Point(437, 183);
-            this.labelJFF2.Name = "labelJFF2";
-            this.labelJFF2.Size = new System.Drawing.Size(149, 20);
-            this.labelJFF2.TabIndex = 14;
-            this.labelJFF2.Text = "Justificación Financiera";
-            this.labelJFF2.Click += new System.EventHandler(this.metroLabel3_Click);
+            this.galleryCienaga.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.galleryCienaga.Location = new System.Drawing.Point(7, 3);
+            this.galleryCienaga.Name = "galleryCienaga";
+            this.galleryCienaga.Size = new System.Drawing.Size(830, 436);
+            this.galleryCienaga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.galleryCienaga.TabIndex = 3;
+            this.galleryCienaga.TabStop = false;
             // 
-            // pictureBoxJFF2
+            // accordionCienaga
             // 
-            this.pictureBoxJFF2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxJFF2.Image = global::BibliotecaVirtual.Properties.Resources.Tesis;
-            this.pictureBoxJFF2.Location = new System.Drawing.Point(437, 40);
-            this.pictureBoxJFF2.Name = "pictureBoxJFF2";
-            this.pictureBoxJFF2.Size = new System.Drawing.Size(155, 137);
-            this.pictureBoxJFF2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxJFF2.TabIndex = 13;
-            this.pictureBoxJFF2.TabStop = false;
-            this.pictureBoxJFF2.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.accordionCienaga.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.accordionCienaga.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.accordionCienaga.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
+            this.accordionCienaga.Location = new System.Drawing.Point(0, 445);
+            this.accordionCienaga.Name = "accordionCienaga";
+            this.accordionCienaga.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(98)))), ((int)(((byte)(137)))));
+            this.accordionCienaga.Size = new System.Drawing.Size(847, 109);
+            this.accordionCienaga.TabIndex = 2;
             // 
-            // _labelFolder2
+            // galleryGC
             // 
-            this._labelFolder2.AutoSize = true;
-            this._labelFolder2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this._labelFolder2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._labelFolder2.Location = new System.Drawing.Point(43, 179);
-            this._labelFolder2.Name = "_labelFolder2";
-            this._labelFolder2.Size = new System.Drawing.Size(159, 20);
-            this._labelFolder2.TabIndex = 12;
-            this._labelFolder2.Text = "Mensajes comunicativos";
-            this._labelFolder2.Click += new System.EventHandler(this.metroLabel1_Click_1);
+            this.galleryGC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.galleryGC.Location = new System.Drawing.Point(5, 0);
+            this.galleryGC.Name = "galleryGC";
+            this.galleryGC.Size = new System.Drawing.Size(830, 436);
+            this.galleryGC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.galleryGC.TabIndex = 5;
+            this.galleryGC.TabStop = false;
             // 
-            // _pictureBFolder2
+            // accordionGC
             // 
-            this._pictureBFolder2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._pictureBFolder2.Image = global::BibliotecaVirtual.Properties.Resources.Tesis;
-            this._pictureBFolder2.Location = new System.Drawing.Point(40, 40);
-            this._pictureBFolder2.Name = "_pictureBFolder2";
-            this._pictureBFolder2.Size = new System.Drawing.Size(155, 137);
-            this._pictureBFolder2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this._pictureBFolder2.TabIndex = 11;
-            this._pictureBFolder2.TabStop = false;
-            this._pictureBFolder2.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            this.accordionGC.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.accordionGC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.accordionGC.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(118)))));
+            this.accordionGC.Location = new System.Drawing.Point(-2, 442);
+            this.accordionGC.Name = "accordionGC";
+            this.accordionGC.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(98)))), ((int)(((byte)(137)))));
+            this.accordionGC.Size = new System.Drawing.Size(847, 109);
+            this.accordionGC.TabIndex = 4;
+            // 
+            // linkTarifas
+            // 
+            this.linkTarifas.Location = new System.Drawing.Point(707, 85);
+            this.linkTarifas.Name = "linkTarifas";
+            this.linkTarifas.Size = new System.Drawing.Size(118, 23);
+            this.linkTarifas.TabIndex = 12;
+            this.linkTarifas.Text = "Tarifa Financiera";
+            this.linkTarifas.UseSelectable = true;
+            this.linkTarifas.Click += new System.EventHandler(this.linkTarifas_Click);
             // 
             // Sites
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(840, 662);
+            this.Controls.Add(this.linkTarifas);
             this.Controls.Add(this.metroTabControl1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -194,13 +142,9 @@
             this.Text = "Sitios";
             this.metroTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJFF1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._pictureBFolder1)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJFF2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._pictureBFolder2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.galleryCienaga)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.galleryGC)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -208,14 +152,11 @@
         #endregion
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private MetroFramework.Controls.MetroLabel labelJFF1;
-        private System.Windows.Forms.PictureBox pictureBoxJFF1;
-        private MetroFramework.Controls.MetroLabel _labelFolder1;
-        private System.Windows.Forms.PictureBox _pictureBFolder1;
         private System.Windows.Forms.TabPage tabPage2;
-        private MetroFramework.Controls.MetroLabel labelJFF2;
-        private System.Windows.Forms.PictureBox pictureBoxJFF2;
-        private MetroFramework.Controls.MetroLabel _labelFolder2;
-        private System.Windows.Forms.PictureBox _pictureBFolder2;
+        private System.Windows.Forms.PictureBox galleryCienaga;
+        private TestGallery.ImageAccordion accordionCienaga;
+        private System.Windows.Forms.PictureBox galleryGC;
+        private TestGallery.ImageAccordion accordionGC;
+        private MetroFramework.Controls.MetroLink linkTarifas;
     }
 }
