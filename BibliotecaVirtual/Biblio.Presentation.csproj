@@ -130,6 +130,18 @@
     <Compile Include="Forms\FormStart.Designer.cs">
       <DependentUpon>FormStart.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Initiative\About_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Initiative\About_1.Designer.cs">
+      <DependentUpon>About_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Initiative\About_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Initiative\About_2.Designer.cs">
+      <DependentUpon>About_2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Initiative\DetailsView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +197,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormStart.resx">
       <DependentUpon>FormStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Initiative\About_1.resx">
+      <DependentUpon>About_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Initiative\About_2.resx">
+      <DependentUpon>About_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Initiative\DetailsView.resx">
       <DependentUpon>DetailsView.cs</DependentUpon>

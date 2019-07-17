@@ -12,8 +12,9 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
         COMPONENTS3 = 3,
         COMPONENTS4 = 4,
         POSTERS =5,
-        PILOTSSITES=6,
-        ALLCOMPONENTS=7
+        PILOTSSOLUTIONS=6,
+        ALLCOMPONENTS=7,
+        APP=8
     }
 
     public class SearchsTerminals
