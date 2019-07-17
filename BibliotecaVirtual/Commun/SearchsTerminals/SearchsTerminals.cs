@@ -134,7 +134,6 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             {
                 results.AddRange(component4.Documents);
                 results.AddRange(component4.Folders[0].Documents);
-                results.AddRange(component4.Folders[1].Documents);
                 return results;
             }
             return SearchInDocuments(key, component4);
@@ -172,7 +171,6 @@ namespace BibliotecaVirtual.Commun.SearchsTerminals
             if (string.IsNullOrEmpty(key))
             {
                 results.AddRange(component1.Documents);
-                results.AddRange(component1.Folders[0].Documents);
                 return results;
             }
            
