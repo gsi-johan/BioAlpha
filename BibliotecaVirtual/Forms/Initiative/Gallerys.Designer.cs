@@ -42,10 +42,11 @@
             // _pictureBFolder1
             // 
             this._pictureBFolder1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._pictureBFolder1.Image = global::BibliotecaVirtual.Properties.Resources.Tesis;
-            this._pictureBFolder1.Location = new System.Drawing.Point(76, 103);
+            this._pictureBFolder1.Image = global::BibliotecaVirtual.Properties.Resources.Folder;
+            this._pictureBFolder1.Location = new System.Drawing.Point(57, 84);
+            this._pictureBFolder1.Margin = new System.Windows.Forms.Padding(2);
             this._pictureBFolder1.Name = "_pictureBFolder1";
-            this._pictureBFolder1.Size = new System.Drawing.Size(79, 67);
+            this._pictureBFolder1.Size = new System.Drawing.Size(59, 54);
             this._pictureBFolder1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this._pictureBFolder1.TabIndex = 0;
             this._pictureBFolder1.TabStop = false;
@@ -55,9 +56,10 @@
             // 
             this._labelFolder1.AutoSize = true;
             this._labelFolder1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._labelFolder1.Location = new System.Drawing.Point(76, 173);
+            this._labelFolder1.Location = new System.Drawing.Point(57, 141);
+            this._labelFolder1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this._labelFolder1.Name = "_labelFolder1";
-            this._labelFolder1.Size = new System.Drawing.Size(146, 20);
+            this._labelFolder1.Size = new System.Drawing.Size(140, 19);
             this._labelFolder1.TabIndex = 2;
             this._labelFolder1.Text = "Taller Santa Clara 2018";
             this._labelFolder1.Click += new System.EventHandler(this._labelFolder1_Click);
@@ -66,9 +68,10 @@
             // 
             this._labelFolder2.AutoSize = true;
             this._labelFolder2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._labelFolder2.Location = new System.Drawing.Point(76, 296);
+            this._labelFolder2.Location = new System.Drawing.Point(57, 240);
+            this._labelFolder2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this._labelFolder2.Name = "_labelFolder2";
-            this._labelFolder2.Size = new System.Drawing.Size(74, 20);
+            this._labelFolder2.Size = new System.Drawing.Size(71, 19);
             this._labelFolder2.TabIndex = 4;
             this._labelFolder2.Text = "La Habana";
             this._labelFolder2.Click += new System.EventHandler(this._labelFolder2_Click);
@@ -76,10 +79,11 @@
             // _pictureBFolder2
             // 
             this._pictureBFolder2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._pictureBFolder2.Image = global::BibliotecaVirtual.Properties.Resources.Tesis;
-            this._pictureBFolder2.Location = new System.Drawing.Point(76, 226);
+            this._pictureBFolder2.Image = global::BibliotecaVirtual.Properties.Resources.Folder;
+            this._pictureBFolder2.Location = new System.Drawing.Point(57, 184);
+            this._pictureBFolder2.Margin = new System.Windows.Forms.Padding(2);
             this._pictureBFolder2.Name = "_pictureBFolder2";
-            this._pictureBFolder2.Size = new System.Drawing.Size(79, 67);
+            this._pictureBFolder2.Size = new System.Drawing.Size(59, 54);
             this._pictureBFolder2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this._pictureBFolder2.TabIndex = 3;
             this._pictureBFolder2.TabStop = false;
@@ -89,9 +93,10 @@
             // 
             this._labelFolder3.AutoSize = true;
             this._labelFolder3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._labelFolder3.Location = new System.Drawing.Point(76, 415);
+            this._labelFolder3.Location = new System.Drawing.Point(57, 337);
+            this._labelFolder3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this._labelFolder3.Name = "_labelFolder3";
-            this._labelFolder3.Size = new System.Drawing.Size(180, 20);
+            this._labelFolder3.Size = new System.Drawing.Size(175, 19);
             this._labelFolder3.TabIndex = 6;
             this._labelFolder3.Text = "Collage Fotos de la Ciénaga";
             this._labelFolder3.Click += new System.EventHandler(this._labelFolder3_Click);
@@ -99,10 +104,11 @@
             // _pictureBFolder3
             // 
             this._pictureBFolder3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._pictureBFolder3.Image = global::BibliotecaVirtual.Properties.Resources.Tesis;
-            this._pictureBFolder3.Location = new System.Drawing.Point(76, 345);
+            this._pictureBFolder3.Image = global::BibliotecaVirtual.Properties.Resources.Folder;
+            this._pictureBFolder3.Location = new System.Drawing.Point(57, 280);
+            this._pictureBFolder3.Margin = new System.Windows.Forms.Padding(2);
             this._pictureBFolder3.Name = "_pictureBFolder3";
-            this._pictureBFolder3.Size = new System.Drawing.Size(79, 67);
+            this._pictureBFolder3.Size = new System.Drawing.Size(59, 54);
             this._pictureBFolder3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this._pictureBFolder3.TabIndex = 5;
             this._pictureBFolder3.TabStop = false;
@@ -110,18 +116,20 @@
             // 
             // Gallerys
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(840, 662);
+            this.ClientSize = new System.Drawing.Size(630, 400);
             this.Controls.Add(this._labelFolder3);
             this.Controls.Add(this._pictureBFolder3);
             this.Controls.Add(this._labelFolder2);
             this.Controls.Add(this._pictureBFolder2);
             this.Controls.Add(this._labelFolder1);
             this.Controls.Add(this._pictureBFolder1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Gallerys";
+            this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);
             this.Resizable = false;
             this.Text = "Galería";
             ((System.ComponentModel.ISupportInitialize)(this._pictureBFolder1)).EndInit();

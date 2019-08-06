@@ -71,6 +71,16 @@ namespace BibliotecaVirtual.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BANNERBOFIN {
+            get {
+                object obj = ResourceManager.GetObject("BANNERBOFIN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to El documento seleccionado será eliminado.
         /// </summary>
         internal static string Delete {
@@ -145,6 +155,16 @@ namespace BibliotecaVirtual.Properties {
         internal static string EmptyFields {
             get {
                 return ResourceManager.GetString("EmptyFields", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Folder {
+            get {
+                object obj = ResourceManager.GetObject("Folder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

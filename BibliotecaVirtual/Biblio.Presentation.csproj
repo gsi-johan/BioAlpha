@@ -295,6 +295,7 @@
   <ItemGroup>
     <None Include="Resources\diamante.ico" />
     <Content Include="changle_log.txt" />
+    <None Include="Resources\BANNERBOFIN.png" />
     <Content Include="Resources\download.ico" />
     <Content Include="Resources\download.png" />
     <Content Include="Resources\editar.ico" />
@@ -302,6 +303,7 @@
     <None Include="Resources\login.png" />
     <None Include="Resources\footer.png" />
     <None Include="Resources\emoticon.png" />
+    <None Include="Resources\Folder.png" />
     <Content Include="Resources\home.png" />
     <Content Include="Resources\info2.png" />
     <Content Include="Resources\plusFloat.png" />
